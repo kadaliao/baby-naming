@@ -1,0 +1,1512 @@
+{
+  "characters": [
+    {
+      "char": "金",
+      "wuxing": "金"
+    },
+    {
+      "char": "鑫",
+      "wuxing": "金"
+    },
+    {
+      "char": "锐",
+      "wuxing": "金"
+    },
+    {
+      "char": "铭",
+      "wuxing": "金"
+    },
+    {
+      "char": "钰",
+      "wuxing": "金"
+    },
+    {
+      "char": "钊",
+      "wuxing": "金"
+    },
+    {
+      "char": "锋",
+      "wuxing": "金"
+    },
+    {
+      "char": "鉴",
+      "wuxing": "金"
+    },
+    {
+      "char": "钢",
+      "wuxing": "金"
+    },
+    {
+      "char": "铃",
+      "wuxing": "金"
+    },
+    {
+      "char": "钦",
+      "wuxing": "金"
+    },
+    {
+      "char": "钟",
+      "wuxing": "金"
+    },
+    {
+      "char": "银",
+      "wuxing": "金"
+    },
+    {
+      "char": "铎",
+      "wuxing": "金"
+    },
+    {
+      "char": "瑞",
+      "wuxing": "金"
+    },
+    {
+      "char": "锦",
+      "wuxing": "金"
+    },
+    {
+      "char": "钧",
+      "wuxing": "金"
+    },
+    {
+      "char": "锡",
+      "wuxing": "金"
+    },
+    {
+      "char": "铮",
+      "wuxing": "金"
+    },
+    {
+      "char": "镇",
+      "wuxing": "金"
+    },
+    {
+      "char": "铸",
+      "wuxing": "金"
+    },
+    {
+      "char": "锻",
+      "wuxing": "金"
+    },
+    {
+      "char": "镜",
+      "wuxing": "金"
+    },
+    {
+      "char": "钛",
+      "wuxing": "金"
+    },
+    {
+      "char": "钢",
+      "wuxing": "金"
+    },
+    {
+      "char": "西",
+      "wuxing": "金"
+    },
+    {
+      "char": "申",
+      "wuxing": "金"
+    },
+    {
+      "char": "辛",
+      "wuxing": "金"
+    },
+    {
+      "char": "兑",
+      "wuxing": "金"
+    },
+    {
+      "char": "商",
+      "wuxing": "金"
+    },
+    {
+      "char": "白",
+      "wuxing": "金"
+    },
+    {
+      "char": "素",
+      "wuxing": "金"
+    },
+    {
+      "char": "玉",
+      "wuxing": "金"
+    },
+    {
+      "char": "珠",
+      "wuxing": "金"
+    },
+    {
+      "char": "琦",
+      "wuxing": "金"
+    },
+    {
+      "char": "琪",
+      "wuxing": "金"
+    },
+    {
+      "char": "瑜",
+      "wuxing": "金"
+    },
+    {
+      "char": "瑶",
+      "wuxing": "金"
+    },
+    {
+      "char": "璇",
+      "wuxing": "金"
+    },
+    {
+      "char": "璋",
+      "wuxing": "金"
+    },
+    {
+      "char": "林",
+      "wuxing": "木"
+    },
+    {
+      "char": "森",
+      "wuxing": "木"
+    },
+    {
+      "char": "木",
+      "wuxing": "木"
+    },
+    {
+      "char": "本",
+      "wuxing": "木"
+    },
+    {
+      "char": "朴",
+      "wuxing": "木"
+    },
+    {
+      "char": "材",
+      "wuxing": "木"
+    },
+    {
+      "char": "松",
+      "wuxing": "木"
+    },
+    {
+      "char": "柏",
+      "wuxing": "木"
+    },
+    {
+      "char": "枫",
+      "wuxing": "木"
+    },
+    {
+      "char": "柳",
+      "wuxing": "木"
+    },
+    {
+      "char": "栋",
+      "wuxing": "木"
+    },
+    {
+      "char": "树",
+      "wuxing": "木"
+    },
+    {
+      "char": "梓",
+      "wuxing": "木"
+    },
+    {
+      "char": "桓",
+      "wuxing": "木"
+    },
+    {
+      "char": "彬",
+      "wuxing": "木"
+    },
+    {
+      "char": "杰",
+      "wuxing": "木"
+    },
+    {
+      "char": "楠",
+      "wuxing": "木"
+    },
+    {
+      "char": "榕",
+      "wuxing": "木"
+    },
+    {
+      "char": "槿",
+      "wuxing": "木"
+    },
+    {
+      "char": "桦",
+      "wuxing": "木"
+    },
+    {
+      "char": "棋",
+      "wuxing": "木"
+    },
+    {
+      "char": "棠",
+      "wuxing": "木"
+    },
+    {
+      "char": "桐",
+      "wuxing": "木"
+    },
+    {
+      "char": "梧",
+      "wuxing": "木"
+    },
+    {
+      "char": "桢",
+      "wuxing": "木"
+    },
+    {
+      "char": "梁",
+      "wuxing": "木"
+    },
+    {
+      "char": "栩",
+      "wuxing": "木"
+    },
+    {
+      "char": "柯",
+      "wuxing": "木"
+    },
+    {
+      "char": "柔",
+      "wuxing": "木"
+    },
+    {
+      "char": "权",
+      "wuxing": "木"
+    },
+    {
+      "char": "荣",
+      "wuxing": "木"
+    },
+    {
+      "char": "莉",
+      "wuxing": "木"
+    },
+    {
+      "char": "莲",
+      "wuxing": "木"
+    },
+    {
+      "char": "芳",
+      "wuxing": "木"
+    },
+    {
+      "char": "芬",
+      "wuxing": "木"
+    },
+    {
+      "char": "芝",
+      "wuxing": "木"
+    },
+    {
+      "char": "芯",
+      "wuxing": "木"
+    },
+    {
+      "char": "花",
+      "wuxing": "木"
+    },
+    {
+      "char": "茂",
+      "wuxing": "木"
+    },
+    {
+      "char": "茵",
+      "wuxing": "木"
+    },
+    {
+      "char": "茹",
+      "wuxing": "木"
+    },
+    {
+      "char": "荷",
+      "wuxing": "木"
+    },
+    {
+      "char": "莹",
+      "wuxing": "木"
+    },
+    {
+      "char": "菁",
+      "wuxing": "木"
+    },
+    {
+      "char": "菊",
+      "wuxing": "木"
+    },
+    {
+      "char": "萱",
+      "wuxing": "木"
+    },
+    {
+      "char": "蕾",
+      "wuxing": "木"
+    },
+    {
+      "char": "薇",
+      "wuxing": "木"
+    },
+    {
+      "char": "蓝",
+      "wuxing": "木"
+    },
+    {
+      "char": "蕊",
+      "wuxing": "木"
+    },
+    {
+      "char": "艺",
+      "wuxing": "木"
+    },
+    {
+      "char": "苏",
+      "wuxing": "木"
+    },
+    {
+      "char": "英",
+      "wuxing": "木"
+    },
+    {
+      "char": "茜",
+      "wuxing": "木"
+    },
+    {
+      "char": "筠",
+      "wuxing": "木"
+    },
+    {
+      "char": "竹",
+      "wuxing": "木"
+    },
+    {
+      "char": "笛",
+      "wuxing": "木"
+    },
+    {
+      "char": "箫",
+      "wuxing": "木"
+    },
+    {
+      "char": "策",
+      "wuxing": "木"
+    },
+    {
+      "char": "筱",
+      "wuxing": "木"
+    },
+    {
+      "char": "海",
+      "wuxing": "水"
+    },
+    {
+      "char": "洋",
+      "wuxing": "水"
+    },
+    {
+      "char": "江",
+      "wuxing": "水"
+    },
+    {
+      "char": "河",
+      "wuxing": "水"
+    },
+    {
+      "char": "湖",
+      "wuxing": "水"
+    },
+    {
+      "char": "泽",
+      "wuxing": "水"
+    },
+    {
+      "char": "清",
+      "wuxing": "水"
+    },
+    {
+      "char": "涛",
+      "wuxing": "水"
+    },
+    {
+      "char": "波",
+      "wuxing": "水"
+    },
+    {
+      "char": "澜",
+      "wuxing": "水"
+    },
+    {
+      "char": "沁",
+      "wuxing": "水"
+    },
+    {
+      "char": "浩",
+      "wuxing": "水"
+    },
+    {
+      "char": "淼",
+      "wuxing": "水"
+    },
+    {
+      "char": "涵",
+      "wuxing": "水"
+    },
+    {
+      "char": "润",
+      "wuxing": "水"
+    },
+    {
+      "char": "溪",
+      "wuxing": "水"
+    },
+    {
+      "char": "泉",
+      "wuxing": "水"
+    },
+    {
+      "char": "源",
+      "wuxing": "水"
+    },
+    {
+      "char": "渊",
+      "wuxing": "水"
+    },
+    {
+      "char": "沐",
+      "wuxing": "水"
+    },
+    {
+      "char": "沛",
+      "wuxing": "水"
+    },
+    {
+      "char": "泓",
+      "wuxing": "水"
+    },
+    {
+      "char": "洁",
+      "wuxing": "水"
+    },
+    {
+      "char": "洪",
+      "wuxing": "水"
+    },
+    {
+      "char": "浚",
+      "wuxing": "水"
+    },
+    {
+      "char": "洲",
+      "wuxing": "水"
+    },
+    {
+      "char": "浦",
+      "wuxing": "水"
+    },
+    {
+      "char": "澈",
+      "wuxing": "水"
+    },
+    {
+      "char": "淳",
+      "wuxing": "水"
+    },
+    {
+      "char": "淑",
+      "wuxing": "水"
+    },
+    {
+      "char": "渝",
+      "wuxing": "水"
+    },
+    {
+      "char": "溶",
+      "wuxing": "水"
+    },
+    {
+      "char": "漫",
+      "wuxing": "水"
+    },
+    {
+      "char": "漪",
+      "wuxing": "水"
+    },
+    {
+      "char": "潇",
+      "wuxing": "水"
+    },
+    {
+      "char": "潮",
+      "wuxing": "水"
+    },
+    {
+      "char": "澳",
+      "wuxing": "水"
+    },
+    {
+      "char": "滨",
+      "wuxing": "水"
+    },
+    {
+      "char": "濠",
+      "wuxing": "水"
+    },
+    {
+      "char": "瀚",
+      "wuxing": "水"
+    },
+    {
+      "char": "雨",
+      "wuxing": "水"
+    },
+    {
+      "char": "雪",
+      "wuxing": "水"
+    },
+    {
+      "char": "霖",
+      "wuxing": "水"
+    },
+    {
+      "char": "霏",
+      "wuxing": "水"
+    },
+    {
+      "char": "霓",
+      "wuxing": "水"
+    },
+    {
+      "char": "霞",
+      "wuxing": "水"
+    },
+    {
+      "char": "露",
+      "wuxing": "水"
+    },
+    {
+      "char": "霜",
+      "wuxing": "水"
+    },
+    {
+      "char": "冰",
+      "wuxing": "水"
+    },
+    {
+      "char": "凌",
+      "wuxing": "水"
+    },
+    {
+      "char": "冷",
+      "wuxing": "水"
+    },
+    {
+      "char": "冬",
+      "wuxing": "水"
+    },
+    {
+      "char": "子",
+      "wuxing": "水"
+    },
+    {
+      "char": "文",
+      "wuxing": "水"
+    },
+    {
+      "char": "北",
+      "wuxing": "水"
+    },
+    {
+      "char": "玄",
+      "wuxing": "水"
+    },
+    {
+      "char": "黑",
+      "wuxing": "水"
+    },
+    {
+      "char": "墨",
+      "wuxing": "水"
+    },
+    {
+      "char": "云",
+      "wuxing": "水"
+    },
+    {
+      "char": "雯",
+      "wuxing": "水"
+    },
+    {
+      "char": "炎",
+      "wuxing": "火"
+    },
+    {
+      "char": "焱",
+      "wuxing": "火"
+    },
+    {
+      "char": "灿",
+      "wuxing": "火"
+    },
+    {
+      "char": "烨",
+      "wuxing": "火"
+    },
+    {
+      "char": "焕",
+      "wuxing": "火"
+    },
+    {
+      "char": "煜",
+      "wuxing": "火"
+    },
+    {
+      "char": "炳",
+      "wuxing": "火"
+    },
+    {
+      "char": "耀",
+      "wuxing": "火"
+    },
+    {
+      "char": "晖",
+      "wuxing": "火"
+    },
+    {
+      "char": "辉",
+      "wuxing": "火"
+    },
+    {
+      "char": "晨",
+      "wuxing": "火"
+    },
+    {
+      "char": "昭",
+      "wuxing": "火"
+    },
+    {
+      "char": "明",
+      "wuxing": "火"
+    },
+    {
+      "char": "昱",
+      "wuxing": "火"
+    },
+    {
+      "char": "晴",
+      "wuxing": "火"
+    },
+    {
+      "char": "晓",
+      "wuxing": "火"
+    },
+    {
+      "char": "晶",
+      "wuxing": "火"
+    },
+    {
+      "char": "智",
+      "wuxing": "火"
+    },
+    {
+      "char": "慧",
+      "wuxing": "火"
+    },
+    {
+      "char": "曦",
+      "wuxing": "火"
+    },
+    {
+      "char": "旭",
+      "wuxing": "火"
+    },
+    {
+      "char": "旺",
+      "wuxing": "火"
+    },
+    {
+      "char": "昌",
+      "wuxing": "火"
+    },
+    {
+      "char": "星",
+      "wuxing": "火"
+    },
+    {
+      "char": "昊",
+      "wuxing": "火"
+    },
+    {
+      "char": "昆",
+      "wuxing": "火"
+    },
+    {
+      "char": "晟",
+      "wuxing": "火"
+    },
+    {
+      "char": "暄",
+      "wuxing": "火"
+    },
+    {
+      "char": "暖",
+      "wuxing": "火"
+    },
+    {
+      "char": "曜",
+      "wuxing": "火"
+    },
+    {
+      "char": "日",
+      "wuxing": "火"
+    },
+    {
+      "char": "光",
+      "wuxing": "火"
+    },
+    {
+      "char": "丽",
+      "wuxing": "火"
+    },
+    {
+      "char": "丹",
+      "wuxing": "火"
+    },
+    {
+      "char": "赤",
+      "wuxing": "火"
+    },
+    {
+      "char": "彤",
+      "wuxing": "火"
+    },
+    {
+      "char": "红",
+      "wuxing": "火"
+    },
+    {
+      "char": "朱",
+      "wuxing": "火"
+    },
+    {
+      "char": "绛",
+      "wuxing": "火"
+    },
+    {
+      "char": "炽",
+      "wuxing": "火"
+    },
+    {
+      "char": "炜",
+      "wuxing": "火"
+    },
+    {
+      "char": "烽",
+      "wuxing": "火"
+    },
+    {
+      "char": "燃",
+      "wuxing": "火"
+    },
+    {
+      "char": "燎",
+      "wuxing": "火"
+    },
+    {
+      "char": "熙",
+      "wuxing": "火"
+    },
+    {
+      "char": "德",
+      "wuxing": "火"
+    },
+    {
+      "char": "恺",
+      "wuxing": "火"
+    },
+    {
+      "char": "恩",
+      "wuxing": "火"
+    },
+    {
+      "char": "志",
+      "wuxing": "火"
+    },
+    {
+      "char": "忠",
+      "wuxing": "火"
+    },
+    {
+      "char": "忻",
+      "wuxing": "火"
+    },
+    {
+      "char": "怡",
+      "wuxing": "火"
+    },
+    {
+      "char": "恬",
+      "wuxing": "火"
+    },
+    {
+      "char": "南",
+      "wuxing": "火"
+    },
+    {
+      "char": "夏",
+      "wuxing": "火"
+    },
+    {
+      "char": "午",
+      "wuxing": "火"
+    },
+    {
+      "char": "丙",
+      "wuxing": "火"
+    },
+    {
+      "char": "丁",
+      "wuxing": "火"
+    },
+    {
+      "char": "坤",
+      "wuxing": "土"
+    },
+    {
+      "char": "垚",
+      "wuxing": "土"
+    },
+    {
+      "char": "堃",
+      "wuxing": "土"
+    },
+    {
+      "char": "坚",
+      "wuxing": "土"
+    },
+    {
+      "char": "培",
+      "wuxing": "土"
+    },
+    {
+      "char": "城",
+      "wuxing": "土"
+    },
+    {
+      "char": "塘",
+      "wuxing": "土"
+    },
+    {
+      "char": "境",
+      "wuxing": "土"
+    },
+    {
+      "char": "均",
+      "wuxing": "土"
+    },
+    {
+      "char": "基",
+      "wuxing": "土"
+    },
+    {
+      "char": "堂",
+      "wuxing": "土"
+    },
+    {
+      "char": "增",
+      "wuxing": "土"
+    },
+    {
+      "char": "墉",
+      "wuxing": "土"
+    },
+    {
+      "char": "墨",
+      "wuxing": "土"
+    },
+    {
+      "char": "壁",
+      "wuxing": "土"
+    },
+    {
+      "char": "壮",
+      "wuxing": "土"
+    },
+    {
+      "char": "声",
+      "wuxing": "土"
+    },
+    {
+      "char": "坦",
+      "wuxing": "土"
+    },
+    {
+      "char": "垣",
+      "wuxing": "土"
+    },
+    {
+      "char": "埔",
+      "wuxing": "土"
+    },
+    {
+      "char": "埠",
+      "wuxing": "土"
+    },
+    {
+      "char": "堆",
+      "wuxing": "土"
+    },
+    {
+      "char": "塔",
+      "wuxing": "土"
+    },
+    {
+      "char": "塞",
+      "wuxing": "土"
+    },
+    {
+      "char": "墅",
+      "wuxing": "土"
+    },
+    {
+      "char": "土",
+      "wuxing": "土"
+    },
+    {
+      "char": "圣",
+      "wuxing": "土"
+    },
+    {
+      "char": "圭",
+      "wuxing": "土"
+    },
+    {
+      "char": "地",
+      "wuxing": "土"
+    },
+    {
+      "char": "圻",
+      "wuxing": "土"
+    },
+    {
+      "char": "山",
+      "wuxing": "土"
+    },
+    {
+      "char": "岳",
+      "wuxing": "土"
+    },
+    {
+      "char": "岚",
+      "wuxing": "土"
+    },
+    {
+      "char": "岭",
+      "wuxing": "土"
+    },
+    {
+      "char": "岩",
+      "wuxing": "土"
+    },
+    {
+      "char": "峰",
+      "wuxing": "土"
+    },
+    {
+      "char": "峻",
+      "wuxing": "土"
+    },
+    {
+      "char": "崇",
+      "wuxing": "土"
+    },
+    {
+      "char": "嵩",
+      "wuxing": "土"
+    },
+    {
+      "char": "岱",
+      "wuxing": "土"
+    },
+    {
+      "char": "峥",
+      "wuxing": "土"
+    },
+    {
+      "char": "嵘",
+      "wuxing": "土"
+    },
+    {
+      "char": "野",
+      "wuxing": "土"
+    },
+    {
+      "char": "田",
+      "wuxing": "土"
+    },
+    {
+      "char": "畴",
+      "wuxing": "土"
+    },
+    {
+      "char": "畦",
+      "wuxing": "土"
+    },
+    {
+      "char": "畅",
+      "wuxing": "土"
+    },
+    {
+      "char": "央",
+      "wuxing": "土"
+    },
+    {
+      "char": "中",
+      "wuxing": "土"
+    },
+    {
+      "char": "辰",
+      "wuxing": "土"
+    },
+    {
+      "char": "戌",
+      "wuxing": "土"
+    },
+    {
+      "char": "丑",
+      "wuxing": "土"
+    },
+    {
+      "char": "未",
+      "wuxing": "土"
+    },
+    {
+      "char": "戊",
+      "wuxing": "土"
+    },
+    {
+      "char": "己",
+      "wuxing": "土"
+    },
+    {
+      "char": "黄",
+      "wuxing": "土"
+    },
+    {
+      "char": "安",
+      "wuxing": "土"
+    },
+    {
+      "char": "宇",
+      "wuxing": "土"
+    },
+    {
+      "char": "宛",
+      "wuxing": "土"
+    },
+    {
+      "char": "宥",
+      "wuxing": "土"
+    },
+    {
+      "char": "宸",
+      "wuxing": "土"
+    },
+    {
+      "char": "思",
+      "wuxing": "金"
+    },
+    {
+      "char": "新",
+      "wuxing": "金"
+    },
+    {
+      "char": "心",
+      "wuxing": "金"
+    },
+    {
+      "char": "信",
+      "wuxing": "金"
+    },
+    {
+      "char": "正",
+      "wuxing": "金"
+    },
+    {
+      "char": "铁",
+      "wuxing": "金"
+    },
+    {
+      "char": "睿",
+      "wuxing": "金"
+    },
+    {
+      "char": "诚",
+      "wuxing": "金"
+    },
+    {
+      "char": "静",
+      "wuxing": "金"
+    },
+    {
+      "char": "宣",
+      "wuxing": "金"
+    },
+    {
+      "char": "舒",
+      "wuxing": "金"
+    },
+    {
+      "char": "书",
+      "wuxing": "金"
+    },
+    {
+      "char": "诗",
+      "wuxing": "金"
+    },
+    {
+      "char": "修",
+      "wuxing": "金"
+    },
+    {
+      "char": "嘉",
+      "wuxing": "木"
+    },
+    {
+      "char": "佳",
+      "wuxing": "木"
+    },
+    {
+      "char": "家",
+      "wuxing": "木"
+    },
+    {
+      "char": "建",
+      "wuxing": "木"
+    },
+    {
+      "char": "健",
+      "wuxing": "木"
+    },
+    {
+      "char": "凯",
+      "wuxing": "木"
+    },
+    {
+      "char": "可",
+      "wuxing": "木"
+    },
+    {
+      "char": "毅",
+      "wuxing": "木"
+    },
+    {
+      "char": "义",
+      "wuxing": "木"
+    },
+    {
+      "char": "奕",
+      "wuxing": "木"
+    },
+    {
+      "char": "逸",
+      "wuxing": "木"
+    },
+    {
+      "char": "颖",
+      "wuxing": "木"
+    },
+    {
+      "char": "语",
+      "wuxing": "木"
+    },
+    {
+      "char": "雅",
+      "wuxing": "木"
+    },
+    {
+      "char": "轩",
+      "wuxing": "木"
+    },
+    {
+      "char": "琳",
+      "wuxing": "木"
+    },
+    {
+      "char": "羽",
+      "wuxing": "木"
+    },
+    {
+      "char": "博",
+      "wuxing": "水"
+    },
+    {
+      "char": "渤",
+      "wuxing": "水"
+    },
+    {
+      "char": "敏",
+      "wuxing": "水"
+    },
+    {
+      "char": "民",
+      "wuxing": "水"
+    },
+    {
+      "char": "鸿",
+      "wuxing": "水"
+    },
+    {
+      "char": "宏",
+      "wuxing": "水"
+    },
+    {
+      "char": "乐",
+      "wuxing": "火"
+    },
+    {
+      "char": "朗",
+      "wuxing": "火"
+    },
+    {
+      "char": "亮",
+      "wuxing": "火"
+    },
+    {
+      "char": "良",
+      "wuxing": "火"
+    },
+    {
+      "char": "令",
+      "wuxing": "火"
+    },
+    {
+      "char": "宁",
+      "wuxing": "火"
+    },
+    {
+      "char": "诺",
+      "wuxing": "火"
+    },
+    {
+      "char": "晗",
+      "wuxing": "火"
+    },
+    {
+      "char": "烁",
+      "wuxing": "火"
+    },
+    {
+      "char": "炫",
+      "wuxing": "火"
+    },
+    {
+      "char": "昕",
+      "wuxing": "火"
+    },
+    {
+      "char": "阳",
+      "wuxing": "火"
+    },
+    {
+      "char": "扬",
+      "wuxing": "火"
+    },
+    {
+      "char": "璐",
+      "wuxing": "火"
+    },
+    {
+      "char": "伟",
+      "wuxing": "土"
+    },
+    {
+      "char": "维",
+      "wuxing": "土"
+    },
+    {
+      "char": "为",
+      "wuxing": "土"
+    },
+    {
+      "char": "唯",
+      "wuxing": "土"
+    },
+    {
+      "char": "勇",
+      "wuxing": "土"
+    },
+    {
+      "char": "永",
+      "wuxing": "土"
+    },
+    {
+      "char": "咏",
+      "wuxing": "土"
+    },
+    {
+      "char": "羽",
+      "wuxing": "土"
+    },
+    {
+      "char": "远",
+      "wuxing": "土"
+    },
+    {
+      "char": "跃",
+      "wuxing": "土"
+    },
+    {
+      "char": "越",
+      "wuxing": "土"
+    },
+    {
+      "char": "婉",
+      "wuxing": "土"
+    },
+    {
+      "char": "玥",
+      "wuxing": "土"
+    },
+    {
+      "char": "轩",
+      "wuxing": "土"
+    },
+    {
+      "char": "然",
+      "wuxing": "土"
+    },
+    {
+      "char": "赵",
+      "wuxing": "金"
+    },
+    {
+      "char": "钱",
+      "wuxing": "金"
+    },
+    {
+      "char": "孙",
+      "wuxing": "金"
+    },
+    {
+      "char": "周",
+      "wuxing": "金"
+    },
+    {
+      "char": "郑",
+      "wuxing": "金"
+    },
+    {
+      "char": "石",
+      "wuxing": "金"
+    },
+    {
+      "char": "沈",
+      "wuxing": "金"
+    },
+    {
+      "char": "谢",
+      "wuxing": "金"
+    },
+    {
+      "char": "李",
+      "wuxing": "木"
+    },
+    {
+      "char": "杨",
+      "wuxing": "木"
+    },
+    {
+      "char": "吴",
+      "wuxing": "木"
+    },
+    {
+      "char": "许",
+      "wuxing": "木"
+    },
+    {
+      "char": "贾",
+      "wuxing": "木"
+    },
+    {
+      "char": "董",
+      "wuxing": "木"
+    },
+    {
+      "char": "王",
+      "wuxing": "水"
+    },
+    {
+      "char": "刘",
+      "wuxing": "水"
+    },
+    {
+      "char": "冯",
+      "wuxing": "水"
+    },
+    {
+      "char": "汤",
+      "wuxing": "水"
+    },
+    {
+      "char": "潘",
+      "wuxing": "水"
+    },
+    {
+      "char": "韩",
+      "wuxing": "水"
+    },
+    {
+      "char": "张",
+      "wuxing": "火"
+    },
+    {
+      "char": "陈",
+      "wuxing": "火"
+    },
+    {
+      "char": "郭",
+      "wuxing": "火"
+    },
+    {
+      "char": "何",
+      "wuxing": "火"
+    },
+    {
+      "char": "高",
+      "wuxing": "火"
+    },
+    {
+      "char": "唐",
+      "wuxing": "火"
+    },
+    {
+      "char": "吴",
+      "wuxing": "土"
+    },
+    {
+      "char": "徐",
+      "wuxing": "土"
+    },
+    {
+      "char": "马",
+      "wuxing": "土"
+    },
+    {
+      "char": "袁",
+      "wuxing": "土"
+    },
+    {
+      "char": "魏",
+      "wuxing": "土"
+    },
+    {
+      "char": "于",
+      "wuxing": "土"
+    }
+  ]
+}

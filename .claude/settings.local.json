@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run dev:*)",
+      "Bash(npm install:*)",
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "Bash(curl -s \"https://raw.githubusercontent.com/chinese-poetry/chinese-poetry/master/quan_tang_shi/json/poet.tang.0.json\")",
+      "Bash(curl -s \"https://unpkg.com/chinese-poetry@latest/\")",
+      "Bash(curl:*)",
+      "Bash(node:*)",
+      "Bash(npm run build:*)",
+      "Bash(npx tsx:*)",
+      "Bash(cat:*)",
+      "WebFetch(domain:alexop.dev)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nfeat: implement core scoring system and generators\n\nMajor updates:\n- Scoring: 4-dimensional system (wuxing/yinlu/zixing/yuyi) with real algorithms\n- Generators: Poetry (from 30 Tang poems) and Wuxing (Five Elements theory)\n- Bazi calculator: Uses lunar-javascript for birth date analysis\n- Data: 377 chars with wuxing/strokes/pinyin properties\n- UI: ScoreRadar component with recharts, enhanced NameCard\n- Dependencies: lunar-javascript (1.7.5), recharts (3.2.1)\n- Docs: Added CLAUDE.md with architecture overview\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git config:*)",
+      "Bash(git log:*)",
+      "Bash(git filter-branch:*)",
+      "Bash(git stash:*)",
+      "Bash(git for-each-ref:*)",
+      "Bash(xargs:*)"
+    ],
+    "deny": [],
+    "ask": []
+  },
+  "outputStyle": "linus"
+}
