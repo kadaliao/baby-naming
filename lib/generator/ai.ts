@@ -24,6 +24,7 @@ export async function generateNamesWithAI(input: NamingInput): Promise<NameCandi
       preferences: input.preferences,
       sources: input.sources,
       count: input.count || 10,
+      fixedChar: input.fixedChar,
     });
 
     const response = await openai.chat.completions.create({

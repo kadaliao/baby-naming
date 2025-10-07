@@ -51,7 +51,8 @@ export async function POST(request: NextRequest) {
           input.surname,
           input.gender,
           undefined, // 暂不支持五行筛选
-          perSourceCount
+          perSourceCount,
+          input.fixedChar
         );
         candidates.push(...poetryCandidates);
       } else if (source === 'wuxing') {
@@ -76,7 +77,8 @@ export async function POST(request: NextRequest) {
           input.surname,
           wuxingNeeds,
           input.gender,
-          perSourceCount
+          perSourceCount,
+          input.fixedChar
         );
         candidates.push(...wuxingCandidates);
       }

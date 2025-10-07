@@ -42,6 +42,13 @@ export interface NamingInput {
   sources: NameSource[];
   /** 生成数量 */
   count?: number;
+  /** 固定字（辈分字） */
+  fixedChar?: {
+    /** 辈分字（单个汉字） */
+    char: string;
+    /** 位置（姓氏后第一个字或第二个字） */
+    position: 'first' | 'second';
+  };
 }
 
 /** 评分结果 */

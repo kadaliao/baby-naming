@@ -33,6 +33,7 @@ export function buildNamingPrompt(params: {
   preferences: string[];
   sources: string[];
   count?: number;
+  fixedChar?: { char: string; position: 'first' | 'second' };
 }): string {
   const genderText =
     params.gender === 'male' ? '男' :
@@ -54,11 +55,17 @@ export function buildNamingPrompt(params: {
     sourceInstructions += '\n- 综合多种来源，推荐最优质的名字';
   }
 
+  let fixedCharInstructions = '';
+  if (params.fixedChar) {
+    const position = params.fixedChar.position === 'first' ? '第一个字' : '第二个字';
+    fixedCharInstructions = `\n\n⚠️ 固定字要求：名字的${position}必须是"${params.fixedChar.char}"，请只生成另一个字来搭配。`;
+  }
+
   return `请为姓"${params.surname}"的${genderText}宝宝推荐${count}个名字。
 
 用户偏好：${params.preferences.join('、')}
 
-名字来源要求：${sourceInstructions}
+名字来源要求：${sourceInstructions}${fixedCharInstructions}
 
 请返回 JSON 格式：
 {

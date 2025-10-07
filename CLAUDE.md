@@ -8,19 +8,24 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **Tech Stack**: Next.js 15 (App Router) + TypeScript + Tailwind CSS + shadcn/ui + OpenAI API
 
-**Current Status**: ~75% complete. Core functionality (generators, scoring, UI) implemented. Missing: database persistence, user system.
+**Current Status**: ~80% complete. Core functionality (generators, scoring, UI, fixed-char feature) implemented. Missing: database persistence, user system.
 
-**Last Updated**: 2025-10-06
+**Last Updated**: 2025-10-07 12:15
 
 ## Recent Changes
 
+- **Fixed-char feature** (辈分字): Added support for specifying fixed character at specific position
+  - Updated all generators (poetry, wuxing, AI) to support `fixedChar` parameter
+  - Added UI controls in NameInputForm for fixed char input and position selection
+  - Backward compatible: existing code works unchanged when fixedChar is not provided
+  - Test script: `scripts/test-fixed-char.ts`
 - **Scoring system**: Implemented all 4 dimensions (wuxing, yinlu, zixing, yuyi) with real algorithms
 - **UI enhancements**: Added ScoreRadar.tsx component with recharts integration, updated NameCard with collapsible radar
 - **Dependencies**: Added `lunar-javascript` (v1.7.4) and `recharts` (v2.15.0)
 - **Data infrastructure**: Created character databases (wuxing, strokes, pinyin) and Tang poetry dataset (30 poems)
 - **Generators**: Implemented poetry and wuxing generators with bazi integration
 - **Utilities**: Added data-loader.ts for consistent character data access
-- **Scripts**: Created data generation and exploration utilities (generate-pinyin, extend-wuxing, explore-lunar-api)
+- **Scripts**: Created data generation and exploration utilities (generate-pinyin, extend-wuxing, explore-lunar-api, test-fixed-char)
 
 ## Development Commands
 
@@ -41,6 +46,7 @@ npm run lint
 npx tsx scripts/test-scoring.ts      # Test scoring algorithms
 npx tsx scripts/test-generator.ts    # Test name generators
 npx tsx scripts/test-bazi.ts         # Test bazi calculator
+npx tsx scripts/test-fixed-char.ts   # Test fixed-char feature
 ```
 
 ## Architecture Overview
@@ -64,14 +70,17 @@ Three independent generators that produce `NameCandidate[]`:
 - **`poetry.ts`**: Extracts characters from 30 Tang poems (`data/poetry/tangshi.json`)
   - Returns candidates with poetry source details
   - Can filter by gender and wuxing needs
+  - Supports fixed-char mode: generates only the non-fixed character, prioritizes poems containing both chars
 
 - **`wuxing.ts`**: Generates names based on Five Elements theory
   - Uses wuxing mutual generation (相生): 金生水, 水生木, 木生火, 火生土, 土生金
   - Prioritizes element combinations that support each other
   - Example: If need 水(Water), combines 水 chars with 金(Metal) chars (金生水)
+  - Supports fixed-char mode: generates characters matching wuxing needs to pair with fixed char
 
 - **`ai.ts`**: Calls OpenAI API for creative name generation
   - Requires `OPENAI_API_KEY` in `.env.local`
+  - Supports fixed-char mode via prompt instruction
 
 **Integration**: `app/api/generate/route.ts` orchestrates multiple generators based on `input.sources[]`
 
@@ -183,6 +192,7 @@ Core types in `types/name.ts`:
 - `ScoreResult` - Four-dimensional scoring result
 - `Gender` - 'male' | 'female' | 'neutral'
 - `NameSource` - 'poetry' | 'wuxing' | 'ai' | 'custom'
+- `NamingInput.fixedChar` - Optional fixed character with position ('first' | 'second')
 
 ## Common Pitfalls
 

@@ -129,13 +129,56 @@ function generateDoubleChar(
 }
 
 /**
+ * 生成名字候选项（固定字模式）
+ */
+function generateWithFixedChar(
+  surname: string,
+  chars: string[],
+  fixedChar: { char: string; position: 'first' | 'second' }
+): NameCandidate[] {
+  const candidates: NameCandidate[] = [];
+
+  // 优先从包含固定字的诗句中提取其他字
+  const poemsWithFixed = getPoemsContainingChar(fixedChar.char);
+
+  for (const char of chars) {
+    // 跳过固定字本身
+    if (char === fixedChar.char) continue;
+
+    const firstName = fixedChar.position === 'first'
+      ? fixedChar.char + char
+      : char + fixedChar.char;
+
+    // 查找来源诗句（优先使用包含固定字的诗）
+    const poemsWithChar = getPoemsContainingChar(char);
+    const sharedPoem = poemsWithFixed.find(p1 =>
+      poemsWithChar.some(p2 => p2.id === p1.id)
+    );
+
+    const sourcePoem = sharedPoem || poemsWithFixed[0] || poemsWithChar[0];
+
+    candidates.push({
+      fullName: surname + firstName,
+      firstName,
+      source: 'poetry' as const,
+      sourceDetail: sourcePoem
+        ? `《${sourcePoem.title}》${sourcePoem.author}：${sourcePoem.content}`
+        : '诗词典故',
+    });
+  }
+
+  return candidates;
+}
+
+/**
  * 诗词生成器主函数
  */
 export function generateFromPoetry(
   surname: string,
   gender?: Gender,
   wuxingNeeds?: string[],
-  count: number = 20
+  count: number = 20,
+  fixedChar?: { char: string; position: 'first' | 'second' }
 ): NameCandidate[] {
   // 1. 提取所有可用字
   const allChars = extractNamingChars();
@@ -147,15 +190,20 @@ export function generateFromPoetry(
     return [];
   }
 
-  // 3. 生成候选（双字名优先）
+  // 3. 生成候选
   const candidates: NameCandidate[] = [];
 
-  // 双字名
-  candidates.push(...generateDoubleChar(surname, filteredChars));
+  if (fixedChar) {
+    // 固定字模式：只生成另一个字
+    candidates.push(...generateWithFixedChar(surname, filteredChars, fixedChar));
+  } else {
+    // 正常模式：双字名优先
+    candidates.push(...generateDoubleChar(surname, filteredChars));
 
-  // 单字名（如果双字名不够）
-  if (candidates.length < count) {
-    candidates.push(...generateSingleChar(surname, filteredChars));
+    // 单字名（如果双字名不够）
+    if (candidates.length < count) {
+      candidates.push(...generateSingleChar(surname, filteredChars));
+    }
   }
 
   // 4. 随机打乱并返回前N个

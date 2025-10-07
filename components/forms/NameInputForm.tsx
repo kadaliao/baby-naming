@@ -23,6 +23,8 @@ import type { NamingInput, Gender, NameSource } from '@/types/name';
 // 表单验证模式
 const formSchema = z.object({
   surname: z.string().min(1, '请输入姓氏').max(2, '姓氏最多2个字'),
+  fixedChar: z.string().max(1, '辈分字只能是1个汉字').optional(),
+  fixedCharPosition: z.enum(['first', 'second'] as const).optional(),
   gender: z.enum(['male', 'female', 'neutral'] as const),
   birthDate: z.string().optional(),
   birthTime: z.string().optional(),
@@ -61,6 +63,8 @@ export function NameInputForm({ onSubmit, isLoading = false }: NameInputFormProp
     resolver: zodResolver(formSchema),
     defaultValues: {
       surname: '',
+      fixedChar: '',
+      fixedCharPosition: 'first',
       gender: 'neutral',
       birthDate: '',
       birthTime: '',
@@ -79,6 +83,15 @@ export function NameInputForm({ onSubmit, isLoading = false }: NameInputFormProp
       birthDate = new Date(dateTimeStr);
     }
 
+    // 组装固定字
+    let fixedChar: { char: string; position: 'first' | 'second' } | undefined;
+    if (values.fixedChar && values.fixedChar.trim().length > 0) {
+      fixedChar = {
+        char: values.fixedChar.trim(),
+        position: values.fixedCharPosition || 'first',
+      };
+    }
+
     const namingInput: NamingInput = {
       surname: values.surname,
       gender: values.gender,
@@ -86,6 +99,7 @@ export function NameInputForm({ onSubmit, isLoading = false }: NameInputFormProp
       preferences: values.preferences,
       sources: values.sources as NameSource[],
       count: 10,
+      fixedChar,
     };
 
     onSubmit(namingInput);
@@ -113,6 +127,68 @@ export function NameInputForm({ onSubmit, isLoading = false }: NameInputFormProp
             </FormItem>
           )}
         />
+
+        {/* 固定字（辈分字）*/}
+        <div className="space-y-4 p-4 bg-blue-50 dark:bg-blue-900/10 rounded-lg border border-blue-200 dark:border-blue-800">
+          <FormLabel className="text-base">辈分字（可选）</FormLabel>
+          <FormDescription className="mb-4">
+            如果家族有辈分字要求，可以指定固定的字和位置
+          </FormDescription>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <FormField
+              control={form.control}
+              name="fixedChar"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>固定字</FormLabel>
+                  <FormControl>
+                    <Input
+                      placeholder="如：明、国、家"
+                      maxLength={1}
+                      className="text-lg"
+                      {...field}
+                    />
+                  </FormControl>
+                  <FormDescription className="text-xs">只能输入1个汉字</FormDescription>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="fixedCharPosition"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>位置</FormLabel>
+                  <FormControl>
+                    <RadioGroup
+                      onValueChange={field.onChange}
+                      defaultValue={field.value}
+                      className="flex gap-4"
+                    >
+                      <div className="flex items-center space-x-2">
+                        <RadioGroupItem value="first" id="position-first" />
+                        <Label htmlFor="position-first" className="cursor-pointer">
+                          第一个字
+                        </Label>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <RadioGroupItem value="second" id="position-second" />
+                        <Label htmlFor="position-second" className="cursor-pointer">
+                          第二个字
+                        </Label>
+                      </div>
+                    </RadioGroup>
+                  </FormControl>
+                  <FormDescription className="text-xs">
+                    固定字在姓氏后的位置
+                  </FormDescription>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+          </div>
+        </div>
 
         {/* 性别选择 */}
         <FormField

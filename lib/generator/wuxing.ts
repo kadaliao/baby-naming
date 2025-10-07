@@ -5,6 +5,7 @@
 
 import type { NameCandidate, Gender } from '@/types/name';
 import wuxingData from '@/data/characters/wuxing.json';
+import { getCharWuxing } from '@/lib/utils/data-loader';
 
 /**
  * 获取指定五行的所有字符
@@ -102,13 +103,52 @@ function generateDoubleChar(
 }
 
 /**
+ * 生成名字候选项（固定字模式）
+ */
+function generateWithFixedChar(
+  surname: string,
+  chars: string[],
+  wuxing: string,
+  fixedChar: { char: string; position: 'first' | 'second' }
+): NameCandidate[] {
+  const candidates: NameCandidate[] = [];
+  const fixedWuxing = getCharWuxing(fixedChar.char);
+
+  for (const char of chars) {
+    // 跳过固定字本身
+    if (char === fixedChar.char) continue;
+
+    const firstName = fixedChar.position === 'first'
+      ? fixedChar.char + char
+      : char + fixedChar.char;
+
+    let sourceDetail = `五行补${wuxing}`;
+    if (fixedWuxing) {
+      sourceDetail += `（含固定字：${fixedChar.char}，五行${fixedWuxing}）`;
+    } else {
+      sourceDetail += `（含固定字：${fixedChar.char}）`;
+    }
+
+    candidates.push({
+      fullName: surname + firstName,
+      firstName,
+      source: 'wuxing' as const,
+      sourceDetail,
+    });
+  }
+
+  return candidates;
+}
+
+/**
  * 五行生成器主函数
  */
 export function generateFromWuxing(
   surname: string,
   wuxingNeeds: string[],
   gender?: Gender,
-  count: number = 20
+  count: number = 20,
+  fixedChar?: { char: string; position: 'first' | 'second' }
 ): NameCandidate[] {
   if (!wuxingNeeds || wuxingNeeds.length === 0) {
     return [];
@@ -140,32 +180,43 @@ export function generateFromWuxing(
     let targetChars = getCharsByWuxing(wuxing);
     targetChars = filterByGender(targetChars, gender);
 
-    // 2. 获取生它的五行的字
-    const helperWuxing = shengByMap[wuxing] || '金';
-    let helperChars = getCharsByWuxing(helperWuxing);
-    helperChars = filterByGender(helperChars, gender);
-
     if (targetChars.length === 0) continue;
 
-    // 3. 生成候选
+    // 2. 生成候选
     const limit = Math.floor(count / wuxingNeeds.length);
 
-    // 双字名（优先相生组合）
-    if (helperChars.length > 0) {
-      const doubleChars = generateDoubleChar(
+    if (fixedChar) {
+      // 固定字模式：只生成另一个字
+      const withFixed = generateWithFixedChar(
         surname,
         targetChars,
         wuxing,
-        helperChars,
-        helperWuxing
+        fixedChar
       );
-      candidates.push(...doubleChars.slice(0, limit));
-    }
+      candidates.push(...withFixed.slice(0, limit));
+    } else {
+      // 正常模式：双字名优先相生组合
+      // 获取生它的五行的字
+      const helperWuxing = shengByMap[wuxing] || '金';
+      let helperChars = getCharsByWuxing(helperWuxing);
+      helperChars = filterByGender(helperChars, gender);
 
-    // 单字名（如果不够）
-    if (candidates.length < limit * (wuxingNeeds.indexOf(wuxing) + 1)) {
-      const singleChars = generateSingleChar(surname, targetChars.slice(0, 5), wuxing);
-      candidates.push(...singleChars);
+      if (helperChars.length > 0) {
+        const doubleChars = generateDoubleChar(
+          surname,
+          targetChars,
+          wuxing,
+          helperChars,
+          helperWuxing
+        );
+        candidates.push(...doubleChars.slice(0, limit));
+      }
+
+      // 单字名（如果不够）
+      if (candidates.length < limit * (wuxingNeeds.indexOf(wuxing) + 1)) {
+        const singleChars = generateSingleChar(surname, targetChars.slice(0, 5), wuxing);
+        candidates.push(...singleChars);
+      }
     }
   }
 
