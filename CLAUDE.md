@@ -8,12 +8,19 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **Tech Stack**: Next.js 15 (App Router) + TypeScript + Tailwind CSS + shadcn/ui + OpenAI API
 
-**Current Status**: ~85% complete. Core functionality (generators, scoring, UI, fixed-char feature) implemented. Poetry database expanded to 393 poems. Missing: database persistence, user system.
+**Current Status**: ~90% complete. Core functionality (generators, scoring, UI, fixed-char feature, database persistence) implemented. Poetry database: 393 poems. Missing: user system, frontend history UI.
 
-**Last Updated**: 2025-10-07 17:21
+**Last Updated**: 2025-10-07 17:35
 
 ## Recent Changes
 
+- **Database persistence** (数据库持久化): Implemented SQLite-based history and favorites
+  - Schema: Single-table design (`generated_names`) with session_id support (no user system required)
+  - Repository pattern: `lib/db/client.ts` + `lib/db/repository.ts` with full CRUD operations
+  - APIs: `/api/generate` (auto-saves), `/api/history` (with stats), `/api/favorite` (toggle/note/delete)
+  - Testing: All endpoints verified working (generate → save → query → favorite)
+  - Database file: `data/names.db` (SQLite3 with WAL mode)
+  - Dependencies: better-sqlite3 ^11.8.1
 - **Poetry database expansion** (诗词库扩展): Expanded from 30 to 393 Tang poems (13x growth)
   - Imported complete "Three Hundred Tang Poems" (唐诗三百首) from chinese-poetry project
   - 95 authors covered: Li Bai (56), Du Fu (41), Wang Wei (29), Li Shangyin (25), etc.
@@ -218,18 +225,21 @@ Core types in `types/name.ts`:
 
 ## What's NOT Implemented Yet
 
-- Database persistence (SQLite schema exists in PLAN.md but not implemented)
-- User authentication system
-- History/favorites functionality
-- Batch name generation
+- User authentication system (schema ready, can migrate session_id → user_id)
+- Frontend history/favorites UI (APIs ready, need React components)
+- Batch name generation (backend supports multiple, need UI)
 - Mobile responsive optimization (basic responsive done, not perfect)
 
 ## Environment Variables Required
 
 ```env
+# OpenAI API (for AI generator)
 OPENAI_API_KEY=sk-xxx          # Required for AI generator
 OPENAI_BASE_URL=https://...    # Optional, defaults to OpenAI
 AI_MODEL=gpt-4o-mini            # Optional, defaults to gpt-4o-mini
+
+# Database (for history/favorites)
+DATABASE_PATH=./data/names.db  # Optional, defaults to ./data/names.db
 ```
 
 Server runs on port 16666 by default (configured in `package.json` via next dev).

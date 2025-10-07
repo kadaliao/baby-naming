@@ -4,7 +4,9 @@ import { generateFromPoetry } from '@/lib/generator/poetry';
 import { generateFromWuxing } from '@/lib/generator/wuxing';
 import { comprehensiveScore } from '@/lib/scoring';
 import { calculateBazi } from '@/lib/bazi/calculator';
+import { saveNames } from '@/lib/db/repository';
 import type { NamingInput, NameCandidate } from '@/types/name';
+import type { SaveNameInput } from '@/lib/db/repository';
 
 export const runtime = 'nodejs';
 
@@ -104,6 +106,28 @@ export async function POST(request: NextRequest) {
     // 按评分排序
     results.sort((a, b) => (b.score || 0) - (a.score || 0));
 
+    // 保存到数据库（可选，失败不影响返回）
+    try {
+      const sessionId = getSessionId(request);
+      const saveInputs: SaveNameInput[] = results.map((candidate) => ({
+        sessionId,
+        surname: input.surname,
+        gender: input.gender,
+        birthDate: input.birthDate ? new Date(input.birthDate) : undefined,
+        preferences: input.preferences,
+        sources: input.sources,
+        fixedChar: input.fixedChar?.char,
+        fixedPosition: input.fixedChar?.position,
+        candidate,
+        score: candidate.scoreDetail!,
+      }));
+
+      const savedIds = saveNames(saveInputs);
+      console.log(`✅ 已保存 ${savedIds.length} 条名字到数据库`);
+    } catch (error) {
+      console.error('保存到数据库失败（不影响返回）:', error);
+    }
+
     return NextResponse.json({
       success: true,
       data: results,
@@ -119,6 +143,26 @@ export async function POST(request: NextRequest) {
       { status: 500 }
     );
   }
+}
+
+/**
+ * 获取或生成session ID
+ */
+function getSessionId(request: NextRequest): string {
+  // 1. 从cookie获取
+  const cookieSessionId = request.cookies.get('sessionId')?.value;
+  if (cookieSessionId) {
+    return cookieSessionId;
+  }
+
+  // 2. 从header获取
+  const headerSessionId = request.headers.get('x-session-id');
+  if (headerSessionId) {
+    return headerSessionId;
+  }
+
+  // 3. 生成新的session ID
+  return 'session-' + Date.now() + '-' + Math.random().toString(36).substr(2, 9);
 }
 
 /**
