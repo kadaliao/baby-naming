@@ -1,8 +1,11 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { NameInputForm } from '@/components/forms/NameInputForm';
 import { NameCard } from '@/components/results/NameCard';
+import { Button } from '@/components/ui/button';
+import { History } from 'lucide-react';
 import type { NamingInput, NameCandidate } from '@/types/name';
 
 export default function Home() {
@@ -10,15 +13,29 @@ export default function Home() {
   const [results, setResults] = useState<NameCandidate[]>([]);
   const [error, setError] = useState<string>('');
 
+  // 获取或生成session ID
+  const getSessionId = (): string => {
+    let sessionId = localStorage.getItem('sessionId');
+    if (!sessionId) {
+      sessionId = 'session-' + Date.now() + '-' + Math.random().toString(36).substr(2, 9);
+      localStorage.setItem('sessionId', sessionId);
+    }
+    return sessionId;
+  };
+
   const handleSubmit = async (data: NamingInput) => {
     setIsGenerating(true);
     setError('');
     setResults([]);
 
     try {
+      const sessionId = getSessionId();
       const response = await fetch('/api/generate', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          'x-session-id': sessionId,
+        },
         body: JSON.stringify(data),
       });
 
@@ -48,10 +65,21 @@ export default function Home() {
       {/* Header */}
       <header className="border-b bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm sticky top-0 z-10">
         <div className="container mx-auto px-4 py-6">
-          <h1 className="text-3xl font-bold text-center bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            宝宝取名助手
-          </h1>
-          <p className="text-center text-gray-600 dark:text-gray-400 mt-2">
+          <div className="flex items-center justify-between mb-2">
+            <div className="flex-1" />
+            <h1 className="text-3xl font-bold text-center bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent flex-1">
+              宝宝取名助手
+            </h1>
+            <div className="flex-1 flex justify-end">
+              <Link href="/history">
+                <Button variant="outline" size="sm">
+                  <History className="h-4 w-4 mr-2" />
+                  历史记录
+                </Button>
+              </Link>
+            </div>
+          </div>
+          <p className="text-center text-gray-600 dark:text-gray-400">
             结合传统文化与现代 AI，为您的宝宝推荐美好的名字
           </p>
         </div>

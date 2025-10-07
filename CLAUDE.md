@@ -8,12 +8,19 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **Tech Stack**: Next.js 15 (App Router) + TypeScript + Tailwind CSS + shadcn/ui + OpenAI API
 
-**Current Status**: ~90% complete. Core functionality (generators, scoring, UI, fixed-char feature, database persistence) implemented. Poetry database: 393 poems. Missing: user system, frontend history UI.
+**Current Status**: ~95% complete. Core functionality (generators, scoring, UI, fixed-char feature, database persistence, history UI) implemented. Poetry database: 393 poems. Missing: user system only.
 
-**Last Updated**: 2025-10-07 17:35
+**Last Updated**: 2025-10-07 17:52
 
 ## Recent Changes
 
+- **History UI** (历史记录界面): Implemented frontend for browsing history and favorites
+  - Page: `/history` with tabs for all records and favorites only
+  - Components: `HistoryList.tsx` (card-based display), `StatsCard.tsx` (dashboard stats)
+  - Features: Toggle favorite (star icon), delete records, time formatting (今天/昨天/N天前)
+  - Session management: localStorage-based session_id for anonymous users
+  - Navigation: Added "历史记录" button to home page header
+  - Icons: Uses lucide-react for UI icons (Star, Trash2, Calendar, Award, etc.)
 - **Database persistence** (数据库持久化): Implemented SQLite-based history and favorites
   - Schema: Single-table design (`generated_names`) with session_id support (no user system required)
   - Repository pattern: `lib/db/client.ts` + `lib/db/repository.ts` with full CRUD operations
@@ -226,9 +233,8 @@ Core types in `types/name.ts`:
 ## What's NOT Implemented Yet
 
 - User authentication system (schema ready, can migrate session_id → user_id)
-- Frontend history/favorites UI (APIs ready, need React components)
-- Batch name generation (backend supports multiple, need UI)
 - Mobile responsive optimization (basic responsive done, not perfect)
+- Export功能 (导出名字列表为PDF/图片)
 
 ## Environment Variables Required
 
