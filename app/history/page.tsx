@@ -7,7 +7,13 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { HistoryList } from '@/components/history/HistoryList';
 import { StatsCard } from '@/components/history/StatsCard';
-import { Loader2, Home } from 'lucide-react';
+import { Loader2, Home, User as UserIcon } from 'lucide-react';
+
+interface User {
+  id: number;
+  username: string;
+  created_at: string;
+}
 
 interface HistoryRecord {
   id: number;
@@ -44,6 +50,19 @@ export default function HistoryPage() {
   const [stats, setStats] = useState<Stats | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string>('');
+  const [currentUser, setCurrentUser] = useState<User | null>(null);
+
+  // 初始化：检查是否已登录
+  useEffect(() => {
+    const userStr = localStorage.getItem('user');
+    if (userStr) {
+      try {
+        setCurrentUser(JSON.parse(userStr));
+      } catch (e) {
+        console.error('Failed to parse user:', e);
+      }
+    }
+  }, []);
 
   // 获取session ID
   const getSessionId = (): string => {
@@ -58,9 +77,9 @@ export default function HistoryPage() {
   // 加载历史记录
   const loadHistory = async (onlyFavorites = false) => {
     try {
-      const sessionId = getSessionId();
+      // 优先使用userId，如果已登录
       const params = new URLSearchParams({
-        sessionId,
+        ...(currentUser ? { userId: currentUser.id.toString() } : { sessionId: getSessionId() }),
         ...(onlyFavorites ? { favorites: 'true' } : {}),
       });
 
@@ -132,9 +151,10 @@ export default function HistoryPage() {
   };
 
   useEffect(() => {
+    // 当用户状态加载完成后再加载历史记录
     loadHistory(false);
     loadHistory(true);
-  }, []);
+  }, [currentUser]); // 依赖currentUser，登录后会自动重新加载
 
   if (isLoading) {
     return (
@@ -171,7 +191,16 @@ export default function HistoryPage() {
           <div className="flex items-center justify-between">
             <div>
               <h1 className="text-3xl font-bold text-gray-900 dark:text-white">历史记录</h1>
-              <p className="text-gray-600 dark:text-gray-400 mt-1">查看所有生成的名字</p>
+              <p className="text-gray-600 dark:text-gray-400 mt-1">
+                {currentUser ? (
+                  <span className="flex items-center">
+                    <UserIcon className="h-4 w-4 mr-1" />
+                    {currentUser.username} 的名字记录
+                  </span>
+                ) : (
+                  '查看所有生成的名字'
+                )}
+              </p>
             </div>
             <Link href="/">
               <Button variant="outline">

@@ -1,17 +1,39 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { NameInputForm } from '@/components/forms/NameInputForm';
 import { NameCard } from '@/components/results/NameCard';
 import { Button } from '@/components/ui/button';
-import { History } from 'lucide-react';
+import { AuthDialog } from '@/components/auth/AuthDialog';
+import { History, LogIn, LogOut, User } from 'lucide-react';
 import type { NamingInput, NameCandidate } from '@/types/name';
+
+interface User {
+  id: number;
+  username: string;
+  created_at: string;
+}
 
 export default function Home() {
   const [isGenerating, setIsGenerating] = useState(false);
   const [results, setResults] = useState<NameCandidate[]>([]);
   const [error, setError] = useState<string>('');
+  const [isAuthDialogOpen, setIsAuthDialogOpen] = useState(false);
+  const [currentUser, setCurrentUser] = useState<User | null>(null);
+  const [authMessage, setAuthMessage] = useState<string>('');
+
+  // 初始化：检查是否已登录
+  useEffect(() => {
+    const userStr = localStorage.getItem('user');
+    if (userStr) {
+      try {
+        setCurrentUser(JSON.parse(userStr));
+      } catch (e) {
+        console.error('Failed to parse user:', e);
+      }
+    }
+  }, []);
 
   // 获取或生成session ID
   const getSessionId = (): string => {
@@ -21,6 +43,25 @@ export default function Home() {
       localStorage.setItem('sessionId', sessionId);
     }
     return sessionId;
+  };
+
+  // 处理登录成功
+  const handleAuthSuccess = (user: User, migratedCount: number) => {
+    setCurrentUser(user);
+    setAuthMessage(
+      migratedCount > 0
+        ? `欢迎 ${user.username}！已成功迁移 ${migratedCount} 条历史记录`
+        : `欢迎 ${user.username}！`
+    );
+    setTimeout(() => setAuthMessage(''), 5000);
+  };
+
+  // 处理登出
+  const handleLogout = () => {
+    localStorage.removeItem('user');
+    setCurrentUser(null);
+    setAuthMessage('已退出登录');
+    setTimeout(() => setAuthMessage(''), 3000);
   };
 
   const handleSubmit = async (data: NamingInput) => {
@@ -70,13 +111,31 @@ export default function Home() {
             <h1 className="text-3xl font-bold text-center bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent flex-1">
               宝宝取名助手
             </h1>
-            <div className="flex-1 flex justify-end">
+            <div className="flex-1 flex justify-end gap-2">
               <Link href="/history">
                 <Button variant="outline" size="sm">
                   <History className="h-4 w-4 mr-2" />
                   历史记录
                 </Button>
               </Link>
+
+              {currentUser ? (
+                <div className="flex items-center gap-2">
+                  <span className="text-sm text-gray-600 dark:text-gray-400 flex items-center">
+                    <User className="h-4 w-4 mr-1" />
+                    {currentUser.username}
+                  </span>
+                  <Button variant="outline" size="sm" onClick={handleLogout}>
+                    <LogOut className="h-4 w-4 mr-2" />
+                    退出
+                  </Button>
+                </div>
+              ) : (
+                <Button variant="outline" size="sm" onClick={() => setIsAuthDialogOpen(true)}>
+                  <LogIn className="h-4 w-4 mr-2" />
+                  登录
+                </Button>
+              )}
             </div>
           </div>
           <p className="text-center text-gray-600 dark:text-gray-400">
@@ -87,6 +146,13 @@ export default function Home() {
 
       {/* Main Content */}
       <main className="container mx-auto px-4 py-8 max-w-4xl">
+        {/* Auth Success Message */}
+        {authMessage && (
+          <div className="mb-4 p-4 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg">
+            <p className="text-green-600 dark:text-green-400 text-sm">{authMessage}</p>
+          </div>
+        )}
+
         {/* Input Form */}
         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 md:p-8">
           <div className="mb-6">
@@ -163,6 +229,13 @@ export default function Home() {
           <p className="mt-2">结合诗词、五行、AI 智能生成，为您的宝宝推荐美好名字</p>
         </div>
       </footer>
+
+      {/* Auth Dialog */}
+      <AuthDialog
+        isOpen={isAuthDialogOpen}
+        onClose={() => setIsAuthDialogOpen(false)}
+        onSuccess={handleAuthSuccess}
+      />
     </div>
   );
 }

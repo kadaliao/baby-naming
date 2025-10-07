@@ -110,10 +110,10 @@ export function saveNames(inputs: SaveNameInput[]): number[] {
 }
 
 /**
- * 获取历史记录（按会话）
+ * 获取历史记录（按session或user）
  */
 export function getHistory(
-  sessionId: string,
+  identifier: { sessionId?: string; userId?: number },
   options?: {
     limit?: number;
     offset?: number;
@@ -122,10 +122,19 @@ export function getHistory(
 ): GeneratedNameRecord[] {
   const db = getDatabase();
 
-  let query = `
-    SELECT * FROM generated_names
-    WHERE session_id = ?
-  `;
+  let query = 'SELECT * FROM generated_names WHERE ';
+  let params: (string | number)[] = [];
+
+  // 优先使用userId
+  if (identifier.userId) {
+    query += 'user_id = ?';
+    params.push(identifier.userId);
+  } else if (identifier.sessionId) {
+    query += 'session_id = ?';
+    params.push(identifier.sessionId);
+  } else {
+    return []; // 没有提供标识符
+  }
 
   if (options?.onlyFavorites) {
     query += ' AND is_favorite = 1';
@@ -142,7 +151,7 @@ export function getHistory(
   }
 
   const stmt = db.prepare(query);
-  return stmt.all(sessionId) as GeneratedNameRecord[];
+  return stmt.all(...params) as GeneratedNameRecord[];
 }
 
 /**
@@ -194,7 +203,7 @@ export function deleteName(id: number): boolean {
 /**
  * 获取统计信息
  */
-export function getStats(sessionId: string): {
+export function getStats(identifier: { sessionId?: string; userId?: number }): {
   total: number;
   favorites: number;
   avgScore: number;
@@ -202,25 +211,30 @@ export function getStats(sessionId: string): {
 } {
   const db = getDatabase();
 
-  const totalStmt = db.prepare(
-    'SELECT COUNT(*) as count FROM generated_names WHERE session_id = ?'
-  );
-  const total = (totalStmt.get(sessionId) as { count: number }).count;
+  let whereClause = '';
+  let param: string | number;
 
-  const favStmt = db.prepare(
-    'SELECT COUNT(*) as count FROM generated_names WHERE session_id = ? AND is_favorite = 1'
-  );
-  const favorites = (favStmt.get(sessionId) as { count: number }).count;
+  if (identifier.userId) {
+    whereClause = 'user_id = ?';
+    param = identifier.userId;
+  } else if (identifier.sessionId) {
+    whereClause = 'session_id = ?';
+    param = identifier.sessionId;
+  } else {
+    return { total: 0, favorites: 0, avgScore: 0, bySources: {} };
+  }
 
-  const avgStmt = db.prepare(
-    'SELECT AVG(score_total) as avg FROM generated_names WHERE session_id = ?'
-  );
-  const avgScore = Math.round((avgStmt.get(sessionId) as { avg: number }).avg || 0);
+  const totalStmt = db.prepare(`SELECT COUNT(*) as count FROM generated_names WHERE ${whereClause}`);
+  const total = (totalStmt.get(param) as { count: number }).count;
 
-  const sourceStmt = db.prepare(
-    'SELECT source, COUNT(*) as count FROM generated_names WHERE session_id = ? GROUP BY source'
-  );
-  const sources = sourceStmt.all(sessionId) as { source: string; count: number }[];
+  const favStmt = db.prepare(`SELECT COUNT(*) as count FROM generated_names WHERE ${whereClause} AND is_favorite = 1`);
+  const favorites = (favStmt.get(param) as { count: number }).count;
+
+  const avgStmt = db.prepare(`SELECT AVG(score_total) as avg FROM generated_names WHERE ${whereClause}`);
+  const avgScore = Math.round((avgStmt.get(param) as { avg: number }).avg || 0);
+
+  const sourceStmt = db.prepare(`SELECT source, COUNT(*) as count FROM generated_names WHERE ${whereClause} GROUP BY source`);
+  const sources = sourceStmt.all(param) as { source: string; count: number }[];
   const bySources: Record<string, number> = {};
   sources.forEach((s) => {
     bySources[s.source] = s.count;

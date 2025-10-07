@@ -42,6 +42,60 @@ function initializeSchema(database: Database.Database): void {
 
   // 执行schema创建
   database.exec(schema);
+
+  // 运行migrations
+  runMigrations(database);
+}
+
+/**
+ * 运行数据库migrations
+ */
+function runMigrations(database: Database.Database): void {
+  // 创建migrations表（记录已运行的migrations）
+  database.exec(`
+    CREATE TABLE IF NOT EXISTS schema_migrations (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      migration_name TEXT UNIQUE NOT NULL,
+      applied_at DATETIME DEFAULT CURRENT_TIMESTAMP
+    );
+  `);
+
+  // 获取已运行的migrations
+  const appliedMigrations = database
+    .prepare('SELECT migration_name FROM schema_migrations')
+    .all() as { migration_name: string }[];
+
+  const appliedSet = new Set(appliedMigrations.map(m => m.migration_name));
+
+  // 读取migrations目录
+  const migrationsDir = join(process.cwd(), 'lib', 'db', 'migrations');
+  const fs = require('fs');
+
+  if (!fs.existsSync(migrationsDir)) {
+    return; // 没有migrations目录，跳过
+  }
+
+  const migrationFiles = fs.readdirSync(migrationsDir)
+    .filter((f: string) => f.endsWith('.sql'))
+    .sort(); // 按文件名排序
+
+  // 执行未运行的migrations
+  for (const file of migrationFiles) {
+    if (!appliedSet.has(file)) {
+      console.log(`🔄 Running migration: ${file}`);
+      const migrationPath = join(migrationsDir, file);
+      const migrationSQL = fs.readFileSync(migrationPath, 'utf-8');
+
+      try {
+        database.exec(migrationSQL);
+        database.prepare('INSERT INTO schema_migrations (migration_name) VALUES (?)').run(file);
+        console.log(`✅ Migration ${file} applied`);
+      } catch (error) {
+        console.error(`❌ Migration ${file} failed:`, error);
+        throw error;
+      }
+    }
+  }
 }
 
 /**

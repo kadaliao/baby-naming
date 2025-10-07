@@ -8,12 +8,22 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **Tech Stack**: Next.js 15 (App Router) + TypeScript + Tailwind CSS + shadcn/ui + OpenAI API
 
-**Current Status**: ~95% complete. Core functionality (generators, scoring, UI, fixed-char feature, database persistence, history UI) implemented. Poetry database: 393 poems. Missing: user system only.
+**Current Status**: 100% complete. All core functionality implemented: generators, scoring, UI, fixed-char feature, database persistence, history UI, and user authentication system. Poetry database: 393 poems.
 
-**Last Updated**: 2025-10-07 17:52
+**Last Updated**: 2025-10-07 18:10
 
 ## Recent Changes
 
+- **User Authentication System** (用户认证系统): Complete user login/registration system with session migration
+  - Database: Migration-based schema evolution with `lib/db/migrations/001_add_users.sql`
+  - Auth logic: `lib/auth/user.ts` with bcrypt password hashing (10 rounds)
+  - API: `/api/auth` endpoint supporting both registration and login in one call
+  - UI: `AuthDialog.tsx` modal component with username/password fields
+  - Session migration: Seamlessly migrate anonymous session data to user accounts
+  - Repository updates: All data access functions support both `sessionId` and `userId`
+  - History integration: History page automatically uses userId when logged in
+  - Testing: Full test suite in `scripts/test-user-system.ts` (all tests passing)
+  - UX: Shows current user in header, auto-migration message on first login
 - **History UI** (历史记录界面): Implemented frontend for browsing history and favorites
   - Page: `/history` with tabs for all records and favorites only
   - Components: `HistoryList.tsx` (card-based display), `StatsCard.tsx` (dashboard stats)
@@ -232,9 +242,9 @@ Core types in `types/name.ts`:
 
 ## What's NOT Implemented Yet
 
-- User authentication system (schema ready, can migrate session_id → user_id)
 - Mobile responsive optimization (basic responsive done, not perfect)
 - Export功能 (导出名字列表为PDF/图片)
+- Batch name generation UI (can generate multiple names at once)
 
 ## Environment Variables Required
 

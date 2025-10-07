@@ -12,15 +12,20 @@ export async function GET(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url);
 
-    // 获取session ID
+    // 优先获取user ID（从query或header）
+    const userIdParam = searchParams.get('userId') || request.headers.get('x-user-id');
+    const userId = userIdParam ? parseInt(userIdParam) : undefined;
+
+    // 获取session ID（兼容未登录用户）
     const sessionId =
       request.cookies.get('sessionId')?.value ||
       request.headers.get('x-session-id') ||
       searchParams.get('sessionId');
 
-    if (!sessionId) {
+    // 至少需要一个标识符
+    if (!userId && !sessionId) {
       return NextResponse.json(
-        { error: '缺少session ID' },
+        { error: '缺少用户标识（userId或sessionId）' },
         { status: 400 }
       );
     }
@@ -30,8 +35,11 @@ export async function GET(request: NextRequest) {
     const offset = parseInt(searchParams.get('offset') || '0');
     const onlyFavorites = searchParams.get('favorites') === 'true';
 
+    // 构建标识符对象（优先使用userId）
+    const identifier = userId ? { userId } : { sessionId };
+
     // 查询历史记录
-    const history = getHistory(sessionId, {
+    const history = getHistory(identifier, {
       limit,
       offset,
       onlyFavorites,
@@ -65,7 +73,7 @@ export async function GET(request: NextRequest) {
     }));
 
     // 获取统计信息
-    const stats = getStats(sessionId);
+    const stats = getStats(identifier);
 
     return NextResponse.json({
       success: true,
