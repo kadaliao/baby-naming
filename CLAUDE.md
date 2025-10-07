@@ -8,12 +8,17 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **Tech Stack**: Next.js 15 (App Router) + TypeScript + Tailwind CSS + shadcn/ui + OpenAI API
 
-**Current Status**: ~80% complete. Core functionality (generators, scoring, UI, fixed-char feature) implemented. Missing: database persistence, user system.
+**Current Status**: ~85% complete. Core functionality (generators, scoring, UI, fixed-char feature) implemented. Poetry database expanded to 393 poems. Missing: database persistence, user system.
 
-**Last Updated**: 2025-10-07 12:15
+**Last Updated**: 2025-10-07 17:21
 
 ## Recent Changes
 
+- **Poetry database expansion** (诗词库扩展): Expanded from 30 to 393 Tang poems (13x growth)
+  - Imported complete "Three Hundred Tang Poems" (唐诗三百首) from chinese-poetry project
+  - 95 authors covered: Li Bai (56), Du Fu (41), Wang Wei (29), Li Shangyin (25), etc.
+  - Script: `scripts/extend-poetry.js` - automated import with deduplication
+  - Verified: Poetry generator working normally with expanded dataset
 - **Fixed-char feature** (辈分字): Added support for specifying fixed character at specific position
   - Updated all generators (poetry, wuxing, AI) to support `fixedChar` parameter
   - Added UI controls in NameInputForm for fixed char input and position selection
@@ -22,10 +27,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **Scoring system**: Implemented all 4 dimensions (wuxing, yinlu, zixing, yuyi) with real algorithms
 - **UI enhancements**: Added ScoreRadar.tsx component with recharts integration, updated NameCard with collapsible radar
 - **Dependencies**: Added `lunar-javascript` (v1.7.4) and `recharts` (v2.15.0)
-- **Data infrastructure**: Created character databases (wuxing, strokes, pinyin) and Tang poetry dataset (30 poems)
+- **Data infrastructure**: Created character databases (wuxing, strokes, pinyin) and Tang poetry dataset (393 poems)
 - **Generators**: Implemented poetry and wuxing generators with bazi integration
 - **Utilities**: Added data-loader.ts for consistent character data access
-- **Scripts**: Created data generation and exploration utilities (generate-pinyin, extend-wuxing, explore-lunar-api, test-fixed-char)
+- **Scripts**: Created data generation and exploration utilities (generate-pinyin, extend-wuxing, explore-lunar-api, test-fixed-char, extend-poetry)
 
 ## Development Commands
 
@@ -218,7 +223,6 @@ Core types in `types/name.ts`:
 - History/favorites functionality
 - Batch name generation
 - Mobile responsive optimization (basic responsive done, not perfect)
-- More poetry sources (currently only 30 Tang poems, should expand to 300+)
 
 ## Environment Variables Required
 
