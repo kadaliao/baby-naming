@@ -154,16 +154,7 @@ export function generateFromWuxing(
     return [];
   }
 
-  // 五行相生关系
-  const shengMap: Record<string, string> = {
-    '金': '水',
-    '水': '木',
-    '木': '火',
-    '火': '土',
-    '土': '金',
-  };
-
-  // 反向查找：谁生它
+  // 反向查找：谁生目标元素（用于生成辅助字）
   const shengByMap: Record<string, string> = {
     '水': '金',
     '木': '水',

@@ -165,7 +165,7 @@ export async function getHistory(
   const db = await getDatabase();
 
   let whereClause = '';
-  let params: (string | number)[] = [];
+  const params: (string | number)[] = [];
 
   // 优先使用userId
   if (identifier.userId) {

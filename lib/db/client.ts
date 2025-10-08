@@ -8,7 +8,6 @@ import { readFileSync } from 'fs';
 import { join } from 'path';
 
 // 定义统一的数据库接口
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export interface DatabaseClient {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   execute(sql: string, args?: any[]): Promise<{ rows: any[]; rowsAffected: number; lastInsertRowid?: number }>;
@@ -94,6 +93,7 @@ async function createSQLiteClient(): Promise<DatabaseClient> {
   sqlite.pragma('journal_mode = WAL');
 
   return {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     async execute(sql: string, args?: any[]) {
       // 检查是否为多语句 SQL（包含分号，且不是注释）
       const hasMultipleStatements = sql.includes(';') && sql.split(';').filter(s => s.trim() && !s.trim().startsWith('--')).length > 1;
@@ -122,7 +122,9 @@ async function createSQLiteClient(): Promise<DatabaseClient> {
       }
     },
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     async batch(statements: Array<{ sql: string; args?: any[] }>) {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const results: any[] = [];
       const transaction = sqlite.transaction(() => {
         for (const stmt of statements) {
@@ -170,6 +172,7 @@ async function runMigrations(database: DatabaseClient): Promise<void> {
 
   // 获取已运行的 migrations
   const result = await database.execute('SELECT migration_name FROM schema_migrations');
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const appliedSet = new Set(result.rows.map((r: any) => r.migration_name));
 
   // 读取 migrations 目录
