@@ -41,7 +41,7 @@ export async function POST(request: NextRequest) {
     // 如果提供了sessionId，迁移数据
     let migratedCount = 0;
     if (sessionId) {
-      migratedCount = migrateSessionToUser(sessionId, user.id);
+      migratedCount = await migrateSessionToUser(sessionId, user.id);
       console.log(`✅ 迁移了 ${migratedCount} 条记录从 session ${sessionId} 到 user ${user.id}`);
     }
 

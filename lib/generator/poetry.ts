@@ -29,7 +29,7 @@ function loadFragments(): PoetryFragment[] {
   }
 
   const fragmentsPath = path.join(process.cwd(), 'data/poetry/fragments.json');
-  const data = JSON.parse(fs.readFileSync(fragmentsPath, 'utf-8'));
+  const data = JSON.parse(fs.readFileSync(fragmentsPath, 'utf-8')) as { fragments: PoetryFragment[] };
   cachedFragments = data.fragments;
 
   return cachedFragments;

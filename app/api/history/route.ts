@@ -36,7 +36,7 @@ export async function GET(request: NextRequest) {
     const onlyFavorites = searchParams.get('favorites') === 'true';
 
     // 构建标识符对象（优先使用userId）
-    const identifier = userId ? { userId } : { sessionId };
+    const identifier = userId ? { userId } : { sessionId: sessionId ?? undefined };
 
     // 查询历史记录
     const history = await getHistory(identifier, {

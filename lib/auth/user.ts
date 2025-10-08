@@ -21,12 +21,11 @@ export async function registerOrLogin(
   username: string,
   password: string
 ): Promise<User | null> {
-  const db = getDatabase();
+  const db = await getDatabase();
 
   // 查询用户是否存在
-  const existingUser = db
-    .prepare('SELECT * FROM users WHERE username = ?')
-    .get(username) as { id: number; username: string; password_hash: string; created_at: string } | undefined;
+  const existingResult = await db.execute('SELECT * FROM users WHERE username = ?', [username]);
+  const existingUser = existingResult.rows[0] as { id: number; username: string; password_hash: string; created_at: string } | undefined;
 
   if (existingUser) {
     // 用户存在，验证密码
@@ -45,15 +44,15 @@ export async function registerOrLogin(
   // 用户不存在，自动注册
   const passwordHash = await bcrypt.hash(password, 10);
 
-  const result = db
-    .prepare('INSERT INTO users (username, password_hash) VALUES (?, ?)')
-    .run(username, passwordHash);
+  const insertResult = await db.execute(
+    'INSERT INTO users (username, password_hash) VALUES (?, ?)',
+    [username, passwordHash]
+  );
 
-  const userId = result.lastInsertRowid as number;
+  const userId = insertResult.lastInsertRowid!;
 
-  const newUser = db
-    .prepare('SELECT * FROM users WHERE id = ?')
-    .get(userId) as { id: number; username: string; created_at: string };
+  const newUserResult = await db.execute('SELECT * FROM users WHERE id = ?', [userId]);
+  const newUser = newUserResult.rows[0] as { id: number; username: string; created_at: string };
 
   return {
     id: newUser.id,
@@ -65,12 +64,11 @@ export async function registerOrLogin(
 /**
  * 根据ID获取用户
  */
-export function getUserById(userId: number): User | null {
-  const db = getDatabase();
+export async function getUserById(userId: number): Promise<User | null> {
+  const db = await getDatabase();
 
-  const user = db
-    .prepare('SELECT id, username, created_at FROM users WHERE id = ?')
-    .get(userId) as { id: number; username: string; created_at: string } | undefined;
+  const result = await db.execute('SELECT id, username, created_at FROM users WHERE id = ?', [userId]);
+  const user = result.rows[0] as { id: number; username: string; created_at: string } | undefined;
 
   return user || null;
 }
@@ -78,12 +76,13 @@ export function getUserById(userId: number): User | null {
 /**
  * 迁移session数据到用户
  */
-export function migrateSessionToUser(sessionId: string, userId: number): number {
-  const db = getDatabase();
+export async function migrateSessionToUser(sessionId: string, userId: number): Promise<number> {
+  const db = await getDatabase();
 
-  const result = db
-    .prepare('UPDATE generated_names SET user_id = ? WHERE session_id = ? AND user_id IS NULL')
-    .run(userId, sessionId);
+  const result = await db.execute(
+    'UPDATE generated_names SET user_id = ? WHERE session_id = ? AND user_id IS NULL',
+    [userId, sessionId]
+  );
 
-  return result.changes;
+  return result.rowsAffected;
 }
