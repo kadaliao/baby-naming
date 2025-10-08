@@ -6,19 +6,45 @@ import { Badge } from '@/components/ui/badge';
 import { Progress } from '@/components/ui/progress';
 import { Separator } from '@/components/ui/separator';
 import { Button } from '@/components/ui/button';
+import { Star } from 'lucide-react';
 import { ScoreRadar } from './ScoreRadar';
 import type { NameCandidate } from '@/types/name';
 
 interface NameCardProps {
-  name: NameCandidate;
+  name: NameCandidate & { id?: number; isFavorite?: boolean };
   index: number;
 }
 
 export function NameCard({ name, index }: NameCardProps) {
   const [showDetails, setShowDetails] = useState(false);
+  const [isFavorite, setIsFavorite] = useState(name.isFavorite || false);
+  const [isTogglingFavorite, setIsTogglingFavorite] = useState(false);
   const scoreDetail = name.scoreDetail;
   const total = scoreDetail?.total || name.score || 0;
   const grade = scoreDetail?.grade || 'C';
+
+  // 切换收藏状态
+  const handleToggleFavorite = async () => {
+    if (!name.id || isTogglingFavorite) return;
+
+    setIsTogglingFavorite(true);
+    try {
+      const response = await fetch('/api/favorite', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ id: name.id, action: 'toggle' }),
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        setIsFavorite(!isFavorite);
+      }
+    } catch (error) {
+      console.error('切换收藏失败：', error);
+    } finally {
+      setIsTogglingFavorite(false);
+    }
+  };
 
   // 等级颜色
   const gradeColors: Record<string, string> = {
@@ -32,11 +58,11 @@ export function NameCard({ name, index }: NameCardProps) {
   return (
     <Card className="hover:shadow-xl transition-shadow">
       <CardHeader>
-        <div className="flex items-start justify-between">
+        <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
           <div className="flex-1">
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 flex-wrap">
               <span className="text-sm font-medium text-gray-500">#{index + 1}</span>
-              <CardTitle className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              <CardTitle className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                 {name.fullName}
               </CardTitle>
             </div>
@@ -44,13 +70,30 @@ export function NameCard({ name, index }: NameCardProps) {
               来源：{name.source === 'ai' ? 'AI 智能生成' : name.source}
             </CardDescription>
           </div>
-          <div className="flex flex-col items-end gap-2">
-            <Badge className={`text-lg px-4 py-1 ${gradeColors[grade]}`}>
-              {grade} 级
-            </Badge>
-            <span className="text-2xl font-bold text-gray-700 dark:text-gray-300">
-              {total.toFixed(0)} 分
-            </span>
+          <div className="flex items-center gap-3">
+            {/* 收藏按钮 */}
+            {name.id && (
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={handleToggleFavorite}
+                disabled={isTogglingFavorite}
+                className={isFavorite ? 'text-yellow-500' : 'text-gray-400'}
+              >
+                <Star
+                  className="h-5 w-5"
+                  fill={isFavorite ? 'currentColor' : 'none'}
+                />
+              </Button>
+            )}
+            <div className="flex md:flex-col items-center md:items-end gap-4 md:gap-2">
+              <Badge className={`text-lg px-4 py-1 ${gradeColors[grade]}`}>
+                {grade} 级
+              </Badge>
+              <span className="text-2xl font-bold text-gray-700 dark:text-gray-300">
+                {total.toFixed(0)} 分
+              </span>
+            </div>
           </div>
         </div>
       </CardHeader>

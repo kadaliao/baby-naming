@@ -1,13 +1,13 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { HistoryList } from '@/components/history/HistoryList';
 import { StatsCard } from '@/components/history/StatsCard';
-import { Loader2, Home, User as UserIcon } from 'lucide-react';
+import { Loader2, Home, User as UserIcon, Trash2 } from 'lucide-react';
 
 interface User {
   id: number;
@@ -51,6 +51,7 @@ export default function HistoryPage() {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string>('');
   const [currentUser, setCurrentUser] = useState<User | null>(null);
+  const [selectedIds, setSelectedIds] = useState<number[]>([]);
 
   // 初始化：检查是否已登录
   useEffect(() => {
@@ -74,12 +75,15 @@ export default function HistoryPage() {
     return sessionId;
   };
 
-  // 加载历史记录
-  const loadHistory = async (onlyFavorites = false) => {
+  // 加载历史记录 - 不使用 useCallback 避免闭包问题
+  const loadHistory = async (onlyFavorites = false, initialLoad = false) => {
     try {
-      // 优先使用userId，如果已登录
+      // 每次调用时获取最新的 user 和 sessionId
+      const userStr = localStorage.getItem('user');
+      const user = userStr ? JSON.parse(userStr) : null;
+
       const params = new URLSearchParams({
-        ...(currentUser ? { userId: currentUser.id.toString() } : { sessionId: getSessionId() }),
+        ...(user ? { userId: user.id.toString() } : { sessionId: getSessionId() }),
         ...(onlyFavorites ? { favorites: 'true' } : {}),
       });
 
@@ -102,7 +106,10 @@ export default function HistoryPage() {
       console.error('获取历史记录失败：', error);
       setError(error instanceof Error ? error.message : '获取历史记录失败');
     } finally {
-      setIsLoading(false);
+      // 只在初始加载时设置isLoading
+      if (initialLoad) {
+        setIsLoading(false);
+      }
     }
   };
 
@@ -118,8 +125,8 @@ export default function HistoryPage() {
       const result = await response.json();
 
       if (result.success) {
-        // 重新加载数据
-        await Promise.all([loadHistory(false), loadHistory(true)]);
+        // 重新加载数据（不显示loading）
+        await Promise.all([loadHistory(false, false), loadHistory(true, false)]);
       }
     } catch (error) {
       console.error('切换收藏失败：', error);
@@ -142,19 +149,78 @@ export default function HistoryPage() {
       const result = await response.json();
 
       if (result.success) {
-        // 重新加载数据
-        await Promise.all([loadHistory(false), loadHistory(true)]);
+        // 重新加载数据（不显示loading）
+        await Promise.all([loadHistory(false, false), loadHistory(true, false)]);
       }
     } catch (error) {
       console.error('删除记录失败：', error);
     }
   };
 
+  // 批量删除
+  const handleBatchDelete = async () => {
+    if (selectedIds.length === 0) {
+      alert('请先选择要删除的记录');
+      return;
+    }
+
+    if (!confirm(`确定要删除选中的 ${selectedIds.length} 条记录吗？`)) {
+      return;
+    }
+
+    try {
+      // 并行删除所有选中的记录
+      const deletePromises = selectedIds.map(id =>
+        fetch('/api/favorite', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ id, action: 'delete' }),
+        })
+      );
+
+      const responses = await Promise.all(deletePromises);
+      const results = await Promise.all(responses.map(r => r.json()));
+
+      const successCount = results.filter(r => r.success).length;
+
+      if (successCount > 0) {
+        // 清空选中状态
+        setSelectedIds([]);
+        // 重新加载数据
+        await Promise.all([loadHistory(false, false), loadHistory(true, false)]);
+      }
+
+      if (successCount < selectedIds.length) {
+        alert(`删除完成：成功 ${successCount} 条，失败 ${selectedIds.length - successCount} 条`);
+      }
+    } catch (error) {
+      console.error('批量删除失败：', error);
+      alert('批量删除失败，请重试');
+    }
+  };
+
+  // 切换选中状态
+  const handleToggleSelect = (id: number) => {
+    setSelectedIds(prev =>
+      prev.includes(id) ? prev.filter(i => i !== id) : [...prev, id]
+    );
+  };
+
+  // 全选/取消全选
+  const handleToggleSelectAll = () => {
+    if (selectedIds.length === records.length && records.length > 0) {
+      setSelectedIds([]);
+    } else {
+      setSelectedIds(records.map(r => r.id));
+    }
+  };
+
   useEffect(() => {
-    // 当用户状态加载完成后再加载历史记录
-    loadHistory(false);
-    loadHistory(true);
-  }, [currentUser]); // 依赖currentUser，登录后会自动重新加载
+    // 当用户状态加载完成后再加载历史记录（初始加载）
+    loadHistory(false, true);
+    loadHistory(true, true);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentUser]); // 依赖currentUser，当用户登录/登出时重新加载
 
   if (isLoading) {
     return (
@@ -188,10 +254,10 @@ export default function HistoryPage() {
       {/* Header */}
       <header className="border-b bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm sticky top-0 z-10">
         <div className="container mx-auto px-4 py-6">
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div>
-              <h1 className="text-3xl font-bold text-gray-900 dark:text-white">历史记录</h1>
-              <p className="text-gray-600 dark:text-gray-400 mt-1">
+              <h1 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">历史记录</h1>
+              <p className="text-sm md:text-base text-gray-600 dark:text-gray-400 mt-1">
                 {currentUser ? (
                   <span className="flex items-center">
                     <UserIcon className="h-4 w-4 mr-1" />
@@ -219,10 +285,36 @@ export default function HistoryPage() {
 
         {/* Tabs */}
         <Tabs defaultValue="all" className="space-y-6">
-          <TabsList className="grid w-full max-w-md grid-cols-2">
-            <TabsTrigger value="all">全部记录 ({stats?.total || 0})</TabsTrigger>
-            <TabsTrigger value="favorites">收藏夹 ({stats?.favorites || 0})</TabsTrigger>
-          </TabsList>
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <TabsList className="grid w-full sm:w-auto sm:max-w-md grid-cols-2">
+              <TabsTrigger value="all">全部记录 ({stats?.total || 0})</TabsTrigger>
+              <TabsTrigger value="favorites">收藏夹 ({stats?.favorites || 0})</TabsTrigger>
+            </TabsList>
+
+            {/* 批量操作按钮 */}
+            {records.length > 0 && (
+              <div className="flex items-center gap-2 w-full sm:w-auto">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={handleToggleSelectAll}
+                  className="flex-1 sm:flex-none"
+                >
+                  {selectedIds.length === records.length && records.length > 0 ? '取消全选' : '全选'}
+                </Button>
+                <Button
+                  variant="destructive"
+                  size="sm"
+                  onClick={handleBatchDelete}
+                  disabled={selectedIds.length === 0}
+                  className="flex-1 sm:flex-none"
+                >
+                  <Trash2 className="h-4 w-4 mr-2" />
+                  批量删除 {selectedIds.length > 0 && `(${selectedIds.length})`}
+                </Button>
+              </div>
+            )}
+          </div>
 
           <TabsContent value="all" className="space-y-4">
             {records.length === 0 ? (
@@ -237,8 +329,10 @@ export default function HistoryPage() {
             ) : (
               <HistoryList
                 records={records}
+                selectedIds={selectedIds}
                 onToggleFavorite={handleToggleFavorite}
                 onDelete={handleDelete}
+                onToggleSelect={handleToggleSelect}
               />
             )}
           </TabsContent>
@@ -254,8 +348,11 @@ export default function HistoryPage() {
             ) : (
               <HistoryList
                 records={favorites}
+                selectedIds={[]}
                 onToggleFavorite={handleToggleFavorite}
                 onDelete={handleDelete}
+                onToggleSelect={() => {}}
+                showCheckbox={false}
               />
             )}
           </TabsContent>

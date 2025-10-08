@@ -71,12 +71,19 @@ export default function Home() {
 
     try {
       const sessionId = getSessionId();
+      const headers: Record<string, string> = {
+        'Content-Type': 'application/json',
+        'x-session-id': sessionId,
+      };
+
+      // 如果用户已登录，传递 userId
+      if (currentUser) {
+        headers['x-user-id'] = currentUser.id.toString();
+      }
+
       const response = await fetch('/api/generate', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'x-session-id': sessionId,
-        },
+        headers,
         body: JSON.stringify(data),
       });
 
@@ -106,12 +113,11 @@ export default function Home() {
       {/* Header */}
       <header className="border-b bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm sticky top-0 z-10">
         <div className="container mx-auto px-4 py-6">
-          <div className="flex items-center justify-between mb-2">
-            <div className="flex-1" />
-            <h1 className="text-3xl font-bold text-center bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent flex-1">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-2">
+            <h1 className="text-2xl md:text-3xl font-bold text-center md:text-left bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               宝宝取名助手
             </h1>
-            <div className="flex-1 flex justify-end gap-2">
+            <div className="flex items-center justify-center md:justify-end gap-2 flex-wrap">
               <Link href="/history">
                 <Button variant="outline" size="sm">
                   <History className="h-4 w-4 mr-2" />
@@ -138,7 +144,7 @@ export default function Home() {
               )}
             </div>
           </div>
-          <p className="text-center text-gray-600 dark:text-gray-400">
+          <p className="text-center text-sm md:text-base text-gray-600 dark:text-gray-400">
             结合传统文化与现代 AI，为您的宝宝推荐美好的名字
           </p>
         </div>

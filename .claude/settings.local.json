@@ -22,7 +22,8 @@
       "Bash(git for-each-ref:*)",
       "Bash(xargs:*)",
       "Bash(lsof:*)",
-      "Bash(npm uninstall:*)"
+      "Bash(npm uninstall:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nfeat: add Turso hybrid database support for Vercel deployment\n\nMajor architectural upgrade to enable serverless deployment on Vercel:\n\n**Database Layer (Hybrid Architecture)**\n- Rewrote `lib/db/client.ts` with unified DatabaseClient interface\n- Auto-detects environment: SQLite (local dev) or Turso LibSQL (production)\n- Converted `lib/db/repository.ts` to async/await for LibSQL compatibility\n- Updated all 3 API routes to handle async database operations\n- Dependencies: Added @libsql/client (0.14.0), kept better-sqlite3 for local dev\n\n**API Updates**\n- `/api/generate`: Async saveName() call\n- `/api/history`: Async getHistory() and getStats()\n- `/api/favorite`: Async toggleFavorite(), addNote(), deleteName()\n\n**Environment Configuration**\n- Local: Zero config, auto-uses SQLite (`data/names.db`)\n- Production: Set `TURSO_URL` and `TURSO_AUTH_TOKEN` in Vercel\n- Backward compatible: Existing local development unchanged\n\n**Documentation**\n- CLAUDE.md: Updated status to \"Vercel-ready\", added Turso details\n- README.md: Added Vercel deployment guide with Turso setup steps\n- Updated tech stack description with hybrid database info\n\n**Testing**\n- Verified local SQLite mode working correctly\n- Ready for production Turso deployment (zero code changes needed)\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
     ],
     "deny": [],
     "ask": []

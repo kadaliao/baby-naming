@@ -1,177 +1,44 @@
 /**
- * 诗词生成器
+ * 诗词生成器 - 基于预处理的诗词片段
  * "Good code has no special cases" - Linus
  */
 
 import type { NameCandidate, Gender } from '@/types/name';
-import { getCharWuxing, getPoemsContainingChar } from '@/lib/utils/data-loader';
+import { getCharWuxing } from '@/lib/utils/data-loader';
+import fs from 'fs';
+import path from 'path';
 
-// 加载诗词数据
-import poemsData from '@/data/poetry/tangshi.json';
+type PoetryFragment = {
+  chars: string;
+  poemId: number;
+  poemTitle: string;
+  poemAuthor: string;
+  excerpt: string;
+  position: 'consecutive' | 'single';
+};
+
+// 全局缓存（避免每次都读取文件）
+let cachedFragments: PoetryFragment[] | null = null;
 
 /**
- * 从诗词中提取适合做名字的字
+ * 懒加载诗词片段（仅服务端）
  */
-function extractNamingChars(): string[] {
-  const chars = new Set<string>();
-
-  for (const poem of poemsData.poems) {
-    // 移除标点符号
-    const cleanContent = poem.content.replace(/[，。！？、；：""''《》（）\s]/g, '');
-
-    for (const char of cleanContent) {
-      // 只要在五行库中的字，就是可用字
-      if (getCharWuxing(char)) {
-        chars.add(char);
-      }
-    }
+function loadFragments(): PoetryFragment[] {
+  if (cachedFragments) {
+    return cachedFragments;
   }
 
-  return Array.from(chars);
-}
+  const fragmentsPath = path.join(process.cwd(), 'data/poetry/fragments.json');
+  const data = JSON.parse(fs.readFileSync(fragmentsPath, 'utf-8'));
+  cachedFragments = data.fragments;
 
-/**
- * 过滤字符：性别、五行
- */
-function filterChars(
-  chars: string[],
-  gender?: Gender,
-  wuxingNeeds?: string[]
-): string[] {
-  return chars.filter(char => {
-    // 五行过滤
-    if (wuxingNeeds && wuxingNeeds.length > 0) {
-      const wuxing = getCharWuxing(char);
-      if (!wuxing || !wuxingNeeds.includes(wuxing)) {
-        return false;
-      }
-    }
-
-    // TODO: 性别过滤（需要性别数据）
-
-    return true;
-  });
-}
-
-/**
- * 生成名字候选项（单字名）
- */
-function generateSingleChar(
-  surname: string,
-  chars: string[]
-): NameCandidate[] {
-  return chars.map(char => {
-    const poems = getPoemsContainingChar(char);
-    const poem = poems[0]; // 取第一首诗作为来源
-
-    return {
-      fullName: surname + char,
-      firstName: char,
-      source: 'poetry' as const,
-      sourceDetail: poem
-        ? `《${poem.title}》${poem.author}：${poem.content}`
-        : '诗词典故',
-    };
-  });
-}
-
-/**
- * 生成名字候选项（双字名）
- */
-function generateDoubleChar(
-  surname: string,
-  chars: string[]
-): NameCandidate[] {
-  const candidates: NameCandidate[] = [];
-
-  // 两两组合
-  for (let i = 0; i < chars.length; i++) {
-    for (let j = i + 1; j < chars.length; j++) {
-      const char1 = chars[i];
-      const char2 = chars[j];
-
-      // 尝试两种顺序
-      const firstName1 = char1 + char2;
-      const firstName2 = char2 + char1;
-
-      // 查找来源诗句
-      const poems1 = getPoemsContainingChar(char1);
-      const poems2 = getPoemsContainingChar(char2);
-
-      // 如果两个字来自同一首诗，优先使用
-      const sharedPoem = poems1.find(p1 =>
-        poems2.some(p2 => p2.id === p1.id)
-      );
-
-      const sourcePoem = sharedPoem || poems1[0] || poems2[0];
-
-      candidates.push({
-        fullName: surname + firstName1,
-        firstName: firstName1,
-        source: 'poetry' as const,
-        sourceDetail: sourcePoem
-          ? `《${sourcePoem.title}》${sourcePoem.author}：${sourcePoem.content}`
-          : '诗词典故',
-      });
-
-      candidates.push({
-        fullName: surname + firstName2,
-        firstName: firstName2,
-        source: 'poetry' as const,
-        sourceDetail: sourcePoem
-          ? `《${sourcePoem.title}》${sourcePoem.author}：${sourcePoem.content}`
-          : '诗词典故',
-      });
-    }
-  }
-
-  return candidates;
-}
-
-/**
- * 生成名字候选项（固定字模式）
- */
-function generateWithFixedChar(
-  surname: string,
-  chars: string[],
-  fixedChar: { char: string; position: 'first' | 'second' }
-): NameCandidate[] {
-  const candidates: NameCandidate[] = [];
-
-  // 优先从包含固定字的诗句中提取其他字
-  const poemsWithFixed = getPoemsContainingChar(fixedChar.char);
-
-  for (const char of chars) {
-    // 跳过固定字本身
-    if (char === fixedChar.char) continue;
-
-    const firstName = fixedChar.position === 'first'
-      ? fixedChar.char + char
-      : char + fixedChar.char;
-
-    // 查找来源诗句（优先使用包含固定字的诗）
-    const poemsWithChar = getPoemsContainingChar(char);
-    const sharedPoem = poemsWithFixed.find(p1 =>
-      poemsWithChar.some(p2 => p2.id === p1.id)
-    );
-
-    const sourcePoem = sharedPoem || poemsWithFixed[0] || poemsWithChar[0];
-
-    candidates.push({
-      fullName: surname + firstName,
-      firstName,
-      source: 'poetry' as const,
-      sourceDetail: sourcePoem
-        ? `《${sourcePoem.title}》${sourcePoem.author}：${sourcePoem.content}`
-        : '诗词典故',
-    });
-  }
-
-  return candidates;
+  return cachedFragments;
 }
 
 /**
  * 诗词生成器主函数
+ *
+ * 从预处理的诗词片段中筛选，无需区分单字/双字/固定字模式
  */
 export function generateFromPoetry(
   surname: string,
@@ -180,34 +47,59 @@ export function generateFromPoetry(
   count: number = 20,
   fixedChar?: { char: string; position: 'first' | 'second' }
 ): NameCandidate[] {
-  // 1. 提取所有可用字
-  const allChars = extractNamingChars();
+  const fragments = loadFragments();
 
-  // 2. 过滤
-  const filteredChars = filterChars(allChars, gender, wuxingNeeds);
+  // 统一过滤逻辑（无特殊情况）
+  const filtered = fragments.filter(fragment => {
+    // 固定字模式：只返回真正包含固定字的连续2字片段
+    if (fixedChar) {
+      // 必须是连续2字片段
+      if (fragment.position !== 'consecutive') {
+        return false;
+      }
 
-  if (filteredChars.length === 0) {
-    return [];
-  }
-
-  // 3. 生成候选
-  const candidates: NameCandidate[] = [];
-
-  if (fixedChar) {
-    // 固定字模式：只生成另一个字
-    candidates.push(...generateWithFixedChar(surname, filteredChars, fixedChar));
-  } else {
-    // 正常模式：双字名优先
-    candidates.push(...generateDoubleChar(surname, filteredChars));
-
-    // 单字名（如果双字名不够）
-    if (candidates.length < count) {
-      candidates.push(...generateSingleChar(surname, filteredChars));
+      // 必须包含固定字且位置匹配
+      const [char1, char2] = fragment.chars;
+      if (fixedChar.position === 'first') {
+        return char1 === fixedChar.char;
+      } else {
+        return char2 === fixedChar.char;
+      }
     }
+
+    // 五行过滤
+    if (wuxingNeeds && wuxingNeeds.length > 0) {
+      // 片段中的所有字都需要满足五行要求
+      return [...fragment.chars].every(char => {
+        const wuxing = getCharWuxing(char);
+        return wuxing && wuxingNeeds.includes(wuxing);
+      });
+    }
+
+    return true;
+  });
+
+  // 固定字模式：直接使用片段（已包含固定字）
+  if (fixedChar) {
+    const candidates = filtered.map(fragment => ({
+      fullName: surname + fragment.chars,
+      firstName: fragment.chars,
+      source: 'poetry' as const,
+      sourceDetail: `《${fragment.poemTitle}》${fragment.poemAuthor}：${fragment.excerpt}`,
+    }));
+
+    // 随机打乱并返回
+    return candidates.sort(() => Math.random() - 0.5).slice(0, count);
   }
 
-  // 4. 随机打乱并返回前N个
-  return candidates
-    .sort(() => Math.random() - 0.5)
-    .slice(0, count);
+  // 正常模式：直接转换
+  const candidates = filtered.map(fragment => ({
+    fullName: surname + fragment.chars,
+    firstName: fragment.chars,
+    source: 'poetry' as const,
+    sourceDetail: `《${fragment.poemTitle}》${fragment.poemAuthor}：${fragment.excerpt}`,
+  }));
+
+  // 随机打乱并返回
+  return candidates.sort(() => Math.random() - 0.5).slice(0, count);
 }

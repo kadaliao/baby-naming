@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
@@ -19,6 +19,9 @@ import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Label } from '@/components/ui/label';
 import type { NamingInput, Gender, NameSource } from '@/types/name';
+
+// localStorage key
+const FORM_CACHE_KEY = 'naming-form-cache';
 
 // 表单验证模式
 const formSchema = z.object({
@@ -73,7 +76,27 @@ export function NameInputForm({ onSubmit, isLoading = false }: NameInputFormProp
     },
   });
 
+  // 页面加载时从 localStorage 恢复表单数据
+  useEffect(() => {
+    try {
+      const cached = localStorage.getItem(FORM_CACHE_KEY);
+      if (cached) {
+        const cachedData = JSON.parse(cached);
+        form.reset(cachedData);
+      }
+    } catch (error) {
+      console.error('Failed to load cached form data:', error);
+    }
+  }, [form]);
+
   const handleSubmit = (values: FormValues) => {
+    // 保存表单数据到 localStorage
+    try {
+      localStorage.setItem(FORM_CACHE_KEY, JSON.stringify(values));
+    } catch {
+      // 静默失败
+    }
+
     // 组合日期和时间
     let birthDate: Date | undefined;
     if (values.birthDate) {
@@ -129,12 +152,12 @@ export function NameInputForm({ onSubmit, isLoading = false }: NameInputFormProp
         />
 
         {/* 固定字（辈分字）*/}
-        <div className="space-y-4 p-4 bg-blue-50 dark:bg-blue-900/10 rounded-lg border border-blue-200 dark:border-blue-800">
+        <div className="space-y-4 p-3 md:p-4 bg-blue-50 dark:bg-blue-900/10 rounded-lg border border-blue-200 dark:border-blue-800">
           <FormLabel className="text-base">辈分字（可选）</FormLabel>
-          <FormDescription className="mb-4">
+          <FormDescription className="mb-4 text-xs md:text-sm">
             如果家族有辈分字要求，可以指定固定的字和位置
           </FormDescription>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <FormField
               control={form.control}
               name="fixedChar"
@@ -232,7 +255,7 @@ export function NameInputForm({ onSubmit, isLoading = false }: NameInputFormProp
         {/* 出生日期时间 */}
         <div className="space-y-4">
           <FormLabel className="text-base">出生日期时间（可选）</FormLabel>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <FormField
               control={form.control}
               name="birthDate"
@@ -270,10 +293,10 @@ export function NameInputForm({ onSubmit, isLoading = false }: NameInputFormProp
           render={() => (
             <FormItem>
               <FormLabel className="text-base">寓意偏好 *</FormLabel>
-              <FormDescription className="mb-4">
+              <FormDescription className="mb-4 text-xs md:text-sm">
                 选择您希望名字体现的寓意（可多选）
               </FormDescription>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {PREFERENCE_OPTIONS.map((option) => (
                   <FormField
                     key={option.id}
@@ -318,10 +341,10 @@ export function NameInputForm({ onSubmit, isLoading = false }: NameInputFormProp
           render={() => (
             <FormItem>
               <FormLabel className="text-base">名字来源 *</FormLabel>
-              <FormDescription className="mb-4">
+              <FormDescription className="mb-4 text-xs md:text-sm">
                 选择名字的生成方式（可多选）
               </FormDescription>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {SOURCE_OPTIONS.map((option) => (
                   <FormField
                     key={option.id}

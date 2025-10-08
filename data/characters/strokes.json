@@ -1,1244 +1,188 @@
 {
   "characters": [
     {
-      "char": "金",
-      "strokes": 8
-    },
-    {
-      "char": "鑫",
-      "strokes": 24
-    },
-    {
-      "char": "锐",
-      "strokes": 12
-    },
-    {
-      "char": "铭",
-      "strokes": 11
-    },
-    {
-      "char": "钰",
+      "char": "爱",
       "strokes": 10
     },
     {
-      "char": "钊",
-      "strokes": 7
-    },
-    {
-      "char": "锋",
-      "strokes": 12
-    },
-    {
-      "char": "鉴",
+      "char": "愛",
       "strokes": 13
-    },
-    {
-      "char": "钢",
-      "strokes": 9
-    },
-    {
-      "char": "铃",
-      "strokes": 10
-    },
-    {
-      "char": "钦",
-      "strokes": 9
-    },
-    {
-      "char": "钟",
-      "strokes": 9
-    },
-    {
-      "char": "银",
-      "strokes": 11
-    },
-    {
-      "char": "铎",
-      "strokes": 10
-    },
-    {
-      "char": "瑞",
-      "strokes": 13
-    },
-    {
-      "char": "锦",
-      "strokes": 13
-    },
-    {
-      "char": "钧",
-      "strokes": 9
-    },
-    {
-      "char": "锡",
-      "strokes": 13
-    },
-    {
-      "char": "铮",
-      "strokes": 11
-    },
-    {
-      "char": "镇",
-      "strokes": 15
-    },
-    {
-      "char": "铸",
-      "strokes": 12
-    },
-    {
-      "char": "锻",
-      "strokes": 14
-    },
-    {
-      "char": "镜",
-      "strokes": 16
-    },
-    {
-      "char": "钛",
-      "strokes": 9
-    },
-    {
-      "char": "钢",
-      "strokes": 9
-    },
-    {
-      "char": "西",
-      "strokes": 6
-    },
-    {
-      "char": "申",
-      "strokes": 5
-    },
-    {
-      "char": "辛",
-      "strokes": 7
-    },
-    {
-      "char": "兑",
-      "strokes": 7
-    },
-    {
-      "char": "商",
-      "strokes": 11
-    },
-    {
-      "char": "白",
-      "strokes": 5
-    },
-    {
-      "char": "素",
-      "strokes": 10
-    },
-    {
-      "char": "玉",
-      "strokes": 5
-    },
-    {
-      "char": "珠",
-      "strokes": 10
-    },
-    {
-      "char": "琦",
-      "strokes": 12
-    },
-    {
-      "char": "琪",
-      "strokes": 12
-    },
-    {
-      "char": "瑜",
-      "strokes": 13
-    },
-    {
-      "char": "瑶",
-      "strokes": 14
-    },
-    {
-      "char": "璇",
-      "strokes": 15
-    },
-    {
-      "char": "璋",
-      "strokes": 15
-    },
-    {
-      "char": "林",
-      "strokes": 8
-    },
-    {
-      "char": "森",
-      "strokes": 12
-    },
-    {
-      "char": "木",
-      "strokes": 4
-    },
-    {
-      "char": "本",
-      "strokes": 5
-    },
-    {
-      "char": "朴",
-      "strokes": 6
-    },
-    {
-      "char": "材",
-      "strokes": 7
-    },
-    {
-      "char": "松",
-      "strokes": 8
-    },
-    {
-      "char": "柏",
-      "strokes": 9
-    },
-    {
-      "char": "枫",
-      "strokes": 8
-    },
-    {
-      "char": "柳",
-      "strokes": 9
-    },
-    {
-      "char": "栋",
-      "strokes": 9
-    },
-    {
-      "char": "树",
-      "strokes": 9
-    },
-    {
-      "char": "梓",
-      "strokes": 11
-    },
-    {
-      "char": "桓",
-      "strokes": 10
-    },
-    {
-      "char": "彬",
-      "strokes": 11
-    },
-    {
-      "char": "杰",
-      "strokes": 8
-    },
-    {
-      "char": "楠",
-      "strokes": 13
-    },
-    {
-      "char": "榕",
-      "strokes": 14
-    },
-    {
-      "char": "槿",
-      "strokes": 15
-    },
-    {
-      "char": "桦",
-      "strokes": 10
-    },
-    {
-      "char": "棋",
-      "strokes": 12
-    },
-    {
-      "char": "棠",
-      "strokes": 12
-    },
-    {
-      "char": "桐",
-      "strokes": 10
-    },
-    {
-      "char": "梧",
-      "strokes": 11
-    },
-    {
-      "char": "桢",
-      "strokes": 10
-    },
-    {
-      "char": "梁",
-      "strokes": 11
-    },
-    {
-      "char": "栩",
-      "strokes": 10
-    },
-    {
-      "char": "柯",
-      "strokes": 9
-    },
-    {
-      "char": "柔",
-      "strokes": 9
-    },
-    {
-      "char": "权",
-      "strokes": 6
-    },
-    {
-      "char": "荣",
-      "strokes": 9
-    },
-    {
-      "char": "莉",
-      "strokes": 10
-    },
-    {
-      "char": "莲",
-      "strokes": 10
-    },
-    {
-      "char": "芳",
-      "strokes": 7
-    },
-    {
-      "char": "芬",
-      "strokes": 7
-    },
-    {
-      "char": "芝",
-      "strokes": 6
-    },
-    {
-      "char": "芯",
-      "strokes": 7
-    },
-    {
-      "char": "花",
-      "strokes": 7
-    },
-    {
-      "char": "茂",
-      "strokes": 8
-    },
-    {
-      "char": "茵",
-      "strokes": 9
-    },
-    {
-      "char": "茹",
-      "strokes": 9
-    },
-    {
-      "char": "荷",
-      "strokes": 10
-    },
-    {
-      "char": "莹",
-      "strokes": 10
-    },
-    {
-      "char": "菁",
-      "strokes": 11
-    },
-    {
-      "char": "菊",
-      "strokes": 11
-    },
-    {
-      "char": "萱",
-      "strokes": 12
-    },
-    {
-      "char": "蕾",
-      "strokes": 16
-    },
-    {
-      "char": "薇",
-      "strokes": 16
-    },
-    {
-      "char": "蓝",
-      "strokes": 13
-    },
-    {
-      "char": "蕊",
-      "strokes": 15
-    },
-    {
-      "char": "艺",
-      "strokes": 4
-    },
-    {
-      "char": "苏",
-      "strokes": 7
-    },
-    {
-      "char": "英",
-      "strokes": 8
-    },
-    {
-      "char": "茜",
-      "strokes": 9
-    },
-    {
-      "char": "筠",
-      "strokes": 13
-    },
-    {
-      "char": "竹",
-      "strokes": 6
-    },
-    {
-      "char": "笛",
-      "strokes": 11
-    },
-    {
-      "char": "箫",
-      "strokes": 14
-    },
-    {
-      "char": "策",
-      "strokes": 12
-    },
-    {
-      "char": "筱",
-      "strokes": 13
-    },
-    {
-      "char": "海",
-      "strokes": 10
-    },
-    {
-      "char": "洋",
-      "strokes": 9
-    },
-    {
-      "char": "江",
-      "strokes": 6
-    },
-    {
-      "char": "河",
-      "strokes": 8
-    },
-    {
-      "char": "湖",
-      "strokes": 12
-    },
-    {
-      "char": "泽",
-      "strokes": 8
-    },
-    {
-      "char": "清",
-      "strokes": 11
-    },
-    {
-      "char": "涛",
-      "strokes": 10
-    },
-    {
-      "char": "波",
-      "strokes": 8
-    },
-    {
-      "char": "澜",
-      "strokes": 15
-    },
-    {
-      "char": "沁",
-      "strokes": 7
-    },
-    {
-      "char": "浩",
-      "strokes": 10
-    },
-    {
-      "char": "淼",
-      "strokes": 12
-    },
-    {
-      "char": "涵",
-      "strokes": 11
-    },
-    {
-      "char": "润",
-      "strokes": 10
-    },
-    {
-      "char": "溪",
-      "strokes": 13
-    },
-    {
-      "char": "泉",
-      "strokes": 9
-    },
-    {
-      "char": "源",
-      "strokes": 13
-    },
-    {
-      "char": "渊",
-      "strokes": 11
-    },
-    {
-      "char": "沐",
-      "strokes": 7
-    },
-    {
-      "char": "沛",
-      "strokes": 7
-    },
-    {
-      "char": "泓",
-      "strokes": 8
-    },
-    {
-      "char": "洁",
-      "strokes": 9
-    },
-    {
-      "char": "洪",
-      "strokes": 9
-    },
-    {
-      "char": "浚",
-      "strokes": 10
-    },
-    {
-      "char": "洲",
-      "strokes": 9
-    },
-    {
-      "char": "浦",
-      "strokes": 10
-    },
-    {
-      "char": "澈",
-      "strokes": 15
-    },
-    {
-      "char": "淳",
-      "strokes": 11
-    },
-    {
-      "char": "淑",
-      "strokes": 11
-    },
-    {
-      "char": "渝",
-      "strokes": 12
-    },
-    {
-      "char": "溶",
-      "strokes": 13
-    },
-    {
-      "char": "漫",
-      "strokes": 14
-    },
-    {
-      "char": "漪",
-      "strokes": 14
-    },
-    {
-      "char": "潇",
-      "strokes": 14
-    },
-    {
-      "char": "潮",
-      "strokes": 15
-    },
-    {
-      "char": "澳",
-      "strokes": 15
-    },
-    {
-      "char": "滨",
-      "strokes": 13
-    },
-    {
-      "char": "濠",
-      "strokes": 17
-    },
-    {
-      "char": "瀚",
-      "strokes": 19
-    },
-    {
-      "char": "雨",
-      "strokes": 8
-    },
-    {
-      "char": "雪",
-      "strokes": 11
-    },
-    {
-      "char": "霖",
-      "strokes": 16
-    },
-    {
-      "char": "霏",
-      "strokes": 16
-    },
-    {
-      "char": "霓",
-      "strokes": 16
-    },
-    {
-      "char": "霞",
-      "strokes": 17
-    },
-    {
-      "char": "露",
-      "strokes": 21
-    },
-    {
-      "char": "霜",
-      "strokes": 17
-    },
-    {
-      "char": "冰",
-      "strokes": 6
-    },
-    {
-      "char": "凌",
-      "strokes": 10
-    },
-    {
-      "char": "冷",
-      "strokes": 7
-    },
-    {
-      "char": "冬",
-      "strokes": 5
-    },
-    {
-      "char": "子",
-      "strokes": 3
-    },
-    {
-      "char": "文",
-      "strokes": 4
-    },
-    {
-      "char": "北",
-      "strokes": 5
-    },
-    {
-      "char": "玄",
-      "strokes": 5
-    },
-    {
-      "char": "黑",
-      "strokes": 12
-    },
-    {
-      "char": "墨",
-      "strokes": 15
-    },
-    {
-      "char": "云",
-      "strokes": 4
-    },
-    {
-      "char": "雯",
-      "strokes": 12
-    },
-    {
-      "char": "炎",
-      "strokes": 8
-    },
-    {
-      "char": "焱",
-      "strokes": 12
-    },
-    {
-      "char": "灿",
-      "strokes": 7
-    },
-    {
-      "char": "烨",
-      "strokes": 10
-    },
-    {
-      "char": "焕",
-      "strokes": 11
-    },
-    {
-      "char": "煜",
-      "strokes": 13
-    },
-    {
-      "char": "炳",
-      "strokes": 9
-    },
-    {
-      "char": "耀",
-      "strokes": 20
-    },
-    {
-      "char": "晖",
-      "strokes": 10
-    },
-    {
-      "char": "辉",
-      "strokes": 12
-    },
-    {
-      "char": "晨",
-      "strokes": 11
-    },
-    {
-      "char": "昭",
-      "strokes": 9
-    },
-    {
-      "char": "明",
-      "strokes": 8
-    },
-    {
-      "char": "昱",
-      "strokes": 9
-    },
-    {
-      "char": "晴",
-      "strokes": 12
-    },
-    {
-      "char": "晓",
-      "strokes": 10
-    },
-    {
-      "char": "晶",
-      "strokes": 12
-    },
-    {
-      "char": "智",
-      "strokes": 12
-    },
-    {
-      "char": "慧",
-      "strokes": 15
-    },
-    {
-      "char": "曦",
-      "strokes": 20
-    },
-    {
-      "char": "旭",
-      "strokes": 6
-    },
-    {
-      "char": "旺",
-      "strokes": 8
-    },
-    {
-      "char": "昌",
-      "strokes": 8
-    },
-    {
-      "char": "星",
-      "strokes": 9
-    },
-    {
-      "char": "昊",
-      "strokes": 8
-    },
-    {
-      "char": "昆",
-      "strokes": 8
-    },
-    {
-      "char": "晟",
-      "strokes": 10
-    },
-    {
-      "char": "暄",
-      "strokes": 13
-    },
-    {
-      "char": "暖",
-      "strokes": 13
-    },
-    {
-      "char": "曜",
-      "strokes": 18
-    },
-    {
-      "char": "日",
-      "strokes": 4
-    },
-    {
-      "char": "光",
-      "strokes": 6
-    },
-    {
-      "char": "丽",
-      "strokes": 7
-    },
-    {
-      "char": "丹",
-      "strokes": 4
-    },
-    {
-      "char": "赤",
-      "strokes": 7
-    },
-    {
-      "char": "彤",
-      "strokes": 7
-    },
-    {
-      "char": "红",
-      "strokes": 6
-    },
-    {
-      "char": "朱",
-      "strokes": 6
-    },
-    {
-      "char": "绛",
-      "strokes": 9
-    },
-    {
-      "char": "炽",
-      "strokes": 9
-    },
-    {
-      "char": "炜",
-      "strokes": 8
-    },
-    {
-      "char": "烽",
-      "strokes": 11
-    },
-    {
-      "char": "燃",
-      "strokes": 16
-    },
-    {
-      "char": "燎",
-      "strokes": 16
-    },
-    {
-      "char": "熙",
-      "strokes": 14
-    },
-    {
-      "char": "德",
-      "strokes": 15
-    },
-    {
-      "char": "恺",
-      "strokes": 9
-    },
-    {
-      "char": "恩",
-      "strokes": 10
-    },
-    {
-      "char": "志",
-      "strokes": 7
-    },
-    {
-      "char": "忠",
-      "strokes": 8
-    },
-    {
-      "char": "忻",
-      "strokes": 7
-    },
-    {
-      "char": "怡",
-      "strokes": 8
-    },
-    {
-      "char": "恬",
-      "strokes": 9
-    },
-    {
-      "char": "南",
-      "strokes": 9
-    },
-    {
-      "char": "夏",
-      "strokes": 10
-    },
-    {
-      "char": "午",
-      "strokes": 4
-    },
-    {
-      "char": "丙",
-      "strokes": 5
-    },
-    {
-      "char": "丁",
-      "strokes": 2
-    },
-    {
-      "char": "坤",
-      "strokes": 8
-    },
-    {
-      "char": "垚",
-      "strokes": 9
-    },
-    {
-      "char": "堃",
-      "strokes": 11
-    },
-    {
-      "char": "坚",
-      "strokes": 7
-    },
-    {
-      "char": "培",
-      "strokes": 11
-    },
-    {
-      "char": "城",
-      "strokes": 9
-    },
-    {
-      "char": "塘",
-      "strokes": 13
-    },
-    {
-      "char": "境",
-      "strokes": 14
-    },
-    {
-      "char": "均",
-      "strokes": 7
-    },
-    {
-      "char": "基",
-      "strokes": 11
-    },
-    {
-      "char": "堂",
-      "strokes": 11
-    },
-    {
-      "char": "增",
-      "strokes": 15
-    },
-    {
-      "char": "墉",
-      "strokes": 14
-    },
-    {
-      "char": "墨",
-      "strokes": 15
-    },
-    {
-      "char": "壁",
-      "strokes": 16
-    },
-    {
-      "char": "壮",
-      "strokes": 6
-    },
-    {
-      "char": "声",
-      "strokes": 7
-    },
-    {
-      "char": "坦",
-      "strokes": 8
-    },
-    {
-      "char": "垣",
-      "strokes": 9
-    },
-    {
-      "char": "埔",
-      "strokes": 10
-    },
-    {
-      "char": "埠",
-      "strokes": 11
-    },
-    {
-      "char": "堆",
-      "strokes": 11
-    },
-    {
-      "char": "塔",
-      "strokes": 12
-    },
-    {
-      "char": "塞",
-      "strokes": 13
-    },
-    {
-      "char": "墅",
-      "strokes": 14
-    },
-    {
-      "char": "土",
-      "strokes": 3
-    },
-    {
-      "char": "圣",
-      "strokes": 5
-    },
-    {
-      "char": "圭",
-      "strokes": 6
-    },
-    {
-      "char": "地",
-      "strokes": 6
-    },
-    {
-      "char": "圻",
-      "strokes": 7
-    },
-    {
-      "char": "山",
-      "strokes": 3
-    },
-    {
-      "char": "岳",
-      "strokes": 8
-    },
-    {
-      "char": "岚",
-      "strokes": 7
-    },
-    {
-      "char": "岭",
-      "strokes": 8
-    },
-    {
-      "char": "岩",
-      "strokes": 8
-    },
-    {
-      "char": "峰",
-      "strokes": 10
-    },
-    {
-      "char": "峻",
-      "strokes": 10
-    },
-    {
-      "char": "崇",
-      "strokes": 11
-    },
-    {
-      "char": "嵩",
-      "strokes": 13
-    },
-    {
-      "char": "岱",
-      "strokes": 8
-    },
-    {
-      "char": "峥",
-      "strokes": 9
-    },
-    {
-      "char": "嵘",
-      "strokes": 12
-    },
-    {
-      "char": "野",
-      "strokes": 11
-    },
-    {
-      "char": "田",
-      "strokes": 5
-    },
-    {
-      "char": "畴",
-      "strokes": 12
-    },
-    {
-      "char": "畦",
-      "strokes": 11
-    },
-    {
-      "char": "畅",
-      "strokes": 8
-    },
-    {
-      "char": "央",
-      "strokes": 5
-    },
-    {
-      "char": "中",
-      "strokes": 4
-    },
-    {
-      "char": "辰",
-      "strokes": 7
-    },
-    {
-      "char": "戌",
-      "strokes": 6
-    },
-    {
-      "char": "丑",
-      "strokes": 4
-    },
-    {
-      "char": "未",
-      "strokes": 5
-    },
-    {
-      "char": "戊",
-      "strokes": 5
-    },
-    {
-      "char": "己",
-      "strokes": 3
-    },
-    {
-      "char": "黄",
-      "strokes": 11
     },
     {
       "char": "安",
       "strokes": 6
     },
     {
-      "char": "宇",
-      "strokes": 6
-    },
-    {
-      "char": "宛",
+      "char": "岸",
       "strokes": 8
     },
     {
-      "char": "宥",
+      "char": "按",
       "strokes": 9
     },
     {
-      "char": "宸",
-      "strokes": 10
-    },
-    {
-      "char": "思",
-      "strokes": 9
-    },
-    {
-      "char": "新",
+      "char": "暗",
       "strokes": 13
     },
     {
-      "char": "心",
-      "strokes": 4
-    },
-    {
-      "char": "信",
-      "strokes": 9
-    },
-    {
-      "char": "正",
-      "strokes": 5
-    },
-    {
-      "char": "铁",
-      "strokes": 10
-    },
-    {
-      "char": "睿",
-      "strokes": 14
-    },
-    {
-      "char": "诚",
-      "strokes": 8
-    },
-    {
-      "char": "静",
-      "strokes": 14
-    },
-    {
-      "char": "宣",
-      "strokes": 9
-    },
-    {
-      "char": "舒",
-      "strokes": 12
-    },
-    {
-      "char": "书",
-      "strokes": 4
-    },
-    {
-      "char": "诗",
-      "strokes": 8
-    },
-    {
-      "char": "修",
-      "strokes": 9
-    },
-    {
-      "char": "嘉",
-      "strokes": 14
-    },
-    {
-      "char": "佳",
-      "strokes": 8
-    },
-    {
-      "char": "家",
-      "strokes": 10
-    },
-    {
-      "char": "建",
-      "strokes": 8
-    },
-    {
-      "char": "健",
-      "strokes": 10
-    },
-    {
-      "char": "凯",
-      "strokes": 8
-    },
-    {
-      "char": "可",
-      "strokes": 5
-    },
-    {
-      "char": "毅",
+      "char": "澳",
       "strokes": 15
     },
     {
-      "char": "义",
-      "strokes": 3
+      "char": "八",
+      "strokes": 2
     },
     {
-      "char": "奕",
-      "strokes": 9
-    },
-    {
-      "char": "逸",
-      "strokes": 11
-    },
-    {
-      "char": "颖",
-      "strokes": 13
-    },
-    {
-      "char": "语",
-      "strokes": 9
-    },
-    {
-      "char": "雅",
-      "strokes": 12
-    },
-    {
-      "char": "轩",
+      "char": "把",
       "strokes": 7
     },
     {
-      "char": "琳",
+      "char": "白",
+      "strokes": 5
+    },
+    {
+      "char": "百",
+      "strokes": 6
+    },
+    {
+      "char": "柏",
+      "strokes": 9
+    },
+    {
+      "char": "半",
+      "strokes": 5
+    },
+    {
+      "char": "薄",
+      "strokes": 16
+    },
+    {
+      "char": "宝",
+      "strokes": 8
+    },
+    {
+      "char": "寶",
+      "strokes": 20
+    },
+    {
+      "char": "抱",
+      "strokes": 8
+    },
+    {
+      "char": "報",
       "strokes": 12
     },
     {
-      "char": "羽",
+      "char": "杯",
+      "strokes": 8
+    },
+    {
+      "char": "悲",
+      "strokes": 12
+    },
+    {
+      "char": "碑",
+      "strokes": 13
+    },
+    {
+      "char": "北",
+      "strokes": 5
+    },
+    {
+      "char": "背",
+      "strokes": 9
+    },
+    {
+      "char": "本",
+      "strokes": 5
+    },
+    {
+      "char": "比",
+      "strokes": 4
+    },
+    {
+      "char": "筆",
+      "strokes": 12
+    },
+    {
+      "char": "必",
+      "strokes": 5
+    },
+    {
+      "char": "碧",
+      "strokes": 14
+    },
+    {
+      "char": "壁",
+      "strokes": 16
+    },
+    {
+      "char": "边",
+      "strokes": 5
+    },
+    {
+      "char": "編",
+      "strokes": 15
+    },
+    {
+      "char": "邊",
+      "strokes": 18
+    },
+    {
+      "char": "便",
+      "strokes": 9
+    },
+    {
+      "char": "遍",
+      "strokes": 12
+    },
+    {
+      "char": "變",
+      "strokes": 23
+    },
+    {
+      "char": "表",
+      "strokes": 8
+    },
+    {
+      "char": "別",
+      "strokes": 7
+    },
+    {
+      "char": "彬",
+      "strokes": 11
+    },
+    {
+      "char": "滨",
+      "strokes": 13
+    },
+    {
+      "char": "鬓",
+      "strokes": 20
+    },
+    {
+      "char": "冰",
       "strokes": 6
+    },
+    {
+      "char": "兵",
+      "strokes": 7
+    },
+    {
+      "char": "丙",
+      "strokes": 5
+    },
+    {
+      "char": "炳",
+      "strokes": 9
+    },
+    {
+      "char": "波",
+      "strokes": 8
+    },
+    {
+      "char": "伯",
+      "strokes": 7
     },
     {
       "char": "博",
@@ -1249,96 +193,4020 @@
       "strokes": 12
     },
     {
-      "char": "敏",
-      "strokes": 11
+      "char": "補",
+      "strokes": 12
     },
     {
-      "char": "民",
-      "strokes": 5
+      "char": "不",
+      "strokes": 4
     },
     {
-      "char": "鸿",
-      "strokes": 11
-    },
-    {
-      "char": "宏",
+      "char": "步",
       "strokes": 7
     },
     {
-      "char": "乐",
-      "strokes": 5
-    },
-    {
-      "char": "朗",
+      "char": "埔",
       "strokes": 10
     },
     {
-      "char": "亮",
+      "char": "部",
+      "strokes": 10
+    },
+    {
+      "char": "埠",
+      "strokes": 11
+    },
+    {
+      "char": "才",
+      "strokes": 3
+    },
+    {
+      "char": "材",
+      "strokes": 7
+    },
+    {
+      "char": "采",
+      "strokes": 8
+    },
+    {
+      "char": "彩",
+      "strokes": 11
+    },
+    {
+      "char": "參",
+      "strokes": 11
+    },
+    {
+      "char": "残",
       "strokes": 9
     },
     {
-      "char": "良",
+      "char": "殘",
+      "strokes": 12
+    },
+    {
+      "char": "灿",
       "strokes": 7
     },
     {
-      "char": "令",
-      "strokes": 5
+      "char": "滄",
+      "strokes": 13
     },
     {
-      "char": "宁",
-      "strokes": 5
+      "char": "蒼",
+      "strokes": 13
     },
     {
-      "char": "诺",
+      "char": "藏",
+      "strokes": 17
+    },
+    {
+      "char": "草",
+      "strokes": 9
+    },
+    {
+      "char": "策",
+      "strokes": 12
+    },
+    {
+      "char": "曾",
+      "strokes": 12
+    },
+    {
+      "char": "差",
+      "strokes": 9
+    },
+    {
+      "char": "禪",
+      "strokes": 16
+    },
+    {
+      "char": "昌",
+      "strokes": 8
+    },
+    {
+      "char": "常",
+      "strokes": 11
+    },
+    {
+      "char": "畅",
+      "strokes": 8
+    },
+    {
+      "char": "唱",
+      "strokes": 11
+    },
+    {
+      "char": "朝",
+      "strokes": 12
+    },
+    {
+      "char": "潮",
+      "strokes": 15
+    },
+    {
+      "char": "彻",
+      "strokes": 7
+    },
+    {
+      "char": "澈",
+      "strokes": 15
+    },
+    {
+      "char": "尘",
+      "strokes": 6
+    },
+    {
+      "char": "臣",
+      "strokes": 6
+    },
+    {
+      "char": "辰",
+      "strokes": 7
+    },
+    {
+      "char": "陈",
+      "strokes": 7
+    },
+    {
+      "char": "宸",
       "strokes": 10
+    },
+    {
+      "char": "陳",
+      "strokes": 10
+    },
+    {
+      "char": "晨",
+      "strokes": 11
+    },
+    {
+      "char": "塵",
+      "strokes": 14
+    },
+    {
+      "char": "稱",
+      "strokes": 14
+    },
+    {
+      "char": "成",
+      "strokes": 6
+    },
+    {
+      "char": "承",
+      "strokes": 8
+    },
+    {
+      "char": "诚",
+      "strokes": 8
+    },
+    {
+      "char": "城",
+      "strokes": 9
+    },
+    {
+      "char": "晟",
+      "strokes": 10
+    },
+    {
+      "char": "澄",
+      "strokes": 15
+    },
+    {
+      "char": "池",
+      "strokes": 6
+    },
+    {
+      "char": "持",
+      "strokes": 9
+    },
+    {
+      "char": "遲",
+      "strokes": 15
+    },
+    {
+      "char": "尺",
+      "strokes": 4
+    },
+    {
+      "char": "赤",
+      "strokes": 7
+    },
+    {
+      "char": "炽",
+      "strokes": 9
+    },
+    {
+      "char": "崇",
+      "strokes": 11
+    },
+    {
+      "char": "畴",
+      "strokes": 12
+    },
+    {
+      "char": "愁",
+      "strokes": 13
+    },
+    {
+      "char": "酬",
+      "strokes": 13
+    },
+    {
+      "char": "丑",
+      "strokes": 4
+    },
+    {
+      "char": "出",
+      "strokes": 5
+    },
+    {
+      "char": "初",
+      "strokes": 7
+    },
+    {
+      "char": "楚",
+      "strokes": 13
+    },
+    {
+      "char": "处",
+      "strokes": 5
+    },
+    {
+      "char": "處",
+      "strokes": 11
+    },
+    {
+      "char": "川",
+      "strokes": 3
+    },
+    {
+      "char": "穿",
+      "strokes": 9
+    },
+    {
+      "char": "传",
+      "strokes": 6
+    },
+    {
+      "char": "船",
+      "strokes": 11
+    },
+    {
+      "char": "傳",
+      "strokes": 13
+    },
+    {
+      "char": "窗",
+      "strokes": 12
+    },
+    {
+      "char": "吹",
+      "strokes": 7
+    },
+    {
+      "char": "垂",
+      "strokes": 8
+    },
+    {
+      "char": "春",
+      "strokes": 9
+    },
+    {
+      "char": "淳",
+      "strokes": 11
+    },
+    {
+      "char": "词",
+      "strokes": 7
+    },
+    {
+      "char": "詞",
+      "strokes": 12
+    },
+    {
+      "char": "此",
+      "strokes": 6
+    },
+    {
+      "char": "從",
+      "strokes": 11
+    },
+    {
+      "char": "叢",
+      "strokes": 18
+    },
+    {
+      "char": "催",
+      "strokes": 13
+    },
+    {
+      "char": "翠",
+      "strokes": 14
+    },
+    {
+      "char": "村",
+      "strokes": 7
+    },
+    {
+      "char": "存",
+      "strokes": 6
+    },
+    {
+      "char": "寸",
+      "strokes": 3
+    },
+    {
+      "char": "大",
+      "strokes": 3
+    },
+    {
+      "char": "代",
+      "strokes": 5
+    },
+    {
+      "char": "岱",
+      "strokes": 8
+    },
+    {
+      "char": "带",
+      "strokes": 9
+    },
+    {
+      "char": "待",
+      "strokes": 9
+    },
+    {
+      "char": "帶",
+      "strokes": 11
+    },
+    {
+      "char": "丹",
+      "strokes": 4
+    },
+    {
+      "char": "但",
+      "strokes": 7
+    },
+    {
+      "char": "淡",
+      "strokes": 11
+    },
+    {
+      "char": "当",
+      "strokes": 6
+    },
+    {
+      "char": "當",
+      "strokes": 13
+    },
+    {
+      "char": "蕩",
+      "strokes": 15
+    },
+    {
+      "char": "刀",
+      "strokes": 2
+    },
+    {
+      "char": "到",
+      "strokes": 8
+    },
+    {
+      "char": "道",
+      "strokes": 12
+    },
+    {
+      "char": "得",
+      "strokes": 11
+    },
+    {
+      "char": "德",
+      "strokes": 15
+    },
+    {
+      "char": "地",
+      "strokes": 6
+    },
+    {
+      "char": "的",
+      "strokes": 8
+    },
+    {
+      "char": "登",
+      "strokes": 12
+    },
+    {
+      "char": "燈",
+      "strokes": 16
+    },
+    {
+      "char": "等",
+      "strokes": 12
+    },
+    {
+      "char": "低",
+      "strokes": 7
+    },
+    {
+      "char": "滴",
+      "strokes": 14
+    },
+    {
+      "char": "笛",
+      "strokes": 11
+    },
+    {
+      "char": "底",
+      "strokes": 8
+    },
+    {
+      "char": "帝",
+      "strokes": 9
+    },
+    {
+      "char": "第",
+      "strokes": 11
+    },
+    {
+      "char": "典",
+      "strokes": 8
+    },
+    {
+      "char": "点",
+      "strokes": 9
+    },
+    {
+      "char": "點",
+      "strokes": 17
+    },
+    {
+      "char": "殿",
+      "strokes": 13
+    },
+    {
+      "char": "簟",
+      "strokes": 18
+    },
+    {
+      "char": "丁",
+      "strokes": 2
+    },
+    {
+      "char": "鼎",
+      "strokes": 12
+    },
+    {
+      "char": "定",
+      "strokes": 8
+    },
+    {
+      "char": "东",
+      "strokes": 5
+    },
+    {
+      "char": "冬",
+      "strokes": 5
+    },
+    {
+      "char": "東",
+      "strokes": 8
+    },
+    {
+      "char": "董",
+      "strokes": 12
+    },
+    {
+      "char": "栋",
+      "strokes": 9
+    },
+    {
+      "char": "洞",
+      "strokes": 9
+    },
+    {
+      "char": "動",
+      "strokes": 11
+    },
+    {
+      "char": "都",
+      "strokes": 10
+    },
+    {
+      "char": "斗",
+      "strokes": 4
+    },
+    {
+      "char": "獨",
+      "strokes": 16
+    },
+    {
+      "char": "杜",
+      "strokes": 7
+    },
+    {
+      "char": "度",
+      "strokes": 9
+    },
+    {
+      "char": "渡",
+      "strokes": 12
+    },
+    {
+      "char": "端",
+      "strokes": 14
+    },
+    {
+      "char": "短",
+      "strokes": 12
+    },
+    {
+      "char": "断",
+      "strokes": 11
+    },
+    {
+      "char": "锻",
+      "strokes": 14
+    },
+    {
+      "char": "斷",
+      "strokes": 18
+    },
+    {
+      "char": "堆",
+      "strokes": 11
+    },
+    {
+      "char": "对",
+      "strokes": 5
+    },
+    {
+      "char": "兑",
+      "strokes": 7
+    },
+    {
+      "char": "對",
+      "strokes": 14
+    },
+    {
+      "char": "多",
+      "strokes": 6
+    },
+    {
+      "char": "铎",
+      "strokes": 10
+    },
+    {
+      "char": "恩",
+      "strokes": 10
+    },
+    {
+      "char": "儿",
+      "strokes": 2
+    },
+    {
+      "char": "而",
+      "strokes": 6
+    },
+    {
+      "char": "二",
+      "strokes": 2
+    },
+    {
+      "char": "发",
+      "strokes": 5
+    },
+    {
+      "char": "發",
+      "strokes": 12
+    },
+    {
+      "char": "髮",
+      "strokes": 15
+    },
+    {
+      "char": "帆",
+      "strokes": 6
+    },
+    {
+      "char": "翻",
+      "strokes": 18
+    },
+    {
+      "char": "繁",
+      "strokes": 17
+    },
+    {
+      "char": "泛",
+      "strokes": 7
+    },
+    {
+      "char": "方",
+      "strokes": 4
+    },
+    {
+      "char": "芳",
+      "strokes": 7
+    },
+    {
+      "char": "房",
+      "strokes": 8
+    },
+    {
+      "char": "放",
+      "strokes": 8
+    },
+    {
+      "char": "飞",
+      "strokes": 3
+    },
+    {
+      "char": "非",
+      "strokes": 8
+    },
+    {
+      "char": "飛",
+      "strokes": 9
+    },
+    {
+      "char": "菲",
+      "strokes": 11
+    },
+    {
+      "char": "霏",
+      "strokes": 16
+    },
+    {
+      "char": "分",
+      "strokes": 4
+    },
+    {
+      "char": "芬",
+      "strokes": 7
+    },
+    {
+      "char": "粉",
+      "strokes": 10
+    },
+    {
+      "char": "风",
+      "strokes": 4
+    },
+    {
+      "char": "枫",
+      "strokes": 8
+    },
+    {
+      "char": "封",
+      "strokes": 9
+    },
+    {
+      "char": "風",
+      "strokes": 9
+    },
+    {
+      "char": "峰",
+      "strokes": 10
+    },
+    {
+      "char": "烽",
+      "strokes": 11
+    },
+    {
+      "char": "锋",
+      "strokes": 12
+    },
+    {
+      "char": "冯",
+      "strokes": 5
+    },
+    {
+      "char": "逢",
+      "strokes": 10
+    },
+    {
+      "char": "凤",
+      "strokes": 4
+    },
+    {
+      "char": "奉",
+      "strokes": 8
+    },
+    {
+      "char": "鳳",
+      "strokes": 14
+    },
+    {
+      "char": "夫",
+      "strokes": 4
+    },
+    {
+      "char": "拂",
+      "strokes": 8
+    },
+    {
+      "char": "浮",
+      "strokes": 10
+    },
+    {
+      "char": "福",
+      "strokes": 13
+    },
+    {
+      "char": "府",
+      "strokes": 8
+    },
+    {
+      "char": "附",
+      "strokes": 7
+    },
+    {
+      "char": "復",
+      "strokes": 12
+    },
+    {
+      "char": "覆",
+      "strokes": 18
+    },
+    {
+      "char": "改",
+      "strokes": 7
+    },
+    {
+      "char": "蓋",
+      "strokes": 13
+    },
+    {
+      "char": "甘",
+      "strokes": 5
+    },
+    {
+      "char": "干",
+      "strokes": 3
+    },
+    {
+      "char": "钢",
+      "strokes": 9
+    },
+    {
+      "char": "钢",
+      "strokes": 9
+    },
+    {
+      "char": "高",
+      "strokes": 10
+    },
+    {
+      "char": "戈",
+      "strokes": 4
+    },
+    {
+      "char": "歌",
+      "strokes": 14
+    },
+    {
+      "char": "隔",
+      "strokes": 12
+    },
+    {
+      "char": "閣",
+      "strokes": 14
+    },
+    {
+      "char": "更",
+      "strokes": 7
+    },
+    {
+      "char": "公",
+      "strokes": 4
+    },
+    {
+      "char": "功",
+      "strokes": 5
+    },
+    {
+      "char": "宫",
+      "strokes": 9
+    },
+    {
+      "char": "宮",
+      "strokes": 10
+    },
+    {
+      "char": "共",
+      "strokes": 6
+    },
+    {
+      "char": "孤",
+      "strokes": 8
+    },
+    {
+      "char": "古",
+      "strokes": 5
+    },
+    {
+      "char": "谷",
+      "strokes": 7
+    },
+    {
+      "char": "骨",
+      "strokes": 9
+    },
+    {
+      "char": "鼓",
+      "strokes": 13
+    },
+    {
+      "char": "故",
+      "strokes": 9
+    },
+    {
+      "char": "顧",
+      "strokes": 21
+    },
+    {
+      "char": "挂",
+      "strokes": 9
+    },
+    {
+      "char": "官",
+      "strokes": 8
+    },
+    {
+      "char": "冠",
+      "strokes": 9
+    },
+    {
+      "char": "關",
+      "strokes": 19
+    },
+    {
+      "char": "觀",
+      "strokes": 24
+    },
+    {
+      "char": "管",
+      "strokes": 14
+    },
+    {
+      "char": "館",
+      "strokes": 16
+    },
+    {
+      "char": "光",
+      "strokes": 6
+    },
+    {
+      "char": "廣",
+      "strokes": 14
+    },
+    {
+      "char": "归",
+      "strokes": 5
+    },
+    {
+      "char": "圭",
+      "strokes": 6
+    },
+    {
+      "char": "歸",
+      "strokes": 18
+    },
+    {
+      "char": "桂",
+      "strokes": 10
+    },
+    {
+      "char": "郭",
+      "strokes": 10
+    },
+    {
+      "char": "国",
+      "strokes": 8
+    },
+    {
+      "char": "國",
+      "strokes": 11
+    },
+    {
+      "char": "果",
+      "strokes": 8
+    },
+    {
+      "char": "过",
+      "strokes": 6
+    },
+    {
+      "char": "過",
+      "strokes": 11
+    },
+    {
+      "char": "还",
+      "strokes": 7
+    },
+    {
+      "char": "還",
+      "strokes": 16
+    },
+    {
+      "char": "海",
+      "strokes": 10
+    },
+    {
+      "char": "含",
+      "strokes": 7
     },
     {
       "char": "晗",
       "strokes": 11
     },
     {
-      "char": "烁",
-      "strokes": 9
+      "char": "涵",
+      "strokes": 11
     },
     {
-      "char": "炫",
-      "strokes": 9
+      "char": "寒",
+      "strokes": 12
     },
     {
-      "char": "昕",
+      "char": "韩",
+      "strokes": 12
+    },
+    {
+      "char": "汉",
+      "strokes": 5
+    },
+    {
+      "char": "漢",
+      "strokes": 14
+    },
+    {
+      "char": "翰",
+      "strokes": 16
+    },
+    {
+      "char": "瀚",
+      "strokes": 19
+    },
+    {
+      "char": "濠",
+      "strokes": 17
+    },
+    {
+      "char": "好",
+      "strokes": 6
+    },
+    {
+      "char": "昊",
       "strokes": 8
     },
     {
-      "char": "阳",
+      "char": "浩",
+      "strokes": 10
+    },
+    {
+      "char": "禾",
+      "strokes": 5
+    },
+    {
+      "char": "合",
       "strokes": 6
     },
     {
-      "char": "扬",
+      "char": "何",
+      "strokes": 7
+    },
+    {
+      "char": "和",
+      "strokes": 8
+    },
+    {
+      "char": "河",
+      "strokes": 8
+    },
+    {
+      "char": "荷",
+      "strokes": 10
+    },
+    {
+      "char": "赫",
+      "strokes": 14
+    },
+    {
+      "char": "鶴",
+      "strokes": 21
+    },
+    {
+      "char": "黑",
+      "strokes": 12
+    },
+    {
+      "char": "痕",
+      "strokes": 11
+    },
+    {
+      "char": "恨",
+      "strokes": 9
+    },
+    {
+      "char": "横",
+      "strokes": 15
+    },
+    {
+      "char": "橫",
+      "strokes": 16
+    },
+    {
+      "char": "红",
       "strokes": 6
+    },
+    {
+      "char": "宏",
+      "strokes": 7
+    },
+    {
+      "char": "泓",
+      "strokes": 8
+    },
+    {
+      "char": "洪",
+      "strokes": 9
+    },
+    {
+      "char": "紅",
+      "strokes": 9
+    },
+    {
+      "char": "鸿",
+      "strokes": 11
+    },
+    {
+      "char": "后",
+      "strokes": 6
+    },
+    {
+      "char": "厚",
+      "strokes": 9
+    },
+    {
+      "char": "後",
+      "strokes": 9
+    },
+    {
+      "char": "忽",
+      "strokes": 8
+    },
+    {
+      "char": "胡",
+      "strokes": 9
+    },
+    {
+      "char": "湖",
+      "strokes": 12
+    },
+    {
+      "char": "虎",
+      "strokes": 8
+    },
+    {
+      "char": "花",
+      "strokes": 7
+    },
+    {
+      "char": "华",
+      "strokes": 6
+    },
+    {
+      "char": "華",
+      "strokes": 10
+    },
+    {
+      "char": "化",
+      "strokes": 4
+    },
+    {
+      "char": "画",
+      "strokes": 8
+    },
+    {
+      "char": "桦",
+      "strokes": 10
+    },
+    {
+      "char": "畫",
+      "strokes": 12
+    },
+    {
+      "char": "話",
+      "strokes": 13
+    },
+    {
+      "char": "淮",
+      "strokes": 11
+    },
+    {
+      "char": "懷",
+      "strokes": 19
+    },
+    {
+      "char": "欢",
+      "strokes": 6
+    },
+    {
+      "char": "桓",
+      "strokes": 10
+    },
+    {
+      "char": "焕",
+      "strokes": 11
+    },
+    {
+      "char": "荒",
+      "strokes": 9
+    },
+    {
+      "char": "皇",
+      "strokes": 9
+    },
+    {
+      "char": "黄",
+      "strokes": 11
+    },
+    {
+      "char": "黃",
+      "strokes": 12
+    },
+    {
+      "char": "灰",
+      "strokes": 6
+    },
+    {
+      "char": "晖",
+      "strokes": 10
+    },
+    {
+      "char": "辉",
+      "strokes": 12
+    },
+    {
+      "char": "暉",
+      "strokes": 13
+    },
+    {
+      "char": "輝",
+      "strokes": 15
+    },
+    {
+      "char": "回",
+      "strokes": 6
+    },
+    {
+      "char": "迴",
+      "strokes": 9
+    },
+    {
+      "char": "会",
+      "strokes": 6
+    },
+    {
+      "char": "惠",
+      "strokes": 12
+    },
+    {
+      "char": "會",
+      "strokes": 13
+    },
+    {
+      "char": "慧",
+      "strokes": 15
+    },
+    {
+      "char": "昏",
+      "strokes": 8
+    },
+    {
+      "char": "火",
+      "strokes": 4
+    },
+    {
+      "char": "肌",
+      "strokes": 6
+    },
+    {
+      "char": "基",
+      "strokes": 11
+    },
+    {
+      "char": "跡",
+      "strokes": 13
+    },
+    {
+      "char": "積",
+      "strokes": 16
+    },
+    {
+      "char": "及",
+      "strokes": 3
+    },
+    {
+      "char": "即",
+      "strokes": 7
+    },
+    {
+      "char": "急",
+      "strokes": 9
+    },
+    {
+      "char": "極",
+      "strokes": 12
+    },
+    {
+      "char": "集",
+      "strokes": 12
+    },
+    {
+      "char": "几",
+      "strokes": 2
+    },
+    {
+      "char": "己",
+      "strokes": 3
+    },
+    {
+      "char": "幾",
+      "strokes": 12
+    },
+    {
+      "char": "记",
+      "strokes": 5
+    },
+    {
+      "char": "既",
+      "strokes": 9
+    },
+    {
+      "char": "紀",
+      "strokes": 9
+    },
+    {
+      "char": "記",
+      "strokes": 10
+    },
+    {
+      "char": "寂",
+      "strokes": 11
+    },
+    {
+      "char": "寄",
+      "strokes": 11
+    },
+    {
+      "char": "濟",
+      "strokes": 17
+    },
+    {
+      "char": "佳",
+      "strokes": 8
+    },
+    {
+      "char": "家",
+      "strokes": 10
+    },
+    {
+      "char": "嘉",
+      "strokes": 14
+    },
+    {
+      "char": "甲",
+      "strokes": 5
+    },
+    {
+      "char": "贾",
+      "strokes": 10
+    },
+    {
+      "char": "坚",
+      "strokes": 7
+    },
+    {
+      "char": "间",
+      "strokes": 7
+    },
+    {
+      "char": "兼",
+      "strokes": 10
+    },
+    {
+      "char": "間",
+      "strokes": 12
+    },
+    {
+      "char": "翦",
+      "strokes": 15
+    },
+    {
+      "char": "见",
+      "strokes": 4
+    },
+    {
+      "char": "見",
+      "strokes": 7
+    },
+    {
+      "char": "建",
+      "strokes": 8
+    },
+    {
+      "char": "健",
+      "strokes": 10
+    },
+    {
+      "char": "鉴",
+      "strokes": 13
+    },
+    {
+      "char": "劒",
+      "strokes": 16
+    },
+    {
+      "char": "江",
+      "strokes": 6
+    },
+    {
+      "char": "将",
+      "strokes": 9
+    },
+    {
+      "char": "將",
+      "strokes": 11
+    },
+    {
+      "char": "降",
+      "strokes": 8
+    },
+    {
+      "char": "绛",
+      "strokes": 9
+    },
+    {
+      "char": "交",
+      "strokes": 6
+    },
+    {
+      "char": "角",
+      "strokes": 7
+    },
+    {
+      "char": "皎",
+      "strokes": 11
+    },
+    {
+      "char": "教",
+      "strokes": 11
+    },
+    {
+      "char": "皆",
+      "strokes": 9
+    },
+    {
+      "char": "接",
+      "strokes": 11
+    },
+    {
+      "char": "节",
+      "strokes": 5
+    },
+    {
+      "char": "杰",
+      "strokes": 8
+    },
+    {
+      "char": "洁",
+      "strokes": 9
+    },
+    {
+      "char": "結",
+      "strokes": 12
+    },
+    {
+      "char": "節",
+      "strokes": 13
+    },
+    {
+      "char": "解",
+      "strokes": 13
+    },
+    {
+      "char": "借",
+      "strokes": 10
+    },
+    {
+      "char": "今",
+      "strokes": 4
+    },
+    {
+      "char": "金",
+      "strokes": 8
+    },
+    {
+      "char": "津",
+      "strokes": 9
+    },
+    {
+      "char": "尽",
+      "strokes": 6
+    },
+    {
+      "char": "锦",
+      "strokes": 13
+    },
+    {
+      "char": "盡",
+      "strokes": 14
+    },
+    {
+      "char": "槿",
+      "strokes": 15
+    },
+    {
+      "char": "錦",
+      "strokes": 16
+    },
+    {
+      "char": "近",
+      "strokes": 7
+    },
+    {
+      "char": "禁",
+      "strokes": 13
+    },
+    {
+      "char": "京",
+      "strokes": 8
+    },
+    {
+      "char": "旌",
+      "strokes": 11
+    },
+    {
+      "char": "菁",
+      "strokes": 11
+    },
+    {
+      "char": "晶",
+      "strokes": 12
+    },
+    {
+      "char": "經",
+      "strokes": 13
+    },
+    {
+      "char": "精",
+      "strokes": 14
+    },
+    {
+      "char": "驚",
+      "strokes": 22
+    },
+    {
+      "char": "井",
+      "strokes": 4
+    },
+    {
+      "char": "景",
+      "strokes": 12
+    },
+    {
+      "char": "徑",
+      "strokes": 10
+    },
+    {
+      "char": "淨",
+      "strokes": 11
+    },
+    {
+      "char": "靖",
+      "strokes": 13
+    },
+    {
+      "char": "境",
+      "strokes": 14
+    },
+    {
+      "char": "静",
+      "strokes": 14
+    },
+    {
+      "char": "镜",
+      "strokes": 16
+    },
+    {
+      "char": "靜",
+      "strokes": 16
+    },
+    {
+      "char": "鏡",
+      "strokes": 19
+    },
+    {
+      "char": "九",
+      "strokes": 2
+    },
+    {
+      "char": "久",
+      "strokes": 3
+    },
+    {
+      "char": "酒",
+      "strokes": 10
+    },
+    {
+      "char": "旧",
+      "strokes": 5
+    },
+    {
+      "char": "就",
+      "strokes": 12
+    },
+    {
+      "char": "舊",
+      "strokes": 17
+    },
+    {
+      "char": "居",
+      "strokes": 8
+    },
+    {
+      "char": "菊",
+      "strokes": 11
+    },
+    {
+      "char": "橘",
+      "strokes": 16
+    },
+    {
+      "char": "句",
+      "strokes": 5
+    },
+    {
+      "char": "據",
+      "strokes": 16
+    },
+    {
+      "char": "卷",
+      "strokes": 8
+    },
+    {
+      "char": "绝",
+      "strokes": 9
+    },
+    {
+      "char": "絕",
+      "strokes": 12
+    },
+    {
+      "char": "覺",
+      "strokes": 20
+    },
+    {
+      "char": "君",
+      "strokes": 7
+    },
+    {
+      "char": "均",
+      "strokes": 7
+    },
+    {
+      "char": "軍",
+      "strokes": 9
+    },
+    {
+      "char": "钧",
+      "strokes": 9
+    },
+    {
+      "char": "峻",
+      "strokes": 10
+    },
+    {
+      "char": "浚",
+      "strokes": 10
+    },
+    {
+      "char": "开",
+      "strokes": 4
+    },
+    {
+      "char": "開",
+      "strokes": 12
+    },
+    {
+      "char": "凯",
+      "strokes": 8
+    },
+    {
+      "char": "恺",
+      "strokes": 9
+    },
+    {
+      "char": "刊",
+      "strokes": 5
+    },
+    {
+      "char": "堪",
+      "strokes": 12
+    },
+    {
+      "char": "看",
+      "strokes": 9
+    },
+    {
+      "char": "柯",
+      "strokes": 9
+    },
+    {
+      "char": "可",
+      "strokes": 5
+    },
+    {
+      "char": "刻",
+      "strokes": 8
+    },
+    {
+      "char": "客",
+      "strokes": 9
+    },
+    {
+      "char": "空",
+      "strokes": 8
+    },
+    {
+      "char": "口",
+      "strokes": 3
+    },
+    {
+      "char": "枯",
+      "strokes": 9
+    },
+    {
+      "char": "苦",
+      "strokes": 8
+    },
+    {
+      "char": "況",
+      "strokes": 8
+    },
+    {
+      "char": "曠",
+      "strokes": 18
+    },
+    {
+      "char": "坤",
+      "strokes": 8
+    },
+    {
+      "char": "昆",
+      "strokes": 8
+    },
+    {
+      "char": "堃",
+      "strokes": 11
+    },
+    {
+      "char": "来",
+      "strokes": 7
+    },
+    {
+      "char": "來",
+      "strokes": 8
+    },
+    {
+      "char": "兰",
+      "strokes": 5
+    },
+    {
+      "char": "岚",
+      "strokes": 7
+    },
+    {
+      "char": "蓝",
+      "strokes": 13
+    },
+    {
+      "char": "澜",
+      "strokes": 15
+    },
+    {
+      "char": "蘭",
+      "strokes": 20
+    },
+    {
+      "char": "郎",
+      "strokes": 8
+    },
+    {
+      "char": "朗",
+      "strokes": 10
+    },
+    {
+      "char": "浪",
+      "strokes": 10
+    },
+    {
+      "char": "老",
+      "strokes": 6
+    },
+    {
+      "char": "乐",
+      "strokes": 5
+    },
+    {
+      "char": "樂",
+      "strokes": 15
+    },
+    {
+      "char": "耒",
+      "strokes": 6
+    },
+    {
+      "char": "蕾",
+      "strokes": 16
+    },
+    {
+      "char": "冷",
+      "strokes": 7
+    },
+    {
+      "char": "離",
+      "strokes": 18
+    },
+    {
+      "char": "李",
+      "strokes": 7
+    },
+    {
+      "char": "里",
+      "strokes": 7
+    },
+    {
+      "char": "理",
+      "strokes": 11
+    },
+    {
+      "char": "裏",
+      "strokes": 13
+    },
+    {
+      "char": "力",
+      "strokes": 2
+    },
+    {
+      "char": "立",
+      "strokes": 5
+    },
+    {
+      "char": "丽",
+      "strokes": 7
+    },
+    {
+      "char": "莉",
+      "strokes": 10
+    },
+    {
+      "char": "麗",
+      "strokes": 19
+    },
+    {
+      "char": "帘",
+      "strokes": 8
+    },
+    {
+      "char": "莲",
+      "strokes": 10
+    },
+    {
+      "char": "連",
+      "strokes": 10
+    },
+    {
+      "char": "蓮",
+      "strokes": 13
+    },
+    {
+      "char": "憐",
+      "strokes": 15
+    },
+    {
+      "char": "良",
+      "strokes": 7
+    },
+    {
+      "char": "凉",
+      "strokes": 10
+    },
+    {
+      "char": "梁",
+      "strokes": 11
+    },
+    {
+      "char": "两",
+      "strokes": 7
+    },
+    {
+      "char": "兩",
+      "strokes": 8
+    },
+    {
+      "char": "亮",
+      "strokes": 9
+    },
+    {
+      "char": "量",
+      "strokes": 12
+    },
+    {
+      "char": "聊",
+      "strokes": 11
+    },
+    {
+      "char": "燎",
+      "strokes": 16
+    },
+    {
+      "char": "列",
+      "strokes": 6
+    },
+    {
+      "char": "林",
+      "strokes": 8
+    },
+    {
+      "char": "琳",
+      "strokes": 12
+    },
+    {
+      "char": "霖",
+      "strokes": 16
+    },
+    {
+      "char": "臨",
+      "strokes": 17
+    },
+    {
+      "char": "凌",
+      "strokes": 10
+    },
+    {
+      "char": "铃",
+      "strokes": 10
+    },
+    {
+      "char": "陵",
+      "strokes": 10
+    },
+    {
+      "char": "靈",
+      "strokes": 24
+    },
+    {
+      "char": "岭",
+      "strokes": 8
+    },
+    {
+      "char": "嶺",
+      "strokes": 17
+    },
+    {
+      "char": "令",
+      "strokes": 5
+    },
+    {
+      "char": "刘",
+      "strokes": 6
+    },
+    {
+      "char": "流",
+      "strokes": 10
+    },
+    {
+      "char": "留",
+      "strokes": 10
+    },
+    {
+      "char": "劉",
+      "strokes": 15
+    },
+    {
+      "char": "柳",
+      "strokes": 9
+    },
+    {
+      "char": "六",
+      "strokes": 4
+    },
+    {
+      "char": "龙",
+      "strokes": 5
+    },
+    {
+      "char": "笼",
+      "strokes": 11
+    },
+    {
+      "char": "龍",
+      "strokes": 16
+    },
+    {
+      "char": "楼",
+      "strokes": 13
+    },
+    {
+      "char": "樓",
+      "strokes": 15
+    },
+    {
+      "char": "漏",
+      "strokes": 14
+    },
+    {
+      "char": "路",
+      "strokes": 13
+    },
+    {
+      "char": "錄",
+      "strokes": 16
     },
     {
       "char": "璐",
       "strokes": 17
     },
     {
-      "char": "伟",
-      "strokes": 6
+      "char": "露",
+      "strokes": 21
     },
     {
-      "char": "维",
+      "char": "绿",
       "strokes": 11
     },
     {
-      "char": "为",
+      "char": "綠",
+      "strokes": 14
+    },
+    {
+      "char": "乱",
+      "strokes": 7
+    },
+    {
+      "char": "亂",
+      "strokes": 13
+    },
+    {
+      "char": "論",
+      "strokes": 15
+    },
+    {
+      "char": "羅",
+      "strokes": 19
+    },
+    {
+      "char": "洛",
+      "strokes": 9
+    },
+    {
+      "char": "落",
+      "strokes": 12
+    },
+    {
+      "char": "马",
+      "strokes": 3
+    },
+    {
+      "char": "馬",
+      "strokes": 10
+    },
+    {
+      "char": "满",
+      "strokes": 13
+    },
+    {
+      "char": "滿",
+      "strokes": 14
+    },
+    {
+      "char": "漫",
+      "strokes": 14
+    },
+    {
+      "char": "茫",
+      "strokes": 9
+    },
+    {
+      "char": "茂",
+      "strokes": 8
+    },
+    {
+      "char": "眉",
+      "strokes": 9
+    },
+    {
+      "char": "梅",
+      "strokes": 11
+    },
+    {
+      "char": "美",
+      "strokes": 9
+    },
+    {
+      "char": "门",
+      "strokes": 3
+    },
+    {
+      "char": "門",
+      "strokes": 8
+    },
+    {
+      "char": "孟",
+      "strokes": 8
+    },
+    {
+      "char": "梦",
+      "strokes": 11
+    },
+    {
+      "char": "夢",
+      "strokes": 13
+    },
+    {
+      "char": "迷",
+      "strokes": 9
+    },
+    {
+      "char": "米",
+      "strokes": 6
+    },
+    {
+      "char": "密",
+      "strokes": 11
+    },
+    {
+      "char": "面",
+      "strokes": 9
+    },
+    {
+      "char": "淼",
+      "strokes": 12
+    },
+    {
+      "char": "渺",
+      "strokes": 12
+    },
+    {
+      "char": "妙",
+      "strokes": 7
+    },
+    {
+      "char": "廟",
+      "strokes": 15
+    },
+    {
+      "char": "民",
+      "strokes": 5
+    },
+    {
+      "char": "敏",
+      "strokes": 11
+    },
+    {
+      "char": "名",
+      "strokes": 6
+    },
+    {
+      "char": "明",
+      "strokes": 8
+    },
+    {
+      "char": "冥",
+      "strokes": 10
+    },
+    {
+      "char": "铭",
+      "strokes": 11
+    },
+    {
+      "char": "鳴",
+      "strokes": 14
+    },
+    {
+      "char": "命",
+      "strokes": 8
+    },
+    {
+      "char": "莫",
+      "strokes": 10
+    },
+    {
+      "char": "漠",
+      "strokes": 13
+    },
+    {
+      "char": "墨",
+      "strokes": 15
+    },
+    {
+      "char": "墨",
+      "strokes": 15
+    },
+    {
+      "char": "木",
       "strokes": 4
+    },
+    {
+      "char": "目",
+      "strokes": 5
+    },
+    {
+      "char": "沐",
+      "strokes": 7
+    },
+    {
+      "char": "幕",
+      "strokes": 13
+    },
+    {
+      "char": "暮",
+      "strokes": 14
+    },
+    {
+      "char": "乃",
+      "strokes": 2
+    },
+    {
+      "char": "奈",
+      "strokes": 8
+    },
+    {
+      "char": "南",
+      "strokes": 9
+    },
+    {
+      "char": "难",
+      "strokes": 10
+    },
+    {
+      "char": "楠",
+      "strokes": 13
+    },
+    {
+      "char": "難",
+      "strokes": 19
+    },
+    {
+      "char": "內",
+      "strokes": 4
+    },
+    {
+      "char": "嫩",
+      "strokes": 14
+    },
+    {
+      "char": "能",
+      "strokes": 10
+    },
+    {
+      "char": "泥",
+      "strokes": 8
+    },
+    {
+      "char": "霓",
+      "strokes": 16
+    },
+    {
+      "char": "年",
+      "strokes": 6
+    },
+    {
+      "char": "念",
+      "strokes": 8
+    },
+    {
+      "char": "鳥",
+      "strokes": 11
+    },
+    {
+      "char": "宁",
+      "strokes": 5
+    },
+    {
+      "char": "寧",
+      "strokes": 14
+    },
+    {
+      "char": "凝",
+      "strokes": 16
+    },
+    {
+      "char": "牛",
+      "strokes": 4
+    },
+    {
+      "char": "弄",
+      "strokes": 7
+    },
+    {
+      "char": "女",
+      "strokes": 3
+    },
+    {
+      "char": "暖",
+      "strokes": 13
+    },
+    {
+      "char": "诺",
+      "strokes": 10
+    },
+    {
+      "char": "潘",
+      "strokes": 15
+    },
+    {
+      "char": "盤",
+      "strokes": 15
+    },
+    {
+      "char": "畔",
+      "strokes": 10
+    },
+    {
+      "char": "培",
+      "strokes": 11
+    },
+    {
+      "char": "沛",
+      "strokes": 7
+    },
+    {
+      "char": "佩",
+      "strokes": 8
+    },
+    {
+      "char": "披",
+      "strokes": 8
+    },
+    {
+      "char": "偏",
+      "strokes": 11
+    },
+    {
+      "char": "篇",
+      "strokes": 15
+    },
+    {
+      "char": "片",
+      "strokes": 4
+    },
+    {
+      "char": "飄",
+      "strokes": 20
+    },
+    {
+      "char": "平",
+      "strokes": 5
+    },
+    {
+      "char": "破",
+      "strokes": 10
+    },
+    {
+      "char": "朴",
+      "strokes": 6
+    },
+    {
+      "char": "浦",
+      "strokes": 10
+    },
+    {
+      "char": "七",
+      "strokes": 2
+    },
+    {
+      "char": "期",
+      "strokes": 12
+    },
+    {
+      "char": "圻",
+      "strokes": 7
+    },
+    {
+      "char": "其",
+      "strokes": 8
+    },
+    {
+      "char": "奇",
+      "strokes": 8
+    },
+    {
+      "char": "畦",
+      "strokes": 11
+    },
+    {
+      "char": "棋",
+      "strokes": 12
+    },
+    {
+      "char": "琦",
+      "strokes": 12
+    },
+    {
+      "char": "琪",
+      "strokes": 12
+    },
+    {
+      "char": "旗",
+      "strokes": 14
+    },
+    {
+      "char": "齊",
+      "strokes": 14
+    },
+    {
+      "char": "豈",
+      "strokes": 10
+    },
+    {
+      "char": "起",
+      "strokes": 10
+    },
+    {
+      "char": "綺",
+      "strokes": 14
+    },
+    {
+      "char": "气",
+      "strokes": 4
+    },
+    {
+      "char": "砌",
+      "strokes": 9
+    },
+    {
+      "char": "氣",
+      "strokes": 10
+    },
+    {
+      "char": "千",
+      "strokes": 3
+    },
+    {
+      "char": "前",
+      "strokes": 9
+    },
+    {
+      "char": "钱",
+      "strokes": 10
+    },
+    {
+      "char": "乾",
+      "strokes": 11
+    },
+    {
+      "char": "錢",
+      "strokes": 16
+    },
+    {
+      "char": "茜",
+      "strokes": 9
+    },
+    {
+      "char": "桥",
+      "strokes": 10
+    },
+    {
+      "char": "喬",
+      "strokes": 12
+    },
+    {
+      "char": "且",
+      "strokes": 5
+    },
+    {
+      "char": "妾",
+      "strokes": 8
+    },
+    {
+      "char": "钦",
+      "strokes": 9
+    },
+    {
+      "char": "秦",
+      "strokes": 10
+    },
+    {
+      "char": "琴",
+      "strokes": 12
+    },
+    {
+      "char": "沁",
+      "strokes": 7
+    },
+    {
+      "char": "青",
+      "strokes": 8
+    },
+    {
+      "char": "轻",
+      "strokes": 9
+    },
+    {
+      "char": "清",
+      "strokes": 11
+    },
+    {
+      "char": "傾",
+      "strokes": 13
+    },
+    {
+      "char": "輕",
+      "strokes": 14
+    },
+    {
+      "char": "情",
+      "strokes": 11
+    },
+    {
+      "char": "晴",
+      "strokes": 12
+    },
+    {
+      "char": "慶",
+      "strokes": 15
+    },
+    {
+      "char": "琼",
+      "strokes": 12
+    },
+    {
+      "char": "窮",
+      "strokes": 15
+    },
+    {
+      "char": "秋",
+      "strokes": 9
+    },
+    {
+      "char": "求",
+      "strokes": 7
+    },
+    {
+      "char": "曲",
+      "strokes": 6
+    },
+    {
+      "char": "取",
+      "strokes": 8
+    },
+    {
+      "char": "去",
+      "strokes": 5
+    },
+    {
+      "char": "全",
+      "strokes": 6
+    },
+    {
+      "char": "权",
+      "strokes": 6
+    },
+    {
+      "char": "泉",
+      "strokes": 9
+    },
+    {
+      "char": "却",
+      "strokes": 7
+    },
+    {
+      "char": "闕",
+      "strokes": 18
+    },
+    {
+      "char": "羣",
+      "strokes": 13
+    },
+    {
+      "char": "然",
+      "strokes": 12
+    },
+    {
+      "char": "燃",
+      "strokes": 16
+    },
+    {
+      "char": "染",
+      "strokes": 9
+    },
+    {
+      "char": "繞",
+      "strokes": 18
+    },
+    {
+      "char": "人",
+      "strokes": 2
+    },
+    {
+      "char": "任",
+      "strokes": 6
+    },
+    {
+      "char": "日",
+      "strokes": 4
+    },
+    {
+      "char": "荣",
+      "strokes": 9
+    },
+    {
+      "char": "容",
+      "strokes": 10
+    },
+    {
+      "char": "嵘",
+      "strokes": 12
+    },
+    {
+      "char": "溶",
+      "strokes": 13
+    },
+    {
+      "char": "榕",
+      "strokes": 14
+    },
+    {
+      "char": "榮",
+      "strokes": 14
+    },
+    {
+      "char": "柔",
+      "strokes": 9
+    },
+    {
+      "char": "如",
+      "strokes": 6
+    },
+    {
+      "char": "茹",
+      "strokes": 9
+    },
+    {
+      "char": "入",
+      "strokes": 2
+    },
+    {
+      "char": "蕊",
+      "strokes": 15
+    },
+    {
+      "char": "锐",
+      "strokes": 12
+    },
+    {
+      "char": "瑞",
+      "strokes": 13
+    },
+    {
+      "char": "睿",
+      "strokes": 14
+    },
+    {
+      "char": "润",
+      "strokes": 10
+    },
+    {
+      "char": "潤",
+      "strokes": 15
+    },
+    {
+      "char": "若",
+      "strokes": 8
+    },
+    {
+      "char": "洒",
+      "strokes": 9
+    },
+    {
+      "char": "塞",
+      "strokes": 13
+    },
+    {
+      "char": "三",
+      "strokes": 3
+    },
+    {
+      "char": "散",
+      "strokes": 12
+    },
+    {
+      "char": "色",
+      "strokes": 6
+    },
+    {
+      "char": "森",
+      "strokes": 12
+    },
+    {
+      "char": "僧",
+      "strokes": 14
+    },
+    {
+      "char": "沙",
+      "strokes": 7
+    },
+    {
+      "char": "山",
+      "strokes": 3
+    },
+    {
+      "char": "商",
+      "strokes": 11
+    },
+    {
+      "char": "傷",
+      "strokes": 13
+    },
+    {
+      "char": "上",
+      "strokes": 3
+    },
+    {
+      "char": "尚",
+      "strokes": 8
+    },
+    {
+      "char": "燒",
+      "strokes": 16
+    },
+    {
+      "char": "韶",
+      "strokes": 14
+    },
+    {
+      "char": "少",
+      "strokes": 4
+    },
+    {
+      "char": "舍",
+      "strokes": 8
+    },
+    {
+      "char": "射",
+      "strokes": 10
+    },
+    {
+      "char": "谁",
+      "strokes": 10
+    },
+    {
+      "char": "申",
+      "strokes": 5
+    },
+    {
+      "char": "身",
+      "strokes": 7
+    },
+    {
+      "char": "深",
+      "strokes": 11
+    },
+    {
+      "char": "神",
+      "strokes": 9
+    },
+    {
+      "char": "沈",
+      "strokes": 7
+    },
+    {
+      "char": "生",
+      "strokes": 5
+    },
+    {
+      "char": "声",
+      "strokes": 7
+    },
+    {
+      "char": "笙",
+      "strokes": 11
+    },
+    {
+      "char": "聲",
+      "strokes": 17
+    },
+    {
+      "char": "圣",
+      "strokes": 5
+    },
+    {
+      "char": "胜",
+      "strokes": 9
+    },
+    {
+      "char": "盛",
+      "strokes": 11
+    },
+    {
+      "char": "勝",
+      "strokes": 12
+    },
+    {
+      "char": "聖",
+      "strokes": 13
+    },
+    {
+      "char": "诗",
+      "strokes": 8
+    },
+    {
+      "char": "師",
+      "strokes": 10
+    },
+    {
+      "char": "湿",
+      "strokes": 12
+    },
+    {
+      "char": "詩",
+      "strokes": 13
+    },
+    {
+      "char": "十",
+      "strokes": 2
+    },
+    {
+      "char": "石",
+      "strokes": 5
+    },
+    {
+      "char": "时",
+      "strokes": 7
+    },
+    {
+      "char": "食",
+      "strokes": 9
+    },
+    {
+      "char": "時",
+      "strokes": 10
+    },
+    {
+      "char": "史",
+      "strokes": 5
+    },
+    {
+      "char": "使",
+      "strokes": 8
+    },
+    {
+      "char": "始",
+      "strokes": 8
+    },
+    {
+      "char": "士",
+      "strokes": 3
+    },
+    {
+      "char": "氏",
+      "strokes": 4
+    },
+    {
+      "char": "世",
+      "strokes": 5
+    },
+    {
+      "char": "事",
+      "strokes": 8
+    },
+    {
+      "char": "室",
+      "strokes": 9
+    },
+    {
+      "char": "是",
+      "strokes": 9
+    },
+    {
+      "char": "收",
+      "strokes": 6
+    },
+    {
+      "char": "手",
+      "strokes": 4
+    },
+    {
+      "char": "守",
+      "strokes": 6
+    },
+    {
+      "char": "首",
+      "strokes": 9
+    },
+    {
+      "char": "寿",
+      "strokes": 7
+    },
+    {
+      "char": "壽",
+      "strokes": 14
+    },
+    {
+      "char": "书",
+      "strokes": 4
+    },
+    {
+      "char": "書",
+      "strokes": 10
+    },
+    {
+      "char": "淑",
+      "strokes": 11
+    },
+    {
+      "char": "疎",
+      "strokes": 12
+    },
+    {
+      "char": "疏",
+      "strokes": 12
+    },
+    {
+      "char": "舒",
+      "strokes": 12
+    },
+    {
+      "char": "熟",
+      "strokes": 15
+    },
+    {
+      "char": "蜀",
+      "strokes": 13
+    },
+    {
+      "char": "树",
+      "strokes": 9
+    },
+    {
+      "char": "数",
+      "strokes": 13
+    },
+    {
+      "char": "墅",
+      "strokes": 14
+    },
+    {
+      "char": "數",
+      "strokes": 15
+    },
+    {
+      "char": "樹",
+      "strokes": 16
+    },
+    {
+      "char": "衰",
+      "strokes": 10
+    },
+    {
+      "char": "双",
+      "strokes": 4
+    },
+    {
+      "char": "霜",
+      "strokes": 17
+    },
+    {
+      "char": "雙",
+      "strokes": 18
+    },
+    {
+      "char": "誰",
+      "strokes": 15
+    },
+    {
+      "char": "水",
+      "strokes": 4
+    },
+    {
+      "char": "说",
+      "strokes": 9
+    },
+    {
+      "char": "烁",
+      "strokes": 9
+    },
+    {
+      "char": "丝",
+      "strokes": 5
+    },
+    {
+      "char": "思",
+      "strokes": 9
+    },
+    {
+      "char": "絲",
+      "strokes": 12
+    },
+    {
+      "char": "死",
+      "strokes": 6
+    },
+    {
+      "char": "四",
+      "strokes": 5
+    },
+    {
+      "char": "似",
+      "strokes": 6
+    },
+    {
+      "char": "寺",
+      "strokes": 6
+    },
+    {
+      "char": "松",
+      "strokes": 8
+    },
+    {
+      "char": "嵩",
+      "strokes": 13
+    },
+    {
+      "char": "宋",
+      "strokes": 7
+    },
+    {
+      "char": "送",
+      "strokes": 9
+    },
+    {
+      "char": "苏",
+      "strokes": 7
+    },
+    {
+      "char": "素",
+      "strokes": 10
+    },
+    {
+      "char": "宿",
+      "strokes": 11
+    },
+    {
+      "char": "雖",
+      "strokes": 17
+    },
+    {
+      "char": "隨",
+      "strokes": 14
+    },
+    {
+      "char": "歲",
+      "strokes": 13
+    },
+    {
+      "char": "碎",
+      "strokes": 13
+    },
+    {
+      "char": "孙",
+      "strokes": 6
+    },
+    {
+      "char": "所",
+      "strokes": 8
+    },
+    {
+      "char": "他",
+      "strokes": 5
+    },
+    {
+      "char": "塔",
+      "strokes": 12
+    },
+    {
+      "char": "台",
+      "strokes": 5
+    },
+    {
+      "char": "苔",
+      "strokes": 8
+    },
+    {
+      "char": "臺",
+      "strokes": 14
+    },
+    {
+      "char": "太",
+      "strokes": 4
+    },
+    {
+      "char": "钛",
+      "strokes": 9
+    },
+    {
+      "char": "坦",
+      "strokes": 8
+    },
+    {
+      "char": "汤",
+      "strokes": 6
+    },
+    {
+      "char": "唐",
+      "strokes": 10
+    },
+    {
+      "char": "堂",
+      "strokes": 11
+    },
+    {
+      "char": "棠",
+      "strokes": 12
+    },
+    {
+      "char": "塘",
+      "strokes": 13
+    },
+    {
+      "char": "涛",
+      "strokes": 10
+    },
+    {
+      "char": "桃",
+      "strokes": 10
+    },
+    {
+      "char": "陶",
+      "strokes": 10
+    },
+    {
+      "char": "啼",
+      "strokes": 12
+    },
+    {
+      "char": "題",
+      "strokes": 18
+    },
+    {
+      "char": "天",
+      "strokes": 4
+    },
+    {
+      "char": "添",
+      "strokes": 11
+    },
+    {
+      "char": "田",
+      "strokes": 5
+    },
+    {
+      "char": "恬",
+      "strokes": 9
+    },
+    {
+      "char": "條",
+      "strokes": 10
+    },
+    {
+      "char": "铁",
+      "strokes": 10
+    },
+    {
+      "char": "听",
+      "strokes": 7
+    },
+    {
+      "char": "聽",
+      "strokes": 22
+    },
+    {
+      "char": "亭",
+      "strokes": 9
+    },
+    {
+      "char": "庭",
+      "strokes": 9
+    },
+    {
+      "char": "通",
+      "strokes": 10
+    },
+    {
+      "char": "同",
+      "strokes": 6
+    },
+    {
+      "char": "彤",
+      "strokes": 7
+    },
+    {
+      "char": "桐",
+      "strokes": 10
+    },
+    {
+      "char": "头",
+      "strokes": 5
+    },
+    {
+      "char": "頭",
+      "strokes": 16
+    },
+    {
+      "char": "透",
+      "strokes": 10
+    },
+    {
+      "char": "徒",
+      "strokes": 10
+    },
+    {
+      "char": "圖",
+      "strokes": 14
+    },
+    {
+      "char": "土",
+      "strokes": 3
+    },
+    {
+      "char": "吐",
+      "strokes": 6
+    },
+    {
+      "char": "外",
+      "strokes": 5
+    },
+    {
+      "char": "宛",
+      "strokes": 8
+    },
+    {
+      "char": "婉",
+      "strokes": 11
+    },
+    {
+      "char": "晚",
+      "strokes": 11
+    },
+    {
+      "char": "万",
+      "strokes": 3
+    },
+    {
+      "char": "萬",
+      "strokes": 12
+    },
+    {
+      "char": "王",
+      "strokes": 4
+    },
+    {
+      "char": "往",
+      "strokes": 8
+    },
+    {
+      "char": "旺",
+      "strokes": 8
+    },
+    {
+      "char": "望",
+      "strokes": 11
+    },
+    {
+      "char": "危",
+      "strokes": 6
+    },
+    {
+      "char": "微",
+      "strokes": 13
+    },
+    {
+      "char": "薇",
+      "strokes": 16
     },
     {
       "char": "唯",
       "strokes": 11
     },
     {
-      "char": "勇",
+      "char": "惟",
+      "strokes": 11
+    },
+    {
+      "char": "维",
+      "strokes": 11
+    },
+    {
+      "char": "伟",
+      "strokes": 6
+    },
+    {
+      "char": "炜",
+      "strokes": 8
+    },
+    {
+      "char": "为",
+      "strokes": 4
+    },
+    {
+      "char": "未",
+      "strokes": 5
+    },
+    {
+      "char": "渭",
+      "strokes": 12
+    },
+    {
+      "char": "爲",
+      "strokes": 12
+    },
+    {
+      "char": "謂",
+      "strokes": 16
+    },
+    {
+      "char": "魏",
+      "strokes": 17
+    },
+    {
+      "char": "文",
+      "strokes": 4
+    },
+    {
+      "char": "雯",
+      "strokes": 12
+    },
+    {
+      "char": "聞",
+      "strokes": 14
+    },
+    {
+      "char": "问",
+      "strokes": 6
+    },
+    {
+      "char": "問",
+      "strokes": 11
+    },
+    {
+      "char": "我",
+      "strokes": 7
+    },
+    {
+      "char": "屋",
       "strokes": 9
+    },
+    {
+      "char": "烏",
+      "strokes": 10
+    },
+    {
+      "char": "无",
+      "strokes": 4
+    },
+    {
+      "char": "吳",
+      "strokes": 7
+    },
+    {
+      "char": "吴",
+      "strokes": 7
+    },
+    {
+      "char": "吴",
+      "strokes": 7
+    },
+    {
+      "char": "吾",
+      "strokes": 7
+    },
+    {
+      "char": "梧",
+      "strokes": 11
+    },
+    {
+      "char": "無",
+      "strokes": 12
+    },
+    {
+      "char": "五",
+      "strokes": 4
+    },
+    {
+      "char": "午",
+      "strokes": 4
+    },
+    {
+      "char": "武",
+      "strokes": 8
+    },
+    {
+      "char": "舞",
+      "strokes": 14
+    },
+    {
+      "char": "戊",
+      "strokes": 5
+    },
+    {
+      "char": "物",
+      "strokes": 8
+    },
+    {
+      "char": "夕",
+      "strokes": 3
+    },
+    {
+      "char": "兮",
+      "strokes": 4
+    },
+    {
+      "char": "西",
+      "strokes": 6
+    },
+    {
+      "char": "昔",
+      "strokes": 8
+    },
+    {
+      "char": "息",
+      "strokes": 10
+    },
+    {
+      "char": "惜",
+      "strokes": 11
+    },
+    {
+      "char": "溪",
+      "strokes": 13
+    },
+    {
+      "char": "锡",
+      "strokes": 13
+    },
+    {
+      "char": "熙",
+      "strokes": 14
+    },
+    {
+      "char": "曦",
+      "strokes": 20
+    },
+    {
+      "char": "席",
+      "strokes": 10
+    },
+    {
+      "char": "洗",
+      "strokes": 9
+    },
+    {
+      "char": "喜",
+      "strokes": 12
+    },
+    {
+      "char": "细",
+      "strokes": 8
+    },
+    {
+      "char": "細",
+      "strokes": 11
+    },
+    {
+      "char": "霞",
+      "strokes": 17
+    },
+    {
+      "char": "下",
+      "strokes": 3
+    },
+    {
+      "char": "夏",
+      "strokes": 10
+    },
+    {
+      "char": "仙",
+      "strokes": 5
+    },
+    {
+      "char": "先",
+      "strokes": 6
+    },
+    {
+      "char": "闲",
+      "strokes": 7
+    },
+    {
+      "char": "弦",
+      "strokes": 8
+    },
+    {
+      "char": "閑",
+      "strokes": 12
+    },
+    {
+      "char": "縣",
+      "strokes": 16
+    },
+    {
+      "char": "獻",
+      "strokes": 20
+    },
+    {
+      "char": "相",
+      "strokes": 9
+    },
+    {
+      "char": "香",
+      "strokes": 9
+    },
+    {
+      "char": "鄉",
+      "strokes": 11
+    },
+    {
+      "char": "湘",
+      "strokes": 12
+    },
+    {
+      "char": "想",
+      "strokes": 13
+    },
+    {
+      "char": "向",
+      "strokes": 6
+    },
+    {
+      "char": "象",
+      "strokes": 11
+    },
+    {
+      "char": "宵",
+      "strokes": 10
+    },
+    {
+      "char": "消",
+      "strokes": 10
+    },
+    {
+      "char": "潇",
+      "strokes": 14
+    },
+    {
+      "char": "箫",
+      "strokes": 14
+    },
+    {
+      "char": "霄",
+      "strokes": 15
+    },
+    {
+      "char": "蕭",
+      "strokes": 16
+    },
+    {
+      "char": "小",
+      "strokes": 3
+    },
+    {
+      "char": "晓",
+      "strokes": 10
+    },
+    {
+      "char": "筱",
+      "strokes": 13
+    },
+    {
+      "char": "曉",
+      "strokes": 16
+    },
+    {
+      "char": "校",
+      "strokes": 10
+    },
+    {
+      "char": "笑",
+      "strokes": 10
+    },
+    {
+      "char": "歇",
+      "strokes": 13
+    },
+    {
+      "char": "斜",
+      "strokes": 11
+    },
+    {
+      "char": "攜",
+      "strokes": 21
+    },
+    {
+      "char": "寫",
+      "strokes": 15
+    },
+    {
+      "char": "谢",
+      "strokes": 12
+    },
+    {
+      "char": "謝",
+      "strokes": 17
+    },
+    {
+      "char": "心",
+      "strokes": 4
+    },
+    {
+      "char": "忻",
+      "strokes": 7
+    },
+    {
+      "char": "芯",
+      "strokes": 7
+    },
+    {
+      "char": "辛",
+      "strokes": 7
+    },
+    {
+      "char": "昕",
+      "strokes": 8
+    },
+    {
+      "char": "新",
+      "strokes": 13
+    },
+    {
+      "char": "鑫",
+      "strokes": 24
+    },
+    {
+      "char": "信",
+      "strokes": 9
+    },
+    {
+      "char": "星",
+      "strokes": 9
+    },
+    {
+      "char": "行",
+      "strokes": 6
+    },
+    {
+      "char": "杏",
+      "strokes": 7
+    },
+    {
+      "char": "幸",
+      "strokes": 8
+    },
+    {
+      "char": "性",
+      "strokes": 8
+    },
+    {
+      "char": "興",
+      "strokes": 16
+    },
+    {
+      "char": "雄",
+      "strokes": 12
+    },
+    {
+      "char": "休",
+      "strokes": 6
+    },
+    {
+      "char": "修",
+      "strokes": 9
+    },
+    {
+      "char": "秀",
+      "strokes": 7
+    },
+    {
+      "char": "绣",
+      "strokes": 10
+    },
+    {
+      "char": "戌",
+      "strokes": 6
+    },
+    {
+      "char": "须",
+      "strokes": 9
+    },
+    {
+      "char": "虛",
+      "strokes": 12
+    },
+    {
+      "char": "須",
+      "strokes": 12
+    },
+    {
+      "char": "徐",
+      "strokes": 10
+    },
+    {
+      "char": "许",
+      "strokes": 6
+    },
+    {
+      "char": "栩",
+      "strokes": 10
+    },
+    {
+      "char": "旭",
+      "strokes": 6
+    },
+    {
+      "char": "序",
+      "strokes": 7
+    },
+    {
+      "char": "緒",
+      "strokes": 14
+    },
+    {
+      "char": "轩",
+      "strokes": 7
+    },
+    {
+      "char": "轩",
+      "strokes": 7
+    },
+    {
+      "char": "宣",
+      "strokes": 9
+    },
+    {
+      "char": "萱",
+      "strokes": 12
+    },
+    {
+      "char": "暄",
+      "strokes": 13
+    },
+    {
+      "char": "玄",
+      "strokes": 5
+    },
+    {
+      "char": "璇",
+      "strokes": 15
+    },
+    {
+      "char": "炫",
+      "strokes": 9
+    },
+    {
+      "char": "學",
+      "strokes": 16
+    },
+    {
+      "char": "雪",
+      "strokes": 11
+    },
+    {
+      "char": "寻",
+      "strokes": 6
+    },
+    {
+      "char": "尋",
+      "strokes": 12
+    },
+    {
+      "char": "崖",
+      "strokes": 11
+    },
+    {
+      "char": "雅",
+      "strokes": 12
+    },
+    {
+      "char": "烟",
+      "strokes": 10
+    },
+    {
+      "char": "煙",
+      "strokes": 13
+    },
+    {
+      "char": "言",
+      "strokes": 7
+    },
+    {
+      "char": "岩",
+      "strokes": 8
+    },
+    {
+      "char": "炎",
+      "strokes": 8
+    },
+    {
+      "char": "檐",
+      "strokes": 17
+    },
+    {
+      "char": "嚴",
+      "strokes": 19
+    },
+    {
+      "char": "巖",
+      "strokes": 22
+    },
+    {
+      "char": "掩",
+      "strokes": 11
+    },
+    {
+      "char": "眼",
+      "strokes": 11
+    },
+    {
+      "char": "宴",
+      "strokes": 10
+    },
+    {
+      "char": "艳",
+      "strokes": 10
+    },
+    {
+      "char": "焱",
+      "strokes": 12
+    },
+    {
+      "char": "雁",
+      "strokes": 12
+    },
+    {
+      "char": "燕",
+      "strokes": 16
+    },
+    {
+      "char": "豔",
+      "strokes": 28
+    },
+    {
+      "char": "央",
+      "strokes": 5
+    },
+    {
+      "char": "扬",
+      "strokes": 6
+    },
+    {
+      "char": "阳",
+      "strokes": 6
+    },
+    {
+      "char": "杨",
+      "strokes": 7
+    },
+    {
+      "char": "洋",
+      "strokes": 9
+    },
+    {
+      "char": "陽",
+      "strokes": 11
+    },
+    {
+      "char": "楊",
+      "strokes": 13
+    },
+    {
+      "char": "養",
+      "strokes": 14
+    },
+    {
+      "char": "垚",
+      "strokes": 9
+    },
+    {
+      "char": "搖",
+      "strokes": 13
+    },
+    {
+      "char": "遙",
+      "strokes": 13
+    },
+    {
+      "char": "瑶",
+      "strokes": 14
+    },
+    {
+      "char": "杳",
+      "strokes": 8
+    },
+    {
+      "char": "要",
+      "strokes": 9
+    },
+    {
+      "char": "曜",
+      "strokes": 18
+    },
+    {
+      "char": "耀",
+      "strokes": 20
+    },
+    {
+      "char": "也",
+      "strokes": 3
+    },
+    {
+      "char": "野",
+      "strokes": 11
+    },
+    {
+      "char": "叶",
+      "strokes": 5
+    },
+    {
+      "char": "夜",
+      "strokes": 8
+    },
+    {
+      "char": "烨",
+      "strokes": 10
+    },
+    {
+      "char": "葉",
+      "strokes": 12
+    },
+    {
+      "char": "業",
+      "strokes": 13
+    },
+    {
+      "char": "一",
+      "strokes": 1
+    },
+    {
+      "char": "衣",
+      "strokes": 6
+    },
+    {
+      "char": "依",
+      "strokes": 8
+    },
+    {
+      "char": "漪",
+      "strokes": 14
+    },
+    {
+      "char": "怡",
+      "strokes": 8
+    },
+    {
+      "char": "移",
+      "strokes": 11
+    },
+    {
+      "char": "遺",
+      "strokes": 15
+    },
+    {
+      "char": "已",
+      "strokes": 3
+    },
+    {
+      "char": "以",
+      "strokes": 4
+    },
+    {
+      "char": "倚",
+      "strokes": 10
+    },
+    {
+      "char": "义",
+      "strokes": 3
+    },
+    {
+      "char": "艺",
+      "strokes": 4
+    },
+    {
+      "char": "亦",
+      "strokes": 6
+    },
+    {
+      "char": "奕",
+      "strokes": 9
+    },
+    {
+      "char": "異",
+      "strokes": 11
+    },
+    {
+      "char": "逸",
+      "strokes": 11
+    },
+    {
+      "char": "意",
+      "strokes": 13
+    },
+    {
+      "char": "毅",
+      "strokes": 15
+    },
+    {
+      "char": "翼",
+      "strokes": 17
+    },
+    {
+      "char": "因",
+      "strokes": 6
+    },
+    {
+      "char": "阴",
+      "strokes": 6
+    },
+    {
+      "char": "茵",
+      "strokes": 9
+    },
+    {
+      "char": "音",
+      "strokes": 9
+    },
+    {
+      "char": "陰",
+      "strokes": 10
+    },
+    {
+      "char": "吟",
+      "strokes": 7
+    },
+    {
+      "char": "寅",
+      "strokes": 11
+    },
+    {
+      "char": "银",
+      "strokes": 11
+    },
+    {
+      "char": "引",
+      "strokes": 4
+    },
+    {
+      "char": "飲",
+      "strokes": 12
+    },
+    {
+      "char": "隱",
+      "strokes": 16
+    },
+    {
+      "char": "印",
+      "strokes": 5
+    },
+    {
+      "char": "应",
+      "strokes": 7
+    },
+    {
+      "char": "英",
+      "strokes": 8
+    },
+    {
+      "char": "莺",
+      "strokes": 10
+    },
+    {
+      "char": "應",
+      "strokes": 17
+    },
+    {
+      "char": "迎",
+      "strokes": 7
+    },
+    {
+      "char": "莹",
+      "strokes": 10
+    },
+    {
+      "char": "颖",
+      "strokes": 13
+    },
+    {
+      "char": "影",
+      "strokes": 15
+    },
+    {
+      "char": "映",
+      "strokes": 9
+    },
+    {
+      "char": "墉",
+      "strokes": 14
     },
     {
       "char": "永",
@@ -1349,12 +4217,224 @@
       "strokes": 8
     },
     {
+      "char": "勇",
+      "strokes": 9
+    },
+    {
+      "char": "詠",
+      "strokes": 12
+    },
+    {
+      "char": "用",
+      "strokes": 5
+    },
+    {
+      "char": "幽",
+      "strokes": 9
+    },
+    {
+      "char": "悠",
+      "strokes": 11
+    },
+    {
+      "char": "犹",
+      "strokes": 7
+    },
+    {
+      "char": "游",
+      "strokes": 12
+    },
+    {
+      "char": "猶",
+      "strokes": 12
+    },
+    {
+      "char": "遊",
+      "strokes": 12
+    },
+    {
+      "char": "有",
+      "strokes": 6
+    },
+    {
+      "char": "又",
+      "strokes": 2
+    },
+    {
+      "char": "宥",
+      "strokes": 9
+    },
+    {
+      "char": "于",
+      "strokes": 3
+    },
+    {
+      "char": "於",
+      "strokes": 8
+    },
+    {
+      "char": "鱼",
+      "strokes": 8
+    },
+    {
+      "char": "魚",
+      "strokes": 11
+    },
+    {
+      "char": "渝",
+      "strokes": 12
+    },
+    {
+      "char": "瑜",
+      "strokes": 13
+    },
+    {
+      "char": "餘",
+      "strokes": 15
+    },
+    {
+      "char": "与",
+      "strokes": 3
+    },
+    {
+      "char": "宇",
+      "strokes": 6
+    },
+    {
       "char": "羽",
       "strokes": 6
     },
     {
+      "char": "羽",
+      "strokes": 6
+    },
+    {
+      "char": "雨",
+      "strokes": 8
+    },
+    {
+      "char": "语",
+      "strokes": 9
+    },
+    {
+      "char": "與",
+      "strokes": 13
+    },
+    {
+      "char": "語",
+      "strokes": 14
+    },
+    {
+      "char": "玉",
+      "strokes": 5
+    },
+    {
+      "char": "昱",
+      "strokes": 9
+    },
+    {
+      "char": "钰",
+      "strokes": 10
+    },
+    {
+      "char": "欲",
+      "strokes": 11
+    },
+    {
+      "char": "御",
+      "strokes": 12
+    },
+    {
+      "char": "遇",
+      "strokes": 12
+    },
+    {
+      "char": "煜",
+      "strokes": 13
+    },
+    {
+      "char": "鬱",
+      "strokes": 29
+    },
+    {
+      "char": "渊",
+      "strokes": 11
+    },
+    {
+      "char": "元",
+      "strokes": 4
+    },
+    {
+      "char": "园",
+      "strokes": 7
+    },
+    {
+      "char": "垣",
+      "strokes": 9
+    },
+    {
+      "char": "原",
+      "strokes": 10
+    },
+    {
+      "char": "圆",
+      "strokes": 10
+    },
+    {
+      "char": "袁",
+      "strokes": 10
+    },
+    {
+      "char": "園",
+      "strokes": 13
+    },
+    {
+      "char": "圓",
+      "strokes": 13
+    },
+    {
+      "char": "源",
+      "strokes": 13
+    },
+    {
       "char": "远",
       "strokes": 7
+    },
+    {
+      "char": "遠",
+      "strokes": 13
+    },
+    {
+      "char": "苑",
+      "strokes": 8
+    },
+    {
+      "char": "怨",
+      "strokes": 9
+    },
+    {
+      "char": "院",
+      "strokes": 9
+    },
+    {
+      "char": "愿",
+      "strokes": 14
+    },
+    {
+      "char": "願",
+      "strokes": 19
+    },
+    {
+      "char": "月",
+      "strokes": 4
+    },
+    {
+      "char": "岳",
+      "strokes": 8
+    },
+    {
+      "char": "玥",
+      "strokes": 8
     },
     {
       "char": "跃",
@@ -1365,20 +4445,380 @@
       "strokes": 12
     },
     {
-      "char": "婉",
-      "strokes": 11
+      "char": "云",
+      "strokes": 4
     },
     {
-      "char": "玥",
+      "char": "雲",
+      "strokes": 12
+    },
+    {
+      "char": "筠",
+      "strokes": 13
+    },
+    {
+      "char": "韻",
+      "strokes": 19
+    },
+    {
+      "char": "哉",
+      "strokes": 9
+    },
+    {
+      "char": "在",
+      "strokes": 6
+    },
+    {
+      "char": "載",
+      "strokes": 13
+    },
+    {
+      "char": "早",
+      "strokes": 6
+    },
+    {
+      "char": "泽",
       "strokes": 8
     },
     {
-      "char": "轩",
+      "char": "澤",
+      "strokes": 16
+    },
+    {
+      "char": "增",
+      "strokes": 15
+    },
+    {
+      "char": "齋",
+      "strokes": 17
+    },
+    {
+      "char": "宅",
+      "strokes": 6
+    },
+    {
+      "char": "占",
+      "strokes": 5
+    },
+    {
+      "char": "张",
       "strokes": 7
     },
     {
-      "char": "然",
+      "char": "張",
+      "strokes": 11
+    },
+    {
+      "char": "章",
+      "strokes": 11
+    },
+    {
+      "char": "璋",
+      "strokes": 15
+    },
+    {
+      "char": "长",
+      "strokes": 4
+    },
+    {
+      "char": "長",
+      "strokes": 8
+    },
+    {
+      "char": "钊",
+      "strokes": 7
+    },
+    {
+      "char": "昭",
+      "strokes": 9
+    },
+    {
+      "char": "赵",
+      "strokes": 9
+    },
+    {
+      "char": "照",
+      "strokes": 13
+    },
+    {
+      "char": "折",
+      "strokes": 7
+    },
+    {
+      "char": "者",
+      "strokes": 8
+    },
+    {
+      "char": "珍",
+      "strokes": 9
+    },
+    {
+      "char": "桢",
+      "strokes": 10
+    },
+    {
+      "char": "真",
+      "strokes": 10
+    },
+    {
+      "char": "枕",
+      "strokes": 8
+    },
+    {
+      "char": "镇",
+      "strokes": 15
+    },
+    {
+      "char": "争",
+      "strokes": 6
+    },
+    {
+      "char": "峥",
+      "strokes": 9
+    },
+    {
+      "char": "铮",
+      "strokes": 11
+    },
+    {
+      "char": "正",
+      "strokes": 5
+    },
+    {
+      "char": "郑",
+      "strokes": 8
+    },
+    {
+      "char": "之",
+      "strokes": 3
+    },
+    {
+      "char": "芝",
+      "strokes": 6
+    },
+    {
+      "char": "枝",
+      "strokes": 8
+    },
+    {
+      "char": "知",
+      "strokes": 8
+    },
+    {
+      "char": "直",
+      "strokes": 8
+    },
+    {
+      "char": "只",
+      "strokes": 5
+    },
+    {
+      "char": "指",
+      "strokes": 9
+    },
+    {
+      "char": "至",
+      "strokes": 6
+    },
+    {
+      "char": "志",
+      "strokes": 7
+    },
+    {
+      "char": "治",
+      "strokes": 8
+    },
+    {
+      "char": "智",
       "strokes": 12
+    },
+    {
+      "char": "中",
+      "strokes": 4
+    },
+    {
+      "char": "忠",
+      "strokes": 8
+    },
+    {
+      "char": "钟",
+      "strokes": 9
+    },
+    {
+      "char": "終",
+      "strokes": 11
+    },
+    {
+      "char": "種",
+      "strokes": 14
+    },
+    {
+      "char": "仲",
+      "strokes": 6
+    },
+    {
+      "char": "重",
+      "strokes": 9
+    },
+    {
+      "char": "州",
+      "strokes": 6
+    },
+    {
+      "char": "舟",
+      "strokes": 6
+    },
+    {
+      "char": "周",
+      "strokes": 8
+    },
+    {
+      "char": "洲",
+      "strokes": 9
+    },
+    {
+      "char": "昼",
+      "strokes": 9
+    },
+    {
+      "char": "朱",
+      "strokes": 6
+    },
+    {
+      "char": "珠",
+      "strokes": 10
+    },
+    {
+      "char": "竹",
+      "strokes": 6
+    },
+    {
+      "char": "烛",
+      "strokes": 10
+    },
+    {
+      "char": "逐",
+      "strokes": 10
+    },
+    {
+      "char": "主",
+      "strokes": 5
+    },
+    {
+      "char": "渚",
+      "strokes": 11
+    },
+    {
+      "char": "住",
+      "strokes": 7
+    },
+    {
+      "char": "注",
+      "strokes": 8
+    },
+    {
+      "char": "柱",
+      "strokes": 9
+    },
+    {
+      "char": "著",
+      "strokes": 11
+    },
+    {
+      "char": "铸",
+      "strokes": 12
+    },
+    {
+      "char": "转",
+      "strokes": 8
+    },
+    {
+      "char": "轉",
+      "strokes": 18
+    },
+    {
+      "char": "妆",
+      "strokes": 6
+    },
+    {
+      "char": "壮",
+      "strokes": 6
+    },
+    {
+      "char": "追",
+      "strokes": 9
+    },
+    {
+      "char": "茲",
+      "strokes": 9
+    },
+    {
+      "char": "子",
+      "strokes": 3
+    },
+    {
+      "char": "梓",
+      "strokes": 11
+    },
+    {
+      "char": "紫",
+      "strokes": 12
+    },
+    {
+      "char": "字",
+      "strokes": 6
+    },
+    {
+      "char": "自",
+      "strokes": 6
+    },
+    {
+      "char": "宗",
+      "strokes": 8
+    },
+    {
+      "char": "總",
+      "strokes": 17
+    },
+    {
+      "char": "奏",
+      "strokes": 9
+    },
+    {
+      "char": "足",
+      "strokes": 7
+    },
+    {
+      "char": "祖",
+      "strokes": 9
+    },
+    {
+      "char": "纂",
+      "strokes": 20
+    },
+    {
+      "char": "最",
+      "strokes": 12
+    },
+    {
+      "char": "醉",
+      "strokes": 15
+    },
+    {
+      "char": "尊",
+      "strokes": 12
+    },
+    {
+      "char": "昨",
+      "strokes": 9
+    },
+    {
+      "char": "作",
+      "strokes": 7
+    },
+    {
+      "char": "坐",
+      "strokes": 7
     }
   ],
   "note": "使用简体字笔画数（非康熙笔画），后续可优化为姓名学标准笔画"

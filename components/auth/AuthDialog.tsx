@@ -75,18 +75,18 @@ export function AuthDialog({ isOpen, onClose, onSuccess }: AuthDialogProps) {
       />
 
       {/* Dialog */}
-      <div className="relative bg-white dark:bg-gray-900 rounded-lg shadow-xl w-full max-w-md p-6 m-4">
+      <div className="relative bg-white dark:bg-gray-900 rounded-lg shadow-xl w-full max-w-md p-4 md:p-6 m-4">
         {/* Close button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 dark:hover:text-gray-300"
+          className="absolute top-3 right-3 md:top-4 md:right-4 text-gray-500 hover:text-gray-700 dark:hover:text-gray-300"
         >
           <X className="h-5 w-5" />
         </button>
 
         {/* Header */}
-        <h2 className="text-2xl font-bold mb-2">登录 / 注册</h2>
-        <p className="text-sm text-gray-600 dark:text-gray-400 mb-6">
+        <h2 className="text-xl md:text-2xl font-bold mb-2">登录 / 注册</h2>
+        <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400 mb-4 md:mb-6">
           首次登录将自动注册账号，并迁移当前会话的历史记录
         </p>
 

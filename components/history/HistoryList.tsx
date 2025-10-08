@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import { Checkbox } from '@/components/ui/checkbox';
 import { Star, Trash2, Calendar, Award } from 'lucide-react';
 
 interface HistoryRecord {
@@ -21,11 +22,21 @@ interface HistoryRecord {
 
 interface HistoryListProps {
   records: HistoryRecord[];
+  selectedIds: number[];
   onToggleFavorite: (id: number) => void;
   onDelete: (id: number) => void;
+  onToggleSelect: (id: number) => void;
+  showCheckbox?: boolean;
 }
 
-export function HistoryList({ records, onToggleFavorite, onDelete }: HistoryListProps) {
+export function HistoryList({
+  records,
+  selectedIds,
+  onToggleFavorite,
+  onDelete,
+  onToggleSelect,
+  showCheckbox = true
+}: HistoryListProps) {
   // 格式化时间
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
@@ -93,33 +104,45 @@ export function HistoryList({ records, onToggleFavorite, onDelete }: HistoryList
       {records.map((record) => (
         <Card key={record.id} className="hover:shadow-lg transition-shadow">
           <CardHeader className="pb-3">
-            <div className="flex items-start justify-between">
-              <div className="flex-1">
-                <div className="flex items-center gap-3 mb-2">
-                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
-                    {record.fullName}
-                  </h3>
-                  <Badge className={getSourceColor(record.source)}>
-                    {getSourceText(record.source)}
-                  </Badge>
-                </div>
-                <div className="flex items-center gap-4 text-sm text-gray-600 dark:text-gray-400">
-                  <div className="flex items-center gap-1">
-                    <Award className="h-4 w-4" />
-                    <span className={`font-semibold ${getGradeColor(record.score.grade)}`}>
-                      {record.score.grade}级
-                    </span>
-                    <span>·</span>
-                    <span>{record.score.total}分</span>
+            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-3">
+              <div className="flex gap-3 flex-1">
+                {/* 复选框 */}
+                {showCheckbox && (
+                  <div className="pt-1">
+                    <Checkbox
+                      checked={selectedIds.includes(record.id)}
+                      onCheckedChange={() => onToggleSelect(record.id)}
+                    />
                   </div>
-                  <div className="flex items-center gap-1">
-                    <Calendar className="h-4 w-4" />
-                    <span>{formatDate(record.createdAt)}</span>
+                )}
+
+                <div className="flex-1">
+                  <div className="flex items-center gap-3 mb-2 flex-wrap">
+                    <h3 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white">
+                      {record.fullName}
+                    </h3>
+                    <Badge className={getSourceColor(record.source)}>
+                      {getSourceText(record.source)}
+                    </Badge>
+                  </div>
+                  <div className="flex items-center gap-4 text-sm text-gray-600 dark:text-gray-400 flex-wrap">
+                    <div className="flex items-center gap-1">
+                      <Award className="h-4 w-4" />
+                      <span className={`font-semibold ${getGradeColor(record.score.grade)}`}>
+                        {record.score.grade}级
+                      </span>
+                      <span>·</span>
+                      <span>{record.score.total}分</span>
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <Calendar className="h-4 w-4" />
+                      <span>{formatDate(record.createdAt)}</span>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 self-start md:self-auto">
                 <Button
                   variant="ghost"
                   size="icon"

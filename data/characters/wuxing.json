@@ -1,667 +1,207 @@
 {
   "characters": [
     {
-      "char": "金",
-      "wuxing": "金"
+      "char": "爱",
+      "wuxing": "火",
+      "strokes": 18
     },
     {
-      "char": "鑫",
-      "wuxing": "金"
+      "char": "愛",
+      "wuxing": "土",
+      "strokes": 24
     },
     {
-      "char": "锐",
-      "wuxing": "金"
+      "char": "安",
+      "wuxing": "土"
     },
     {
-      "char": "铭",
-      "wuxing": "金"
+      "char": "岸",
+      "wuxing": "木",
+      "strokes": 21
     },
     {
-      "char": "钰",
-      "wuxing": "金"
+      "char": "按",
+      "wuxing": "火",
+      "strokes": 18
     },
     {
-      "char": "钊",
-      "wuxing": "金"
-    },
-    {
-      "char": "锋",
-      "wuxing": "金"
-    },
-    {
-      "char": "鉴",
-      "wuxing": "金"
-    },
-    {
-      "char": "钢",
-      "wuxing": "金"
-    },
-    {
-      "char": "铃",
-      "wuxing": "金"
-    },
-    {
-      "char": "钦",
-      "wuxing": "金"
-    },
-    {
-      "char": "钟",
-      "wuxing": "金"
-    },
-    {
-      "char": "银",
-      "wuxing": "金"
-    },
-    {
-      "char": "铎",
-      "wuxing": "金"
-    },
-    {
-      "char": "瑞",
-      "wuxing": "金"
-    },
-    {
-      "char": "锦",
-      "wuxing": "金"
-    },
-    {
-      "char": "钧",
-      "wuxing": "金"
-    },
-    {
-      "char": "锡",
-      "wuxing": "金"
-    },
-    {
-      "char": "铮",
-      "wuxing": "金"
-    },
-    {
-      "char": "镇",
-      "wuxing": "金"
-    },
-    {
-      "char": "铸",
-      "wuxing": "金"
-    },
-    {
-      "char": "锻",
-      "wuxing": "金"
-    },
-    {
-      "char": "镜",
-      "wuxing": "金"
-    },
-    {
-      "char": "钛",
-      "wuxing": "金"
-    },
-    {
-      "char": "钢",
-      "wuxing": "金"
-    },
-    {
-      "char": "西",
-      "wuxing": "金"
-    },
-    {
-      "char": "申",
-      "wuxing": "金"
-    },
-    {
-      "char": "辛",
-      "wuxing": "金"
-    },
-    {
-      "char": "兑",
-      "wuxing": "金"
-    },
-    {
-      "char": "商",
-      "wuxing": "金"
-    },
-    {
-      "char": "白",
-      "wuxing": "金"
-    },
-    {
-      "char": "素",
-      "wuxing": "金"
-    },
-    {
-      "char": "玉",
-      "wuxing": "金"
-    },
-    {
-      "char": "珠",
-      "wuxing": "金"
-    },
-    {
-      "char": "琦",
-      "wuxing": "金"
-    },
-    {
-      "char": "琪",
-      "wuxing": "金"
-    },
-    {
-      "char": "瑜",
-      "wuxing": "金"
-    },
-    {
-      "char": "瑶",
-      "wuxing": "金"
-    },
-    {
-      "char": "璇",
-      "wuxing": "金"
-    },
-    {
-      "char": "璋",
-      "wuxing": "金"
-    },
-    {
-      "char": "林",
-      "wuxing": "木"
-    },
-    {
-      "char": "森",
-      "wuxing": "木"
-    },
-    {
-      "char": "木",
-      "wuxing": "木"
-    },
-    {
-      "char": "本",
-      "wuxing": "木"
-    },
-    {
-      "char": "朴",
-      "wuxing": "木"
-    },
-    {
-      "char": "材",
-      "wuxing": "木"
-    },
-    {
-      "char": "松",
-      "wuxing": "木"
-    },
-    {
-      "char": "柏",
-      "wuxing": "木"
-    },
-    {
-      "char": "枫",
-      "wuxing": "木"
-    },
-    {
-      "char": "柳",
-      "wuxing": "木"
-    },
-    {
-      "char": "栋",
-      "wuxing": "木"
-    },
-    {
-      "char": "树",
-      "wuxing": "木"
-    },
-    {
-      "char": "梓",
-      "wuxing": "木"
-    },
-    {
-      "char": "桓",
-      "wuxing": "木"
-    },
-    {
-      "char": "彬",
-      "wuxing": "木"
-    },
-    {
-      "char": "杰",
-      "wuxing": "木"
-    },
-    {
-      "char": "楠",
-      "wuxing": "木"
-    },
-    {
-      "char": "榕",
-      "wuxing": "木"
-    },
-    {
-      "char": "槿",
-      "wuxing": "木"
-    },
-    {
-      "char": "桦",
-      "wuxing": "木"
-    },
-    {
-      "char": "棋",
-      "wuxing": "木"
-    },
-    {
-      "char": "棠",
-      "wuxing": "木"
-    },
-    {
-      "char": "桐",
-      "wuxing": "木"
-    },
-    {
-      "char": "梧",
-      "wuxing": "木"
-    },
-    {
-      "char": "桢",
-      "wuxing": "木"
-    },
-    {
-      "char": "梁",
-      "wuxing": "木"
-    },
-    {
-      "char": "栩",
-      "wuxing": "木"
-    },
-    {
-      "char": "柯",
-      "wuxing": "木"
-    },
-    {
-      "char": "柔",
-      "wuxing": "木"
-    },
-    {
-      "char": "权",
-      "wuxing": "木"
-    },
-    {
-      "char": "荣",
-      "wuxing": "木"
-    },
-    {
-      "char": "莉",
-      "wuxing": "木"
-    },
-    {
-      "char": "莲",
-      "wuxing": "木"
-    },
-    {
-      "char": "芳",
-      "wuxing": "木"
-    },
-    {
-      "char": "芬",
-      "wuxing": "木"
-    },
-    {
-      "char": "芝",
-      "wuxing": "木"
-    },
-    {
-      "char": "芯",
-      "wuxing": "木"
-    },
-    {
-      "char": "花",
-      "wuxing": "木"
-    },
-    {
-      "char": "茂",
-      "wuxing": "木"
-    },
-    {
-      "char": "茵",
-      "wuxing": "木"
-    },
-    {
-      "char": "茹",
-      "wuxing": "木"
-    },
-    {
-      "char": "荷",
-      "wuxing": "木"
-    },
-    {
-      "char": "莹",
-      "wuxing": "木"
-    },
-    {
-      "char": "菁",
-      "wuxing": "木"
-    },
-    {
-      "char": "菊",
-      "wuxing": "木"
-    },
-    {
-      "char": "萱",
-      "wuxing": "木"
-    },
-    {
-      "char": "蕾",
-      "wuxing": "木"
-    },
-    {
-      "char": "薇",
-      "wuxing": "木"
-    },
-    {
-      "char": "蓝",
-      "wuxing": "木"
-    },
-    {
-      "char": "蕊",
-      "wuxing": "木"
-    },
-    {
-      "char": "艺",
-      "wuxing": "木"
-    },
-    {
-      "char": "苏",
-      "wuxing": "木"
-    },
-    {
-      "char": "英",
-      "wuxing": "木"
-    },
-    {
-      "char": "茜",
-      "wuxing": "木"
-    },
-    {
-      "char": "筠",
-      "wuxing": "木"
-    },
-    {
-      "char": "竹",
-      "wuxing": "木"
-    },
-    {
-      "char": "笛",
-      "wuxing": "木"
-    },
-    {
-      "char": "箫",
-      "wuxing": "木"
-    },
-    {
-      "char": "策",
-      "wuxing": "木"
-    },
-    {
-      "char": "筱",
-      "wuxing": "木"
-    },
-    {
-      "char": "海",
-      "wuxing": "水"
-    },
-    {
-      "char": "洋",
-      "wuxing": "水"
-    },
-    {
-      "char": "江",
-      "wuxing": "水"
-    },
-    {
-      "char": "河",
-      "wuxing": "水"
-    },
-    {
-      "char": "湖",
-      "wuxing": "水"
-    },
-    {
-      "char": "泽",
-      "wuxing": "水"
-    },
-    {
-      "char": "清",
-      "wuxing": "水"
-    },
-    {
-      "char": "涛",
-      "wuxing": "水"
-    },
-    {
-      "char": "波",
-      "wuxing": "水"
-    },
-    {
-      "char": "澜",
-      "wuxing": "水"
-    },
-    {
-      "char": "沁",
-      "wuxing": "水"
-    },
-    {
-      "char": "浩",
-      "wuxing": "水"
-    },
-    {
-      "char": "淼",
-      "wuxing": "水"
-    },
-    {
-      "char": "涵",
-      "wuxing": "水"
-    },
-    {
-      "char": "润",
-      "wuxing": "水"
-    },
-    {
-      "char": "溪",
-      "wuxing": "水"
-    },
-    {
-      "char": "泉",
-      "wuxing": "水"
-    },
-    {
-      "char": "源",
-      "wuxing": "水"
-    },
-    {
-      "char": "渊",
-      "wuxing": "水"
-    },
-    {
-      "char": "沐",
-      "wuxing": "水"
-    },
-    {
-      "char": "沛",
-      "wuxing": "水"
-    },
-    {
-      "char": "泓",
-      "wuxing": "水"
-    },
-    {
-      "char": "洁",
-      "wuxing": "水"
-    },
-    {
-      "char": "洪",
-      "wuxing": "水"
-    },
-    {
-      "char": "浚",
-      "wuxing": "水"
-    },
-    {
-      "char": "洲",
-      "wuxing": "水"
-    },
-    {
-      "char": "浦",
-      "wuxing": "水"
-    },
-    {
-      "char": "澈",
-      "wuxing": "水"
-    },
-    {
-      "char": "淳",
-      "wuxing": "水"
-    },
-    {
-      "char": "淑",
-      "wuxing": "水"
-    },
-    {
-      "char": "渝",
-      "wuxing": "水"
-    },
-    {
-      "char": "溶",
-      "wuxing": "水"
-    },
-    {
-      "char": "漫",
-      "wuxing": "水"
-    },
-    {
-      "char": "漪",
-      "wuxing": "水"
-    },
-    {
-      "char": "潇",
-      "wuxing": "水"
-    },
-    {
-      "char": "潮",
-      "wuxing": "水"
+      "char": "暗",
+      "wuxing": "火",
+      "strokes": 8
     },
     {
       "char": "澳",
       "wuxing": "水"
     },
     {
-      "char": "滨",
-      "wuxing": "水"
+      "char": "八",
+      "wuxing": "火",
+      "strokes": 8
     },
     {
-      "char": "濠",
-      "wuxing": "水"
+      "char": "把",
+      "wuxing": "木",
+      "strokes": 11
     },
     {
-      "char": "瀚",
-      "wuxing": "水"
+      "char": "白",
+      "wuxing": "金"
     },
     {
-      "char": "雨",
-      "wuxing": "水"
+      "char": "百",
+      "wuxing": "土",
+      "strokes": 19
     },
     {
-      "char": "雪",
-      "wuxing": "水"
+      "char": "柏",
+      "wuxing": "木"
     },
     {
-      "char": "霖",
-      "wuxing": "水"
+      "char": "半",
+      "wuxing": "水",
+      "strokes": 7
     },
     {
-      "char": "霏",
-      "wuxing": "水"
+      "char": "薄",
+      "wuxing": "金",
+      "strokes": 5
     },
     {
-      "char": "霓",
-      "wuxing": "水"
+      "char": "宝",
+      "wuxing": "火",
+      "strokes": 18
     },
     {
-      "char": "霞",
-      "wuxing": "水"
+      "char": "寶",
+      "wuxing": "水",
+      "strokes": 7
     },
     {
-      "char": "露",
-      "wuxing": "水"
+      "char": "抱",
+      "wuxing": "金",
+      "strokes": 10
     },
     {
-      "char": "霜",
-      "wuxing": "水"
+      "char": "報",
+      "wuxing": "水",
+      "strokes": 22
     },
     {
-      "char": "冰",
-      "wuxing": "水"
+      "char": "杯",
+      "wuxing": "土",
+      "strokes": 24
     },
     {
-      "char": "凌",
-      "wuxing": "水"
+      "char": "悲",
+      "wuxing": "土",
+      "strokes": 19
     },
     {
-      "char": "冷",
-      "wuxing": "水"
-    },
-    {
-      "char": "冬",
-      "wuxing": "水"
-    },
-    {
-      "char": "子",
-      "wuxing": "水"
-    },
-    {
-      "char": "文",
-      "wuxing": "水"
+      "char": "碑",
+      "wuxing": "金",
+      "strokes": 10
     },
     {
       "char": "北",
       "wuxing": "水"
     },
     {
-      "char": "玄",
+      "char": "背",
+      "wuxing": "水",
+      "strokes": 17
+    },
+    {
+      "char": "本",
+      "wuxing": "木"
+    },
+    {
+      "char": "比",
+      "wuxing": "土",
+      "strokes": 9
+    },
+    {
+      "char": "筆",
+      "wuxing": "火",
+      "strokes": 23
+    },
+    {
+      "char": "必",
+      "wuxing": "水",
+      "strokes": 22
+    },
+    {
+      "char": "碧",
+      "wuxing": "水",
+      "strokes": 12
+    },
+    {
+      "char": "壁",
+      "wuxing": "土"
+    },
+    {
+      "char": "边",
+      "wuxing": "火",
+      "strokes": 18
+    },
+    {
+      "char": "編",
+      "wuxing": "水",
+      "strokes": 17
+    },
+    {
+      "char": "邊",
+      "wuxing": "水",
+      "strokes": 7
+    },
+    {
+      "char": "便",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "遍",
+      "wuxing": "木",
+      "strokes": 6
+    },
+    {
+      "char": "變",
+      "wuxing": "水",
+      "strokes": 7
+    },
+    {
+      "char": "表",
+      "wuxing": "金",
+      "strokes": 5
+    },
+    {
+      "char": "別",
+      "wuxing": "土",
+      "strokes": 14
+    },
+    {
+      "char": "彬",
+      "wuxing": "木"
+    },
+    {
+      "char": "滨",
       "wuxing": "水"
     },
     {
-      "char": "黑",
+      "char": "鬓",
+      "wuxing": "土",
+      "strokes": 24
+    },
+    {
+      "char": "冰",
       "wuxing": "水"
     },
     {
-      "char": "墨",
-      "wuxing": "水"
+      "char": "兵",
+      "wuxing": "火",
+      "strokes": 18
     },
     {
-      "char": "云",
-      "wuxing": "水"
-    },
-    {
-      "char": "雯",
-      "wuxing": "水"
-    },
-    {
-      "char": "炎",
-      "wuxing": "火"
-    },
-    {
-      "char": "焱",
-      "wuxing": "火"
-    },
-    {
-      "char": "灿",
-      "wuxing": "火"
-    },
-    {
-      "char": "烨",
-      "wuxing": "火"
-    },
-    {
-      "char": "焕",
-      "wuxing": "火"
-    },
-    {
-      "char": "煜",
+      "char": "丙",
       "wuxing": "火"
     },
     {
@@ -669,576 +209,13 @@
       "wuxing": "火"
     },
     {
-      "char": "耀",
-      "wuxing": "火"
+      "char": "波",
+      "wuxing": "水"
     },
     {
-      "char": "晖",
-      "wuxing": "火"
-    },
-    {
-      "char": "辉",
-      "wuxing": "火"
-    },
-    {
-      "char": "晨",
-      "wuxing": "火"
-    },
-    {
-      "char": "昭",
-      "wuxing": "火"
-    },
-    {
-      "char": "明",
-      "wuxing": "火"
-    },
-    {
-      "char": "昱",
-      "wuxing": "火"
-    },
-    {
-      "char": "晴",
-      "wuxing": "火"
-    },
-    {
-      "char": "晓",
-      "wuxing": "火"
-    },
-    {
-      "char": "晶",
-      "wuxing": "火"
-    },
-    {
-      "char": "智",
-      "wuxing": "火"
-    },
-    {
-      "char": "慧",
-      "wuxing": "火"
-    },
-    {
-      "char": "曦",
-      "wuxing": "火"
-    },
-    {
-      "char": "旭",
-      "wuxing": "火"
-    },
-    {
-      "char": "旺",
-      "wuxing": "火"
-    },
-    {
-      "char": "昌",
-      "wuxing": "火"
-    },
-    {
-      "char": "星",
-      "wuxing": "火"
-    },
-    {
-      "char": "昊",
-      "wuxing": "火"
-    },
-    {
-      "char": "昆",
-      "wuxing": "火"
-    },
-    {
-      "char": "晟",
-      "wuxing": "火"
-    },
-    {
-      "char": "暄",
-      "wuxing": "火"
-    },
-    {
-      "char": "暖",
-      "wuxing": "火"
-    },
-    {
-      "char": "曜",
-      "wuxing": "火"
-    },
-    {
-      "char": "日",
-      "wuxing": "火"
-    },
-    {
-      "char": "光",
-      "wuxing": "火"
-    },
-    {
-      "char": "丽",
-      "wuxing": "火"
-    },
-    {
-      "char": "丹",
-      "wuxing": "火"
-    },
-    {
-      "char": "赤",
-      "wuxing": "火"
-    },
-    {
-      "char": "彤",
-      "wuxing": "火"
-    },
-    {
-      "char": "红",
-      "wuxing": "火"
-    },
-    {
-      "char": "朱",
-      "wuxing": "火"
-    },
-    {
-      "char": "绛",
-      "wuxing": "火"
-    },
-    {
-      "char": "炽",
-      "wuxing": "火"
-    },
-    {
-      "char": "炜",
-      "wuxing": "火"
-    },
-    {
-      "char": "烽",
-      "wuxing": "火"
-    },
-    {
-      "char": "燃",
-      "wuxing": "火"
-    },
-    {
-      "char": "燎",
-      "wuxing": "火"
-    },
-    {
-      "char": "熙",
-      "wuxing": "火"
-    },
-    {
-      "char": "德",
-      "wuxing": "火"
-    },
-    {
-      "char": "恺",
-      "wuxing": "火"
-    },
-    {
-      "char": "恩",
-      "wuxing": "火"
-    },
-    {
-      "char": "志",
-      "wuxing": "火"
-    },
-    {
-      "char": "忠",
-      "wuxing": "火"
-    },
-    {
-      "char": "忻",
-      "wuxing": "火"
-    },
-    {
-      "char": "怡",
-      "wuxing": "火"
-    },
-    {
-      "char": "恬",
-      "wuxing": "火"
-    },
-    {
-      "char": "南",
-      "wuxing": "火"
-    },
-    {
-      "char": "夏",
-      "wuxing": "火"
-    },
-    {
-      "char": "午",
-      "wuxing": "火"
-    },
-    {
-      "char": "丙",
-      "wuxing": "火"
-    },
-    {
-      "char": "丁",
-      "wuxing": "火"
-    },
-    {
-      "char": "坤",
-      "wuxing": "土"
-    },
-    {
-      "char": "垚",
-      "wuxing": "土"
-    },
-    {
-      "char": "堃",
-      "wuxing": "土"
-    },
-    {
-      "char": "坚",
-      "wuxing": "土"
-    },
-    {
-      "char": "培",
-      "wuxing": "土"
-    },
-    {
-      "char": "城",
-      "wuxing": "土"
-    },
-    {
-      "char": "塘",
-      "wuxing": "土"
-    },
-    {
-      "char": "境",
-      "wuxing": "土"
-    },
-    {
-      "char": "均",
-      "wuxing": "土"
-    },
-    {
-      "char": "基",
-      "wuxing": "土"
-    },
-    {
-      "char": "堂",
-      "wuxing": "土"
-    },
-    {
-      "char": "增",
-      "wuxing": "土"
-    },
-    {
-      "char": "墉",
-      "wuxing": "土"
-    },
-    {
-      "char": "墨",
-      "wuxing": "土"
-    },
-    {
-      "char": "壁",
-      "wuxing": "土"
-    },
-    {
-      "char": "壮",
-      "wuxing": "土"
-    },
-    {
-      "char": "声",
-      "wuxing": "土"
-    },
-    {
-      "char": "坦",
-      "wuxing": "土"
-    },
-    {
-      "char": "垣",
-      "wuxing": "土"
-    },
-    {
-      "char": "埔",
-      "wuxing": "土"
-    },
-    {
-      "char": "埠",
-      "wuxing": "土"
-    },
-    {
-      "char": "堆",
-      "wuxing": "土"
-    },
-    {
-      "char": "塔",
-      "wuxing": "土"
-    },
-    {
-      "char": "塞",
-      "wuxing": "土"
-    },
-    {
-      "char": "墅",
-      "wuxing": "土"
-    },
-    {
-      "char": "土",
-      "wuxing": "土"
-    },
-    {
-      "char": "圣",
-      "wuxing": "土"
-    },
-    {
-      "char": "圭",
-      "wuxing": "土"
-    },
-    {
-      "char": "地",
-      "wuxing": "土"
-    },
-    {
-      "char": "圻",
-      "wuxing": "土"
-    },
-    {
-      "char": "山",
-      "wuxing": "土"
-    },
-    {
-      "char": "岳",
-      "wuxing": "土"
-    },
-    {
-      "char": "岚",
-      "wuxing": "土"
-    },
-    {
-      "char": "岭",
-      "wuxing": "土"
-    },
-    {
-      "char": "岩",
-      "wuxing": "土"
-    },
-    {
-      "char": "峰",
-      "wuxing": "土"
-    },
-    {
-      "char": "峻",
-      "wuxing": "土"
-    },
-    {
-      "char": "崇",
-      "wuxing": "土"
-    },
-    {
-      "char": "嵩",
-      "wuxing": "土"
-    },
-    {
-      "char": "岱",
-      "wuxing": "土"
-    },
-    {
-      "char": "峥",
-      "wuxing": "土"
-    },
-    {
-      "char": "嵘",
-      "wuxing": "土"
-    },
-    {
-      "char": "野",
-      "wuxing": "土"
-    },
-    {
-      "char": "田",
-      "wuxing": "土"
-    },
-    {
-      "char": "畴",
-      "wuxing": "土"
-    },
-    {
-      "char": "畦",
-      "wuxing": "土"
-    },
-    {
-      "char": "畅",
-      "wuxing": "土"
-    },
-    {
-      "char": "央",
-      "wuxing": "土"
-    },
-    {
-      "char": "中",
-      "wuxing": "土"
-    },
-    {
-      "char": "辰",
-      "wuxing": "土"
-    },
-    {
-      "char": "戌",
-      "wuxing": "土"
-    },
-    {
-      "char": "丑",
-      "wuxing": "土"
-    },
-    {
-      "char": "未",
-      "wuxing": "土"
-    },
-    {
-      "char": "戊",
-      "wuxing": "土"
-    },
-    {
-      "char": "己",
-      "wuxing": "土"
-    },
-    {
-      "char": "黄",
-      "wuxing": "土"
-    },
-    {
-      "char": "安",
-      "wuxing": "土"
-    },
-    {
-      "char": "宇",
-      "wuxing": "土"
-    },
-    {
-      "char": "宛",
-      "wuxing": "土"
-    },
-    {
-      "char": "宥",
-      "wuxing": "土"
-    },
-    {
-      "char": "宸",
-      "wuxing": "土"
-    },
-    {
-      "char": "思",
-      "wuxing": "金"
-    },
-    {
-      "char": "新",
-      "wuxing": "金"
-    },
-    {
-      "char": "心",
-      "wuxing": "金"
-    },
-    {
-      "char": "信",
-      "wuxing": "金"
-    },
-    {
-      "char": "正",
-      "wuxing": "金"
-    },
-    {
-      "char": "铁",
-      "wuxing": "金"
-    },
-    {
-      "char": "睿",
-      "wuxing": "金"
-    },
-    {
-      "char": "诚",
-      "wuxing": "金"
-    },
-    {
-      "char": "静",
-      "wuxing": "金"
-    },
-    {
-      "char": "宣",
-      "wuxing": "金"
-    },
-    {
-      "char": "舒",
-      "wuxing": "金"
-    },
-    {
-      "char": "书",
-      "wuxing": "金"
-    },
-    {
-      "char": "诗",
-      "wuxing": "金"
-    },
-    {
-      "char": "修",
-      "wuxing": "金"
-    },
-    {
-      "char": "嘉",
-      "wuxing": "木"
-    },
-    {
-      "char": "佳",
-      "wuxing": "木"
-    },
-    {
-      "char": "家",
-      "wuxing": "木"
-    },
-    {
-      "char": "建",
-      "wuxing": "木"
-    },
-    {
-      "char": "健",
-      "wuxing": "木"
-    },
-    {
-      "char": "凯",
-      "wuxing": "木"
-    },
-    {
-      "char": "可",
-      "wuxing": "木"
-    },
-    {
-      "char": "毅",
-      "wuxing": "木"
-    },
-    {
-      "char": "义",
-      "wuxing": "木"
-    },
-    {
-      "char": "奕",
-      "wuxing": "木"
-    },
-    {
-      "char": "逸",
-      "wuxing": "木"
-    },
-    {
-      "char": "颖",
-      "wuxing": "木"
-    },
-    {
-      "char": "语",
-      "wuxing": "木"
-    },
-    {
-      "char": "雅",
-      "wuxing": "木"
-    },
-    {
-      "char": "轩",
-      "wuxing": "木"
-    },
-    {
-      "char": "琳",
-      "wuxing": "木"
-    },
-    {
-      "char": "羽",
-      "wuxing": "木"
+      "char": "伯",
+      "wuxing": "木",
+      "strokes": 16
     },
     {
       "char": "博",
@@ -1249,43 +226,2635 @@
       "wuxing": "水"
     },
     {
-      "char": "敏",
+      "char": "補",
+      "wuxing": "木",
+      "strokes": 21
+    },
+    {
+      "char": "不",
+      "wuxing": "木",
+      "strokes": 6
+    },
+    {
+      "char": "步",
+      "wuxing": "火",
+      "strokes": 18
+    },
+    {
+      "char": "埔",
+      "wuxing": "土"
+    },
+    {
+      "char": "部",
+      "wuxing": "木",
+      "strokes": 21
+    },
+    {
+      "char": "埠",
+      "wuxing": "土"
+    },
+    {
+      "char": "才",
+      "wuxing": "金",
+      "strokes": 10
+    },
+    {
+      "char": "材",
+      "wuxing": "木"
+    },
+    {
+      "char": "采",
+      "wuxing": "土",
+      "strokes": 24
+    },
+    {
+      "char": "彩",
+      "wuxing": "金",
+      "strokes": 10
+    },
+    {
+      "char": "參",
+      "wuxing": "火",
+      "strokes": 8
+    },
+    {
+      "char": "残",
+      "wuxing": "木",
+      "strokes": 16
+    },
+    {
+      "char": "殘",
+      "wuxing": "土",
+      "strokes": 9
+    },
+    {
+      "char": "灿",
+      "wuxing": "火"
+    },
+    {
+      "char": "滄",
+      "wuxing": "木",
+      "strokes": 21
+    },
+    {
+      "char": "蒼",
+      "wuxing": "金",
+      "strokes": 5
+    },
+    {
+      "char": "藏",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "草",
+      "wuxing": "土",
+      "strokes": 14
+    },
+    {
+      "char": "策",
+      "wuxing": "木"
+    },
+    {
+      "char": "曾",
+      "wuxing": "木",
+      "strokes": 11
+    },
+    {
+      "char": "差",
+      "wuxing": "木",
+      "strokes": 11
+    },
+    {
+      "char": "禪",
+      "wuxing": "木",
+      "strokes": 11
+    },
+    {
+      "char": "昌",
+      "wuxing": "火"
+    },
+    {
+      "char": "常",
+      "wuxing": "金",
+      "strokes": 5
+    },
+    {
+      "char": "畅",
+      "wuxing": "土"
+    },
+    {
+      "char": "唱",
+      "wuxing": "土",
+      "strokes": 14
+    },
+    {
+      "char": "朝",
+      "wuxing": "水",
+      "strokes": 22
+    },
+    {
+      "char": "潮",
       "wuxing": "水"
     },
     {
-      "char": "民",
+      "char": "彻",
+      "wuxing": "火",
+      "strokes": 8
+    },
+    {
+      "char": "澈",
       "wuxing": "水"
     },
     {
-      "char": "鸿",
+      "char": "尘",
+      "wuxing": "木",
+      "strokes": 21
+    },
+    {
+      "char": "臣",
+      "wuxing": "木",
+      "strokes": 16
+    },
+    {
+      "char": "辰",
+      "wuxing": "土"
+    },
+    {
+      "char": "陈",
+      "wuxing": "火"
+    },
+    {
+      "char": "宸",
+      "wuxing": "土"
+    },
+    {
+      "char": "陳",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "晨",
+      "wuxing": "火"
+    },
+    {
+      "char": "塵",
+      "wuxing": "金",
+      "strokes": 10
+    },
+    {
+      "char": "稱",
+      "wuxing": "木",
+      "strokes": 6
+    },
+    {
+      "char": "成",
+      "wuxing": "土",
+      "strokes": 9
+    },
+    {
+      "char": "承",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "诚",
+      "wuxing": "金"
+    },
+    {
+      "char": "城",
+      "wuxing": "土"
+    },
+    {
+      "char": "晟",
+      "wuxing": "火"
+    },
+    {
+      "char": "澄",
+      "wuxing": "火",
+      "strokes": 13
+    },
+    {
+      "char": "池",
+      "wuxing": "土",
+      "strokes": 9
+    },
+    {
+      "char": "持",
+      "wuxing": "金",
+      "strokes": 10
+    },
+    {
+      "char": "遲",
+      "wuxing": "火",
+      "strokes": 23
+    },
+    {
+      "char": "尺",
+      "wuxing": "金",
+      "strokes": 15
+    },
+    {
+      "char": "赤",
+      "wuxing": "火"
+    },
+    {
+      "char": "炽",
+      "wuxing": "火"
+    },
+    {
+      "char": "崇",
+      "wuxing": "土"
+    },
+    {
+      "char": "畴",
+      "wuxing": "土"
+    },
+    {
+      "char": "愁",
+      "wuxing": "火",
+      "strokes": 18
+    },
+    {
+      "char": "酬",
+      "wuxing": "火",
+      "strokes": 13
+    },
+    {
+      "char": "丑",
+      "wuxing": "土"
+    },
+    {
+      "char": "出",
+      "wuxing": "木",
+      "strokes": 11
+    },
+    {
+      "char": "初",
+      "wuxing": "木",
+      "strokes": 6
+    },
+    {
+      "char": "楚",
+      "wuxing": "金",
+      "strokes": 15
+    },
+    {
+      "char": "处",
+      "wuxing": "火",
+      "strokes": 13
+    },
+    {
+      "char": "處",
+      "wuxing": "土",
+      "strokes": 14
+    },
+    {
+      "char": "川",
+      "wuxing": "土",
+      "strokes": 14
+    },
+    {
+      "char": "穿",
+      "wuxing": "土",
+      "strokes": 24
+    },
+    {
+      "char": "传",
+      "wuxing": "木",
+      "strokes": 21
+    },
+    {
+      "char": "船",
+      "wuxing": "水",
+      "strokes": 22
+    },
+    {
+      "char": "傳",
+      "wuxing": "土",
+      "strokes": 24
+    },
+    {
+      "char": "窗",
+      "wuxing": "火",
+      "strokes": 8
+    },
+    {
+      "char": "吹",
+      "wuxing": "木",
+      "strokes": 6
+    },
+    {
+      "char": "垂",
+      "wuxing": "水",
+      "strokes": 7
+    },
+    {
+      "char": "春",
+      "wuxing": "土",
+      "strokes": 14
+    },
+    {
+      "char": "淳",
       "wuxing": "水"
+    },
+    {
+      "char": "词",
+      "wuxing": "土",
+      "strokes": 14
+    },
+    {
+      "char": "詞",
+      "wuxing": "水",
+      "strokes": 7
+    },
+    {
+      "char": "此",
+      "wuxing": "水",
+      "strokes": 17
+    },
+    {
+      "char": "從",
+      "wuxing": "火",
+      "strokes": 23
+    },
+    {
+      "char": "叢",
+      "wuxing": "土",
+      "strokes": 19
+    },
+    {
+      "char": "催",
+      "wuxing": "水",
+      "strokes": 17
+    },
+    {
+      "char": "翠",
+      "wuxing": "木",
+      "strokes": 21
+    },
+    {
+      "char": "村",
+      "wuxing": "土",
+      "strokes": 14
+    },
+    {
+      "char": "存",
+      "wuxing": "土",
+      "strokes": 9
+    },
+    {
+      "char": "寸",
+      "wuxing": "土",
+      "strokes": 9
+    },
+    {
+      "char": "大",
+      "wuxing": "火",
+      "strokes": 8
+    },
+    {
+      "char": "代",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "岱",
+      "wuxing": "土"
+    },
+    {
+      "char": "带",
+      "wuxing": "水",
+      "strokes": 7
+    },
+    {
+      "char": "待",
+      "wuxing": "火",
+      "strokes": 18
+    },
+    {
+      "char": "帶",
+      "wuxing": "火",
+      "strokes": 23
+    },
+    {
+      "char": "丹",
+      "wuxing": "火"
+    },
+    {
+      "char": "但",
+      "wuxing": "土",
+      "strokes": 19
+    },
+    {
+      "char": "淡",
+      "wuxing": "土",
+      "strokes": 14
+    },
+    {
+      "char": "当",
+      "wuxing": "火",
+      "strokes": 8
+    },
+    {
+      "char": "當",
+      "wuxing": "金",
+      "strokes": 15
+    },
+    {
+      "char": "蕩",
+      "wuxing": "火",
+      "strokes": 18
+    },
+    {
+      "char": "刀",
+      "wuxing": "金",
+      "strokes": 17
+    },
+    {
+      "char": "到",
+      "wuxing": "金",
+      "strokes": 5
+    },
+    {
+      "char": "道",
+      "wuxing": "水",
+      "strokes": 12
+    },
+    {
+      "char": "得",
+      "wuxing": "木",
+      "strokes": 16
+    },
+    {
+      "char": "德",
+      "wuxing": "火"
+    },
+    {
+      "char": "地",
+      "wuxing": "土"
+    },
+    {
+      "char": "的",
+      "wuxing": "金",
+      "strokes": 5
+    },
+    {
+      "char": "登",
+      "wuxing": "木",
+      "strokes": 16
+    },
+    {
+      "char": "燈",
+      "wuxing": "火",
+      "strokes": 13
+    },
+    {
+      "char": "等",
+      "wuxing": "木",
+      "strokes": 6
+    },
+    {
+      "char": "低",
+      "wuxing": "水",
+      "strokes": 7
+    },
+    {
+      "char": "滴",
+      "wuxing": "土",
+      "strokes": 9
+    },
+    {
+      "char": "笛",
+      "wuxing": "木"
+    },
+    {
+      "char": "底",
+      "wuxing": "火",
+      "strokes": 18
+    },
+    {
+      "char": "帝",
+      "wuxing": "火",
+      "strokes": 18
+    },
+    {
+      "char": "第",
+      "wuxing": "水",
+      "strokes": 17
+    },
+    {
+      "char": "典",
+      "wuxing": "木",
+      "strokes": 21
+    },
+    {
+      "char": "点",
+      "wuxing": "水",
+      "strokes": 22
+    },
+    {
+      "char": "點",
+      "wuxing": "金",
+      "strokes": 15
+    },
+    {
+      "char": "殿",
+      "wuxing": "火",
+      "strokes": 8
+    },
+    {
+      "char": "簟",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "丁",
+      "wuxing": "火"
+    },
+    {
+      "char": "鼎",
+      "wuxing": "火",
+      "strokes": 23
+    },
+    {
+      "char": "定",
+      "wuxing": "金",
+      "strokes": 15
+    },
+    {
+      "char": "东",
+      "wuxing": "木",
+      "strokes": 21
+    },
+    {
+      "char": "冬",
+      "wuxing": "水"
+    },
+    {
+      "char": "東",
+      "wuxing": "木",
+      "strokes": 6
+    },
+    {
+      "char": "董",
+      "wuxing": "木"
+    },
+    {
+      "char": "栋",
+      "wuxing": "木"
+    },
+    {
+      "char": "洞",
+      "wuxing": "土",
+      "strokes": 19
+    },
+    {
+      "char": "動",
+      "wuxing": "金",
+      "strokes": 10
+    },
+    {
+      "char": "都",
+      "wuxing": "水",
+      "strokes": 22
+    },
+    {
+      "char": "斗",
+      "wuxing": "水",
+      "strokes": 12
+    },
+    {
+      "char": "獨",
+      "wuxing": "土",
+      "strokes": 9
+    },
+    {
+      "char": "杜",
+      "wuxing": "金",
+      "strokes": 5
+    },
+    {
+      "char": "度",
+      "wuxing": "金",
+      "strokes": 15
+    },
+    {
+      "char": "渡",
+      "wuxing": "火",
+      "strokes": 18
+    },
+    {
+      "char": "端",
+      "wuxing": "木",
+      "strokes": 16
+    },
+    {
+      "char": "短",
+      "wuxing": "木",
+      "strokes": 6
+    },
+    {
+      "char": "断",
+      "wuxing": "土",
+      "strokes": 14
+    },
+    {
+      "char": "锻",
+      "wuxing": "金"
+    },
+    {
+      "char": "斷",
+      "wuxing": "土",
+      "strokes": 24
+    },
+    {
+      "char": "堆",
+      "wuxing": "土"
+    },
+    {
+      "char": "对",
+      "wuxing": "金",
+      "strokes": 10
+    },
+    {
+      "char": "兑",
+      "wuxing": "金"
+    },
+    {
+      "char": "對",
+      "wuxing": "金",
+      "strokes": 10
+    },
+    {
+      "char": "多",
+      "wuxing": "金",
+      "strokes": 15
+    },
+    {
+      "char": "铎",
+      "wuxing": "金"
+    },
+    {
+      "char": "恩",
+      "wuxing": "火"
+    },
+    {
+      "char": "儿",
+      "wuxing": "土",
+      "strokes": 24
+    },
+    {
+      "char": "而",
+      "wuxing": "金",
+      "strokes": 5
+    },
+    {
+      "char": "二",
+      "wuxing": "火",
+      "strokes": 13
+    },
+    {
+      "char": "发",
+      "wuxing": "水",
+      "strokes": 22
+    },
+    {
+      "char": "發",
+      "wuxing": "水",
+      "strokes": 17
+    },
+    {
+      "char": "髮",
+      "wuxing": "水",
+      "strokes": 7
+    },
+    {
+      "char": "帆",
+      "wuxing": "金",
+      "strokes": 15
+    },
+    {
+      "char": "翻",
+      "wuxing": "火",
+      "strokes": 8
+    },
+    {
+      "char": "繁",
+      "wuxing": "木",
+      "strokes": 6
+    },
+    {
+      "char": "泛",
+      "wuxing": "水",
+      "strokes": 12
+    },
+    {
+      "char": "方",
+      "wuxing": "木",
+      "strokes": 6
+    },
+    {
+      "char": "芳",
+      "wuxing": "木"
+    },
+    {
+      "char": "房",
+      "wuxing": "木",
+      "strokes": 16
+    },
+    {
+      "char": "放",
+      "wuxing": "火",
+      "strokes": 23
+    },
+    {
+      "char": "飞",
+      "wuxing": "土",
+      "strokes": 19
+    },
+    {
+      "char": "非",
+      "wuxing": "金",
+      "strokes": 15
+    },
+    {
+      "char": "飛",
+      "wuxing": "木",
+      "strokes": 16
+    },
+    {
+      "char": "菲",
+      "wuxing": "火",
+      "strokes": 23
+    },
+    {
+      "char": "霏",
+      "wuxing": "水"
+    },
+    {
+      "char": "分",
+      "wuxing": "火",
+      "strokes": 23
+    },
+    {
+      "char": "芬",
+      "wuxing": "木"
+    },
+    {
+      "char": "粉",
+      "wuxing": "木",
+      "strokes": 6
+    },
+    {
+      "char": "风",
+      "wuxing": "火",
+      "strokes": 23
+    },
+    {
+      "char": "枫",
+      "wuxing": "木"
+    },
+    {
+      "char": "封",
+      "wuxing": "火",
+      "strokes": 18
+    },
+    {
+      "char": "風",
+      "wuxing": "金",
+      "strokes": 5
+    },
+    {
+      "char": "峰",
+      "wuxing": "土"
+    },
+    {
+      "char": "烽",
+      "wuxing": "火"
+    },
+    {
+      "char": "锋",
+      "wuxing": "金"
+    },
+    {
+      "char": "冯",
+      "wuxing": "水"
+    },
+    {
+      "char": "逢",
+      "wuxing": "火",
+      "strokes": 23
+    },
+    {
+      "char": "凤",
+      "wuxing": "土",
+      "strokes": 9
+    },
+    {
+      "char": "奉",
+      "wuxing": "水",
+      "strokes": 22
+    },
+    {
+      "char": "鳳",
+      "wuxing": "土",
+      "strokes": 24
+    },
+    {
+      "char": "夫",
+      "wuxing": "水",
+      "strokes": 12
+    },
+    {
+      "char": "拂",
+      "wuxing": "水",
+      "strokes": 7
+    },
+    {
+      "char": "浮",
+      "wuxing": "土",
+      "strokes": 19
+    },
+    {
+      "char": "福",
+      "wuxing": "土",
+      "strokes": 24
+    },
+    {
+      "char": "府",
+      "wuxing": "金",
+      "strokes": 5
+    },
+    {
+      "char": "附",
+      "wuxing": "火",
+      "strokes": 13
+    },
+    {
+      "char": "復",
+      "wuxing": "土",
+      "strokes": 14
+    },
+    {
+      "char": "覆",
+      "wuxing": "木",
+      "strokes": 11
+    },
+    {
+      "char": "改",
+      "wuxing": "火",
+      "strokes": 18
+    },
+    {
+      "char": "蓋",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "甘",
+      "wuxing": "木",
+      "strokes": 21
+    },
+    {
+      "char": "干",
+      "wuxing": "火",
+      "strokes": 23
+    },
+    {
+      "char": "钢",
+      "wuxing": "金"
+    },
+    {
+      "char": "钢",
+      "wuxing": "金"
+    },
+    {
+      "char": "高",
+      "wuxing": "火"
+    },
+    {
+      "char": "戈",
+      "wuxing": "金",
+      "strokes": 21
+    },
+    {
+      "char": "歌",
+      "wuxing": "火",
+      "strokes": 13
+    },
+    {
+      "char": "隔",
+      "wuxing": "火",
+      "strokes": 13
+    },
+    {
+      "char": "閣",
+      "wuxing": "水",
+      "strokes": 12
+    },
+    {
+      "char": "更",
+      "wuxing": "木",
+      "strokes": 21
+    },
+    {
+      "char": "公",
+      "wuxing": "土",
+      "strokes": 9
+    },
+    {
+      "char": "功",
+      "wuxing": "木",
+      "strokes": 16
+    },
+    {
+      "char": "宫",
+      "wuxing": "水",
+      "strokes": 12
+    },
+    {
+      "char": "宮",
+      "wuxing": "金",
+      "strokes": 15
+    },
+    {
+      "char": "共",
+      "wuxing": "土",
+      "strokes": 14
+    },
+    {
+      "char": "孤",
+      "wuxing": "木",
+      "strokes": 21
+    },
+    {
+      "char": "古",
+      "wuxing": "木",
+      "strokes": 21
+    },
+    {
+      "char": "谷",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "骨",
+      "wuxing": "水",
+      "strokes": 17
+    },
+    {
+      "char": "鼓",
+      "wuxing": "火",
+      "strokes": 8
+    },
+    {
+      "char": "故",
+      "wuxing": "金",
+      "strokes": 10
+    },
+    {
+      "char": "顧",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "挂",
+      "wuxing": "木",
+      "strokes": 11
+    },
+    {
+      "char": "官",
+      "wuxing": "火",
+      "strokes": 13
+    },
+    {
+      "char": "冠",
+      "wuxing": "木",
+      "strokes": 21
+    },
+    {
+      "char": "關",
+      "wuxing": "土",
+      "strokes": 9
+    },
+    {
+      "char": "觀",
+      "wuxing": "土",
+      "strokes": 9
+    },
+    {
+      "char": "管",
+      "wuxing": "土",
+      "strokes": 14
+    },
+    {
+      "char": "館",
+      "wuxing": "火",
+      "strokes": 13
+    },
+    {
+      "char": "光",
+      "wuxing": "火"
+    },
+    {
+      "char": "廣",
+      "wuxing": "木",
+      "strokes": 16
+    },
+    {
+      "char": "归",
+      "wuxing": "水",
+      "strokes": 7
+    },
+    {
+      "char": "圭",
+      "wuxing": "土"
+    },
+    {
+      "char": "歸",
+      "wuxing": "水",
+      "strokes": 17
+    },
+    {
+      "char": "桂",
+      "wuxing": "金",
+      "strokes": 15
+    },
+    {
+      "char": "郭",
+      "wuxing": "火"
+    },
+    {
+      "char": "国",
+      "wuxing": "土",
+      "strokes": 14
+    },
+    {
+      "char": "國",
+      "wuxing": "火",
+      "strokes": 8
+    },
+    {
+      "char": "果",
+      "wuxing": "土",
+      "strokes": 9
+    },
+    {
+      "char": "过",
+      "wuxing": "水",
+      "strokes": 12
+    },
+    {
+      "char": "過",
+      "wuxing": "水",
+      "strokes": 7
+    },
+    {
+      "char": "还",
+      "wuxing": "土",
+      "strokes": 9
+    },
+    {
+      "char": "還",
+      "wuxing": "木",
+      "strokes": 21
+    },
+    {
+      "char": "海",
+      "wuxing": "水"
+    },
+    {
+      "char": "含",
+      "wuxing": "水",
+      "strokes": 12
+    },
+    {
+      "char": "晗",
+      "wuxing": "火"
+    },
+    {
+      "char": "涵",
+      "wuxing": "水"
+    },
+    {
+      "char": "寒",
+      "wuxing": "木",
+      "strokes": 11
+    },
+    {
+      "char": "韩",
+      "wuxing": "水"
+    },
+    {
+      "char": "汉",
+      "wuxing": "木",
+      "strokes": 6
+    },
+    {
+      "char": "漢",
+      "wuxing": "金",
+      "strokes": 15
+    },
+    {
+      "char": "翰",
+      "wuxing": "水",
+      "strokes": 17
+    },
+    {
+      "char": "瀚",
+      "wuxing": "水"
+    },
+    {
+      "char": "濠",
+      "wuxing": "水"
+    },
+    {
+      "char": "好",
+      "wuxing": "土",
+      "strokes": 14
+    },
+    {
+      "char": "昊",
+      "wuxing": "火"
+    },
+    {
+      "char": "浩",
+      "wuxing": "水"
+    },
+    {
+      "char": "禾",
+      "wuxing": "木",
+      "strokes": 11
+    },
+    {
+      "char": "合",
+      "wuxing": "水",
+      "strokes": 17
+    },
+    {
+      "char": "何",
+      "wuxing": "火"
+    },
+    {
+      "char": "和",
+      "wuxing": "土",
+      "strokes": 9
+    },
+    {
+      "char": "河",
+      "wuxing": "水"
+    },
+    {
+      "char": "荷",
+      "wuxing": "木"
+    },
+    {
+      "char": "赫",
+      "wuxing": "火",
+      "strokes": 8
+    },
+    {
+      "char": "鶴",
+      "wuxing": "水",
+      "strokes": 17
+    },
+    {
+      "char": "黑",
+      "wuxing": "水"
+    },
+    {
+      "char": "痕",
+      "wuxing": "金",
+      "strokes": 10
+    },
+    {
+      "char": "恨",
+      "wuxing": "金",
+      "strokes": 5
+    },
+    {
+      "char": "横",
+      "wuxing": "火",
+      "strokes": 23
+    },
+    {
+      "char": "橫",
+      "wuxing": "火",
+      "strokes": 8
+    },
+    {
+      "char": "红",
+      "wuxing": "火"
     },
     {
       "char": "宏",
       "wuxing": "水"
     },
     {
-      "char": "乐",
+      "char": "泓",
+      "wuxing": "水"
+    },
+    {
+      "char": "洪",
+      "wuxing": "水"
+    },
+    {
+      "char": "紅",
+      "wuxing": "金",
+      "strokes": 10
+    },
+    {
+      "char": "鸿",
+      "wuxing": "水"
+    },
+    {
+      "char": "后",
+      "wuxing": "火",
+      "strokes": 23
+    },
+    {
+      "char": "厚",
+      "wuxing": "水",
+      "strokes": 7
+    },
+    {
+      "char": "後",
+      "wuxing": "金",
+      "strokes": 5
+    },
+    {
+      "char": "忽",
+      "wuxing": "火",
+      "strokes": 18
+    },
+    {
+      "char": "胡",
+      "wuxing": "火",
+      "strokes": 18
+    },
+    {
+      "char": "湖",
+      "wuxing": "水"
+    },
+    {
+      "char": "虎",
+      "wuxing": "水",
+      "strokes": 7
+    },
+    {
+      "char": "花",
+      "wuxing": "木"
+    },
+    {
+      "char": "华",
+      "wuxing": "木",
+      "strokes": 11
+    },
+    {
+      "char": "華",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "化",
+      "wuxing": "金",
+      "strokes": 15
+    },
+    {
+      "char": "画",
+      "wuxing": "木",
+      "strokes": 16
+    },
+    {
+      "char": "桦",
+      "wuxing": "木"
+    },
+    {
+      "char": "畫",
+      "wuxing": "土",
+      "strokes": 24
+    },
+    {
+      "char": "話",
+      "wuxing": "木",
+      "strokes": 6
+    },
+    {
+      "char": "淮",
+      "wuxing": "水",
+      "strokes": 7
+    },
+    {
+      "char": "懷",
+      "wuxing": "土",
+      "strokes": 24
+    },
+    {
+      "char": "欢",
+      "wuxing": "木",
+      "strokes": 11
+    },
+    {
+      "char": "桓",
+      "wuxing": "木"
+    },
+    {
+      "char": "焕",
       "wuxing": "火"
+    },
+    {
+      "char": "荒",
+      "wuxing": "火",
+      "strokes": 23
+    },
+    {
+      "char": "皇",
+      "wuxing": "火",
+      "strokes": 8
+    },
+    {
+      "char": "黄",
+      "wuxing": "土"
+    },
+    {
+      "char": "黃",
+      "wuxing": "火",
+      "strokes": 8
+    },
+    {
+      "char": "灰",
+      "wuxing": "土",
+      "strokes": 9
+    },
+    {
+      "char": "晖",
+      "wuxing": "火"
+    },
+    {
+      "char": "辉",
+      "wuxing": "火"
+    },
+    {
+      "char": "暉",
+      "wuxing": "土",
+      "strokes": 14
+    },
+    {
+      "char": "輝",
+      "wuxing": "水",
+      "strokes": 22
+    },
+    {
+      "char": "回",
+      "wuxing": "火",
+      "strokes": 23
+    },
+    {
+      "char": "迴",
+      "wuxing": "水",
+      "strokes": 17
+    },
+    {
+      "char": "会",
+      "wuxing": "金",
+      "strokes": 15
+    },
+    {
+      "char": "惠",
+      "wuxing": "金",
+      "strokes": 5
+    },
+    {
+      "char": "會",
+      "wuxing": "木",
+      "strokes": 16
+    },
+    {
+      "char": "慧",
+      "wuxing": "火"
+    },
+    {
+      "char": "昏",
+      "wuxing": "水",
+      "strokes": 12
+    },
+    {
+      "char": "火",
+      "wuxing": "火",
+      "strokes": 24
+    },
+    {
+      "char": "肌",
+      "wuxing": "火",
+      "strokes": 13
+    },
+    {
+      "char": "基",
+      "wuxing": "土"
+    },
+    {
+      "char": "跡",
+      "wuxing": "木",
+      "strokes": 6
+    },
+    {
+      "char": "積",
+      "wuxing": "土",
+      "strokes": 14
+    },
+    {
+      "char": "及",
+      "wuxing": "金",
+      "strokes": 15
+    },
+    {
+      "char": "即",
+      "wuxing": "火",
+      "strokes": 8
+    },
+    {
+      "char": "急",
+      "wuxing": "火",
+      "strokes": 18
+    },
+    {
+      "char": "極",
+      "wuxing": "水",
+      "strokes": 22
+    },
+    {
+      "char": "集",
+      "wuxing": "火",
+      "strokes": 23
+    },
+    {
+      "char": "几",
+      "wuxing": "金",
+      "strokes": 5
+    },
+    {
+      "char": "己",
+      "wuxing": "土"
+    },
+    {
+      "char": "幾",
+      "wuxing": "金",
+      "strokes": 15
+    },
+    {
+      "char": "记",
+      "wuxing": "金",
+      "strokes": 5
+    },
+    {
+      "char": "既",
+      "wuxing": "水",
+      "strokes": 7
+    },
+    {
+      "char": "紀",
+      "wuxing": "金",
+      "strokes": 5
+    },
+    {
+      "char": "記",
+      "wuxing": "水",
+      "strokes": 17
+    },
+    {
+      "char": "寂",
+      "wuxing": "金",
+      "strokes": 15
+    },
+    {
+      "char": "寄",
+      "wuxing": "水",
+      "strokes": 17
+    },
+    {
+      "char": "濟",
+      "wuxing": "土",
+      "strokes": 24
+    },
+    {
+      "char": "佳",
+      "wuxing": "木"
+    },
+    {
+      "char": "家",
+      "wuxing": "木"
+    },
+    {
+      "char": "嘉",
+      "wuxing": "木"
+    },
+    {
+      "char": "甲",
+      "wuxing": "水",
+      "strokes": 7
+    },
+    {
+      "char": "贾",
+      "wuxing": "木"
+    },
+    {
+      "char": "坚",
+      "wuxing": "土"
+    },
+    {
+      "char": "间",
+      "wuxing": "火",
+      "strokes": 13
+    },
+    {
+      "char": "兼",
+      "wuxing": "金",
+      "strokes": 5
+    },
+    {
+      "char": "間",
+      "wuxing": "木",
+      "strokes": 16
+    },
+    {
+      "char": "翦",
+      "wuxing": "水",
+      "strokes": 7
+    },
+    {
+      "char": "见",
+      "wuxing": "金",
+      "strokes": 10
+    },
+    {
+      "char": "見",
+      "wuxing": "木",
+      "strokes": 16
+    },
+    {
+      "char": "建",
+      "wuxing": "木"
+    },
+    {
+      "char": "健",
+      "wuxing": "木"
+    },
+    {
+      "char": "鉴",
+      "wuxing": "金"
+    },
+    {
+      "char": "劒",
+      "wuxing": "火",
+      "strokes": 23
+    },
+    {
+      "char": "江",
+      "wuxing": "水"
+    },
+    {
+      "char": "将",
+      "wuxing": "火",
+      "strokes": 23
+    },
+    {
+      "char": "將",
+      "wuxing": "土",
+      "strokes": 24
+    },
+    {
+      "char": "降",
+      "wuxing": "水",
+      "strokes": 22
+    },
+    {
+      "char": "绛",
+      "wuxing": "火"
+    },
+    {
+      "char": "交",
+      "wuxing": "水",
+      "strokes": 17
+    },
+    {
+      "char": "角",
+      "wuxing": "水",
+      "strokes": 7
+    },
+    {
+      "char": "皎",
+      "wuxing": "金",
+      "strokes": 15
+    },
+    {
+      "char": "教",
+      "wuxing": "金",
+      "strokes": 10
+    },
+    {
+      "char": "皆",
+      "wuxing": "水",
+      "strokes": 7
+    },
+    {
+      "char": "接",
+      "wuxing": "土",
+      "strokes": 14
+    },
+    {
+      "char": "节",
+      "wuxing": "金",
+      "strokes": 15
+    },
+    {
+      "char": "杰",
+      "wuxing": "木"
+    },
+    {
+      "char": "洁",
+      "wuxing": "水"
+    },
+    {
+      "char": "結",
+      "wuxing": "金",
+      "strokes": 5
+    },
+    {
+      "char": "節",
+      "wuxing": "金",
+      "strokes": 5
+    },
+    {
+      "char": "解",
+      "wuxing": "土",
+      "strokes": 24
+    },
+    {
+      "char": "借",
+      "wuxing": "木",
+      "strokes": 16
+    },
+    {
+      "char": "今",
+      "wuxing": "金",
+      "strokes": 15
+    },
+    {
+      "char": "金",
+      "wuxing": "金"
+    },
+    {
+      "char": "津",
+      "wuxing": "木",
+      "strokes": 6
+    },
+    {
+      "char": "尽",
+      "wuxing": "火",
+      "strokes": 18
+    },
+    {
+      "char": "锦",
+      "wuxing": "金"
+    },
+    {
+      "char": "盡",
+      "wuxing": "火",
+      "strokes": 18
+    },
+    {
+      "char": "槿",
+      "wuxing": "木"
+    },
+    {
+      "char": "錦",
+      "wuxing": "金",
+      "strokes": 15
+    },
+    {
+      "char": "近",
+      "wuxing": "水",
+      "strokes": 22
+    },
+    {
+      "char": "禁",
+      "wuxing": "金",
+      "strokes": 10
+    },
+    {
+      "char": "京",
+      "wuxing": "金",
+      "strokes": 5
+    },
+    {
+      "char": "旌",
+      "wuxing": "金",
+      "strokes": 5
+    },
+    {
+      "char": "菁",
+      "wuxing": "木"
+    },
+    {
+      "char": "晶",
+      "wuxing": "火"
+    },
+    {
+      "char": "經",
+      "wuxing": "水",
+      "strokes": 12
+    },
+    {
+      "char": "精",
+      "wuxing": "土",
+      "strokes": 19
+    },
+    {
+      "char": "驚",
+      "wuxing": "土",
+      "strokes": 19
+    },
+    {
+      "char": "井",
+      "wuxing": "水",
+      "strokes": 22
+    },
+    {
+      "char": "景",
+      "wuxing": "火",
+      "strokes": 8
+    },
+    {
+      "char": "徑",
+      "wuxing": "金",
+      "strokes": 10
+    },
+    {
+      "char": "淨",
+      "wuxing": "木",
+      "strokes": 21
+    },
+    {
+      "char": "靖",
+      "wuxing": "水",
+      "strokes": 7
+    },
+    {
+      "char": "境",
+      "wuxing": "土"
+    },
+    {
+      "char": "静",
+      "wuxing": "金"
+    },
+    {
+      "char": "镜",
+      "wuxing": "金"
+    },
+    {
+      "char": "靜",
+      "wuxing": "火",
+      "strokes": 13
+    },
+    {
+      "char": "鏡",
+      "wuxing": "水",
+      "strokes": 22
+    },
+    {
+      "char": "九",
+      "wuxing": "木",
+      "strokes": 6
+    },
+    {
+      "char": "久",
+      "wuxing": "水",
+      "strokes": 22
+    },
+    {
+      "char": "酒",
+      "wuxing": "水",
+      "strokes": 7
+    },
+    {
+      "char": "旧",
+      "wuxing": "水",
+      "strokes": 12
+    },
+    {
+      "char": "就",
+      "wuxing": "木",
+      "strokes": 6
+    },
+    {
+      "char": "舊",
+      "wuxing": "金",
+      "strokes": 15
+    },
+    {
+      "char": "居",
+      "wuxing": "木",
+      "strokes": 6
+    },
+    {
+      "char": "菊",
+      "wuxing": "木"
+    },
+    {
+      "char": "橘",
+      "wuxing": "土",
+      "strokes": 9
+    },
+    {
+      "char": "句",
+      "wuxing": "水",
+      "strokes": 22
+    },
+    {
+      "char": "據",
+      "wuxing": "火",
+      "strokes": 23
+    },
+    {
+      "char": "卷",
+      "wuxing": "水",
+      "strokes": 12
+    },
+    {
+      "char": "绝",
+      "wuxing": "水",
+      "strokes": 22
+    },
+    {
+      "char": "絕",
+      "wuxing": "金",
+      "strokes": 10
+    },
+    {
+      "char": "覺",
+      "wuxing": "火",
+      "strokes": 23
+    },
+    {
+      "char": "君",
+      "wuxing": "木",
+      "strokes": 16
+    },
+    {
+      "char": "均",
+      "wuxing": "土"
+    },
+    {
+      "char": "軍",
+      "wuxing": "水",
+      "strokes": 22
+    },
+    {
+      "char": "钧",
+      "wuxing": "金"
+    },
+    {
+      "char": "峻",
+      "wuxing": "土"
+    },
+    {
+      "char": "浚",
+      "wuxing": "水"
+    },
+    {
+      "char": "开",
+      "wuxing": "金",
+      "strokes": 5
+    },
+    {
+      "char": "開",
+      "wuxing": "火",
+      "strokes": 8
+    },
+    {
+      "char": "凯",
+      "wuxing": "木"
+    },
+    {
+      "char": "恺",
+      "wuxing": "火"
+    },
+    {
+      "char": "刊",
+      "wuxing": "水",
+      "strokes": 7
+    },
+    {
+      "char": "堪",
+      "wuxing": "金",
+      "strokes": 15
+    },
+    {
+      "char": "看",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "柯",
+      "wuxing": "木"
+    },
+    {
+      "char": "可",
+      "wuxing": "木"
+    },
+    {
+      "char": "刻",
+      "wuxing": "木",
+      "strokes": 16
+    },
+    {
+      "char": "客",
+      "wuxing": "火",
+      "strokes": 23
+    },
+    {
+      "char": "空",
+      "wuxing": "土",
+      "strokes": 19
+    },
+    {
+      "char": "口",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "枯",
+      "wuxing": "火",
+      "strokes": 8
+    },
+    {
+      "char": "苦",
+      "wuxing": "金",
+      "strokes": 15
+    },
+    {
+      "char": "況",
+      "wuxing": "木",
+      "strokes": 6
+    },
+    {
+      "char": "曠",
+      "wuxing": "木",
+      "strokes": 21
+    },
+    {
+      "char": "坤",
+      "wuxing": "土"
+    },
+    {
+      "char": "昆",
+      "wuxing": "火"
+    },
+    {
+      "char": "堃",
+      "wuxing": "土"
+    },
+    {
+      "char": "来",
+      "wuxing": "土",
+      "strokes": 14
+    },
+    {
+      "char": "來",
+      "wuxing": "火",
+      "strokes": 23
+    },
+    {
+      "char": "兰",
+      "wuxing": "火",
+      "strokes": 13
+    },
+    {
+      "char": "岚",
+      "wuxing": "土"
+    },
+    {
+      "char": "蓝",
+      "wuxing": "木"
+    },
+    {
+      "char": "澜",
+      "wuxing": "水"
+    },
+    {
+      "char": "蘭",
+      "wuxing": "土",
+      "strokes": 14
+    },
+    {
+      "char": "郎",
+      "wuxing": "金",
+      "strokes": 15
     },
     {
       "char": "朗",
       "wuxing": "火"
     },
     {
-      "char": "亮",
+      "char": "浪",
+      "wuxing": "金",
+      "strokes": 15
+    },
+    {
+      "char": "老",
+      "wuxing": "土",
+      "strokes": 14
+    },
+    {
+      "char": "乐",
       "wuxing": "火"
+    },
+    {
+      "char": "樂",
+      "wuxing": "火",
+      "strokes": 23
+    },
+    {
+      "char": "耒",
+      "wuxing": "木",
+      "strokes": 11
+    },
+    {
+      "char": "蕾",
+      "wuxing": "木"
+    },
+    {
+      "char": "冷",
+      "wuxing": "水"
+    },
+    {
+      "char": "離",
+      "wuxing": "木",
+      "strokes": 11
+    },
+    {
+      "char": "李",
+      "wuxing": "木"
+    },
+    {
+      "char": "里",
+      "wuxing": "土",
+      "strokes": 9
+    },
+    {
+      "char": "理",
+      "wuxing": "水",
+      "strokes": 7
+    },
+    {
+      "char": "裏",
+      "wuxing": "火",
+      "strokes": 8
+    },
+    {
+      "char": "力",
+      "wuxing": "水",
+      "strokes": 12
+    },
+    {
+      "char": "立",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "丽",
+      "wuxing": "火"
+    },
+    {
+      "char": "莉",
+      "wuxing": "木"
+    },
+    {
+      "char": "麗",
+      "wuxing": "土",
+      "strokes": 24
+    },
+    {
+      "char": "帘",
+      "wuxing": "火",
+      "strokes": 13
+    },
+    {
+      "char": "莲",
+      "wuxing": "木"
+    },
+    {
+      "char": "連",
+      "wuxing": "土",
+      "strokes": 24
+    },
+    {
+      "char": "蓮",
+      "wuxing": "金",
+      "strokes": 15
+    },
+    {
+      "char": "憐",
+      "wuxing": "木",
+      "strokes": 21
     },
     {
       "char": "良",
       "wuxing": "火"
     },
     {
+      "char": "凉",
+      "wuxing": "水",
+      "strokes": 22
+    },
+    {
+      "char": "梁",
+      "wuxing": "木"
+    },
+    {
+      "char": "两",
+      "wuxing": "土",
+      "strokes": 9
+    },
+    {
+      "char": "兩",
+      "wuxing": "木",
+      "strokes": 6
+    },
+    {
+      "char": "亮",
+      "wuxing": "火"
+    },
+    {
+      "char": "量",
+      "wuxing": "水",
+      "strokes": 12
+    },
+    {
+      "char": "聊",
+      "wuxing": "水",
+      "strokes": 7
+    },
+    {
+      "char": "燎",
+      "wuxing": "火"
+    },
+    {
+      "char": "列",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "林",
+      "wuxing": "木"
+    },
+    {
+      "char": "琳",
+      "wuxing": "木"
+    },
+    {
+      "char": "霖",
+      "wuxing": "水"
+    },
+    {
+      "char": "臨",
+      "wuxing": "木",
+      "strokes": 21
+    },
+    {
+      "char": "凌",
+      "wuxing": "水"
+    },
+    {
+      "char": "铃",
+      "wuxing": "金"
+    },
+    {
+      "char": "陵",
+      "wuxing": "水",
+      "strokes": 22
+    },
+    {
+      "char": "靈",
+      "wuxing": "火",
+      "strokes": 13
+    },
+    {
+      "char": "岭",
+      "wuxing": "土"
+    },
+    {
+      "char": "嶺",
+      "wuxing": "土",
+      "strokes": 19
+    },
+    {
       "char": "令",
       "wuxing": "火"
     },
     {
+      "char": "刘",
+      "wuxing": "水"
+    },
+    {
+      "char": "流",
+      "wuxing": "土",
+      "strokes": 14
+    },
+    {
+      "char": "留",
+      "wuxing": "木",
+      "strokes": 6
+    },
+    {
+      "char": "劉",
+      "wuxing": "土",
+      "strokes": 14
+    },
+    {
+      "char": "柳",
+      "wuxing": "木"
+    },
+    {
+      "char": "六",
+      "wuxing": "金",
+      "strokes": 10
+    },
+    {
+      "char": "龙",
+      "wuxing": "水",
+      "strokes": 22
+    },
+    {
+      "char": "笼",
+      "wuxing": "火",
+      "strokes": 13
+    },
+    {
+      "char": "龍",
+      "wuxing": "金",
+      "strokes": 10
+    },
+    {
+      "char": "楼",
+      "wuxing": "土",
+      "strokes": 9
+    },
+    {
+      "char": "樓",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "漏",
+      "wuxing": "木",
+      "strokes": 16
+    },
+    {
+      "char": "路",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "錄",
+      "wuxing": "木",
+      "strokes": 21
+    },
+    {
+      "char": "璐",
+      "wuxing": "火"
+    },
+    {
+      "char": "露",
+      "wuxing": "水"
+    },
+    {
+      "char": "绿",
+      "wuxing": "木",
+      "strokes": 16
+    },
+    {
+      "char": "綠",
+      "wuxing": "金",
+      "strokes": 5
+    },
+    {
+      "char": "乱",
+      "wuxing": "木",
+      "strokes": 6
+    },
+    {
+      "char": "亂",
+      "wuxing": "火",
+      "strokes": 23
+    },
+    {
+      "char": "論",
+      "wuxing": "水",
+      "strokes": 7
+    },
+    {
+      "char": "羅",
+      "wuxing": "金",
+      "strokes": 10
+    },
+    {
+      "char": "洛",
+      "wuxing": "木",
+      "strokes": 16
+    },
+    {
+      "char": "落",
+      "wuxing": "火",
+      "strokes": 18
+    },
+    {
+      "char": "马",
+      "wuxing": "土"
+    },
+    {
+      "char": "馬",
+      "wuxing": "金",
+      "strokes": 5
+    },
+    {
+      "char": "满",
+      "wuxing": "金",
+      "strokes": 10
+    },
+    {
+      "char": "滿",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "漫",
+      "wuxing": "水"
+    },
+    {
+      "char": "茫",
+      "wuxing": "土",
+      "strokes": 24
+    },
+    {
+      "char": "茂",
+      "wuxing": "木"
+    },
+    {
+      "char": "眉",
+      "wuxing": "火",
+      "strokes": 18
+    },
+    {
+      "char": "梅",
+      "wuxing": "水",
+      "strokes": 22
+    },
+    {
+      "char": "美",
+      "wuxing": "土",
+      "strokes": 19
+    },
+    {
+      "char": "门",
+      "wuxing": "木",
+      "strokes": 21
+    },
+    {
+      "char": "門",
+      "wuxing": "水",
+      "strokes": 17
+    },
+    {
+      "char": "孟",
+      "wuxing": "木",
+      "strokes": 16
+    },
+    {
+      "char": "梦",
+      "wuxing": "金",
+      "strokes": 15
+    },
+    {
+      "char": "夢",
+      "wuxing": "火",
+      "strokes": 23
+    },
+    {
+      "char": "迷",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "米",
+      "wuxing": "木",
+      "strokes": 24
+    },
+    {
+      "char": "密",
+      "wuxing": "土",
+      "strokes": 19
+    },
+    {
+      "char": "面",
+      "wuxing": "土",
+      "strokes": 19
+    },
+    {
+      "char": "淼",
+      "wuxing": "水"
+    },
+    {
+      "char": "渺",
+      "wuxing": "火",
+      "strokes": 23
+    },
+    {
+      "char": "妙",
+      "wuxing": "水",
+      "strokes": 22
+    },
+    {
+      "char": "廟",
+      "wuxing": "水",
+      "strokes": 12
+    },
+    {
+      "char": "民",
+      "wuxing": "水"
+    },
+    {
+      "char": "敏",
+      "wuxing": "水"
+    },
+    {
+      "char": "名",
+      "wuxing": "水",
+      "strokes": 22
+    },
+    {
+      "char": "明",
+      "wuxing": "火"
+    },
+    {
+      "char": "冥",
+      "wuxing": "木",
+      "strokes": 6
+    },
+    {
+      "char": "铭",
+      "wuxing": "金"
+    },
+    {
+      "char": "鳴",
+      "wuxing": "金",
+      "strokes": 5
+    },
+    {
+      "char": "命",
+      "wuxing": "土",
+      "strokes": 14
+    },
+    {
+      "char": "莫",
+      "wuxing": "水",
+      "strokes": 12
+    },
+    {
+      "char": "漠",
+      "wuxing": "火",
+      "strokes": 13
+    },
+    {
+      "char": "墨",
+      "wuxing": "水"
+    },
+    {
+      "char": "墨",
+      "wuxing": "土"
+    },
+    {
+      "char": "木",
+      "wuxing": "木"
+    },
+    {
+      "char": "目",
+      "wuxing": "木",
+      "strokes": 11
+    },
+    {
+      "char": "沐",
+      "wuxing": "水"
+    },
+    {
+      "char": "幕",
+      "wuxing": "土",
+      "strokes": 14
+    },
+    {
+      "char": "暮",
+      "wuxing": "木",
+      "strokes": 11
+    },
+    {
+      "char": "乃",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "奈",
+      "wuxing": "木",
+      "strokes": 21
+    },
+    {
+      "char": "南",
+      "wuxing": "火"
+    },
+    {
+      "char": "难",
+      "wuxing": "金",
+      "strokes": 15
+    },
+    {
+      "char": "楠",
+      "wuxing": "木"
+    },
+    {
+      "char": "難",
+      "wuxing": "水",
+      "strokes": 12
+    },
+    {
+      "char": "內",
+      "wuxing": "土",
+      "strokes": 24
+    },
+    {
+      "char": "嫩",
+      "wuxing": "火",
+      "strokes": 18
+    },
+    {
+      "char": "能",
+      "wuxing": "木",
+      "strokes": 6
+    },
+    {
+      "char": "泥",
+      "wuxing": "水",
+      "strokes": 22
+    },
+    {
+      "char": "霓",
+      "wuxing": "水"
+    },
+    {
+      "char": "年",
+      "wuxing": "金",
+      "strokes": 5
+    },
+    {
+      "char": "念",
+      "wuxing": "金",
+      "strokes": 10
+    },
+    {
+      "char": "鳥",
+      "wuxing": "金",
+      "strokes": 10
+    },
+    {
       "char": "宁",
+      "wuxing": "火"
+    },
+    {
+      "char": "寧",
+      "wuxing": "水",
+      "strokes": 12
+    },
+    {
+      "char": "凝",
+      "wuxing": "水",
+      "strokes": 22
+    },
+    {
+      "char": "牛",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "弄",
+      "wuxing": "土",
+      "strokes": 9
+    },
+    {
+      "char": "女",
+      "wuxing": "土",
+      "strokes": 24
+    },
+    {
+      "char": "暖",
       "wuxing": "火"
     },
     {
@@ -1293,19 +2862,1792 @@
       "wuxing": "火"
     },
     {
-      "char": "晗",
+      "char": "潘",
+      "wuxing": "水"
+    },
+    {
+      "char": "盤",
+      "wuxing": "木",
+      "strokes": 21
+    },
+    {
+      "char": "畔",
+      "wuxing": "木",
+      "strokes": 21
+    },
+    {
+      "char": "培",
+      "wuxing": "土"
+    },
+    {
+      "char": "沛",
+      "wuxing": "水"
+    },
+    {
+      "char": "佩",
+      "wuxing": "土",
+      "strokes": 14
+    },
+    {
+      "char": "披",
+      "wuxing": "土",
+      "strokes": 24
+    },
+    {
+      "char": "偏",
+      "wuxing": "土",
+      "strokes": 24
+    },
+    {
+      "char": "篇",
+      "wuxing": "水",
+      "strokes": 12
+    },
+    {
+      "char": "片",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "飄",
+      "wuxing": "火",
+      "strokes": 13
+    },
+    {
+      "char": "平",
+      "wuxing": "土",
+      "strokes": 24
+    },
+    {
+      "char": "破",
+      "wuxing": "水",
+      "strokes": 17
+    },
+    {
+      "char": "朴",
+      "wuxing": "木"
+    },
+    {
+      "char": "浦",
+      "wuxing": "水"
+    },
+    {
+      "char": "七",
+      "wuxing": "木",
+      "strokes": 16
+    },
+    {
+      "char": "期",
+      "wuxing": "土",
+      "strokes": 24
+    },
+    {
+      "char": "圻",
+      "wuxing": "土"
+    },
+    {
+      "char": "其",
+      "wuxing": "土",
+      "strokes": 19
+    },
+    {
+      "char": "奇",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "畦",
+      "wuxing": "土"
+    },
+    {
+      "char": "棋",
+      "wuxing": "木"
+    },
+    {
+      "char": "琦",
+      "wuxing": "金"
+    },
+    {
+      "char": "琪",
+      "wuxing": "金"
+    },
+    {
+      "char": "旗",
+      "wuxing": "木",
+      "strokes": 16
+    },
+    {
+      "char": "齊",
+      "wuxing": "火",
+      "strokes": 23
+    },
+    {
+      "char": "豈",
+      "wuxing": "水",
+      "strokes": 17
+    },
+    {
+      "char": "起",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "綺",
+      "wuxing": "木",
+      "strokes": 11
+    },
+    {
+      "char": "气",
+      "wuxing": "火",
+      "strokes": 13
+    },
+    {
+      "char": "砌",
+      "wuxing": "水",
+      "strokes": 17
+    },
+    {
+      "char": "氣",
+      "wuxing": "火",
+      "strokes": 8
+    },
+    {
+      "char": "千",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "前",
+      "wuxing": "土",
+      "strokes": 14
+    },
+    {
+      "char": "钱",
+      "wuxing": "金"
+    },
+    {
+      "char": "乾",
+      "wuxing": "土",
+      "strokes": 19
+    },
+    {
+      "char": "錢",
+      "wuxing": "木",
+      "strokes": 11
+    },
+    {
+      "char": "茜",
+      "wuxing": "木"
+    },
+    {
+      "char": "桥",
+      "wuxing": "金",
+      "strokes": 10
+    },
+    {
+      "char": "喬",
+      "wuxing": "水",
+      "strokes": 17
+    },
+    {
+      "char": "且",
+      "wuxing": "火",
+      "strokes": 13
+    },
+    {
+      "char": "妾",
+      "wuxing": "土",
+      "strokes": 19
+    },
+    {
+      "char": "钦",
+      "wuxing": "金"
+    },
+    {
+      "char": "秦",
+      "wuxing": "木",
+      "strokes": 11
+    },
+    {
+      "char": "琴",
+      "wuxing": "火",
+      "strokes": 13
+    },
+    {
+      "char": "沁",
+      "wuxing": "水"
+    },
+    {
+      "char": "青",
+      "wuxing": "火",
+      "strokes": 23
+    },
+    {
+      "char": "轻",
+      "wuxing": "木",
+      "strokes": 16
+    },
+    {
+      "char": "清",
+      "wuxing": "水"
+    },
+    {
+      "char": "傾",
+      "wuxing": "金",
+      "strokes": 15
+    },
+    {
+      "char": "輕",
+      "wuxing": "土",
+      "strokes": 14
+    },
+    {
+      "char": "情",
+      "wuxing": "火",
+      "strokes": 18
+    },
+    {
+      "char": "晴",
       "wuxing": "火"
+    },
+    {
+      "char": "慶",
+      "wuxing": "金",
+      "strokes": 15
+    },
+    {
+      "char": "琼",
+      "wuxing": "木",
+      "strokes": 21
+    },
+    {
+      "char": "窮",
+      "wuxing": "木",
+      "strokes": 11
+    },
+    {
+      "char": "秋",
+      "wuxing": "土",
+      "strokes": 24
+    },
+    {
+      "char": "求",
+      "wuxing": "土",
+      "strokes": 19
+    },
+    {
+      "char": "曲",
+      "wuxing": "土",
+      "strokes": 19
+    },
+    {
+      "char": "取",
+      "wuxing": "水",
+      "strokes": 7
+    },
+    {
+      "char": "去",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "全",
+      "wuxing": "金",
+      "strokes": 5
+    },
+    {
+      "char": "权",
+      "wuxing": "木"
+    },
+    {
+      "char": "泉",
+      "wuxing": "水"
+    },
+    {
+      "char": "却",
+      "wuxing": "土",
+      "strokes": 9
+    },
+    {
+      "char": "闕",
+      "wuxing": "水",
+      "strokes": 22
+    },
+    {
+      "char": "羣",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "然",
+      "wuxing": "土"
+    },
+    {
+      "char": "燃",
+      "wuxing": "火"
+    },
+    {
+      "char": "染",
+      "wuxing": "土",
+      "strokes": 24
+    },
+    {
+      "char": "繞",
+      "wuxing": "金",
+      "strokes": 15
+    },
+    {
+      "char": "人",
+      "wuxing": "土",
+      "strokes": 19
+    },
+    {
+      "char": "任",
+      "wuxing": "土",
+      "strokes": 24
+    },
+    {
+      "char": "日",
+      "wuxing": "火"
+    },
+    {
+      "char": "荣",
+      "wuxing": "木"
+    },
+    {
+      "char": "容",
+      "wuxing": "木",
+      "strokes": 6
+    },
+    {
+      "char": "嵘",
+      "wuxing": "土"
+    },
+    {
+      "char": "溶",
+      "wuxing": "水"
+    },
+    {
+      "char": "榕",
+      "wuxing": "木"
+    },
+    {
+      "char": "榮",
+      "wuxing": "土",
+      "strokes": 19
+    },
+    {
+      "char": "柔",
+      "wuxing": "木"
+    },
+    {
+      "char": "如",
+      "wuxing": "土",
+      "strokes": 19
+    },
+    {
+      "char": "茹",
+      "wuxing": "木"
+    },
+    {
+      "char": "入",
+      "wuxing": "水",
+      "strokes": 22
+    },
+    {
+      "char": "蕊",
+      "wuxing": "木"
+    },
+    {
+      "char": "锐",
+      "wuxing": "金"
+    },
+    {
+      "char": "瑞",
+      "wuxing": "金"
+    },
+    {
+      "char": "睿",
+      "wuxing": "金"
+    },
+    {
+      "char": "润",
+      "wuxing": "水"
+    },
+    {
+      "char": "潤",
+      "wuxing": "木",
+      "strokes": 21
+    },
+    {
+      "char": "若",
+      "wuxing": "土",
+      "strokes": 14
+    },
+    {
+      "char": "洒",
+      "wuxing": "水",
+      "strokes": 7
+    },
+    {
+      "char": "塞",
+      "wuxing": "土"
+    },
+    {
+      "char": "三",
+      "wuxing": "水",
+      "strokes": 22
+    },
+    {
+      "char": "散",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "色",
+      "wuxing": "土",
+      "strokes": 19
+    },
+    {
+      "char": "森",
+      "wuxing": "木"
+    },
+    {
+      "char": "僧",
+      "wuxing": "木",
+      "strokes": 16
+    },
+    {
+      "char": "沙",
+      "wuxing": "木",
+      "strokes": 6
+    },
+    {
+      "char": "山",
+      "wuxing": "土"
+    },
+    {
+      "char": "商",
+      "wuxing": "金"
+    },
+    {
+      "char": "傷",
+      "wuxing": "火",
+      "strokes": 8
+    },
+    {
+      "char": "上",
+      "wuxing": "火",
+      "strokes": 23
+    },
+    {
+      "char": "尚",
+      "wuxing": "火",
+      "strokes": 23
+    },
+    {
+      "char": "燒",
+      "wuxing": "火",
+      "strokes": 23
+    },
+    {
+      "char": "韶",
+      "wuxing": "水",
+      "strokes": 7
+    },
+    {
+      "char": "少",
+      "wuxing": "土",
+      "strokes": 14
+    },
+    {
+      "char": "舍",
+      "wuxing": "火",
+      "strokes": 18
+    },
+    {
+      "char": "射",
+      "wuxing": "木",
+      "strokes": 21
+    },
+    {
+      "char": "谁",
+      "wuxing": "木",
+      "strokes": 6
+    },
+    {
+      "char": "申",
+      "wuxing": "金"
+    },
+    {
+      "char": "身",
+      "wuxing": "火",
+      "strokes": 8
+    },
+    {
+      "char": "深",
+      "wuxing": "金",
+      "strokes": 10
+    },
+    {
+      "char": "神",
+      "wuxing": "金",
+      "strokes": 15
+    },
+    {
+      "char": "沈",
+      "wuxing": "金"
+    },
+    {
+      "char": "生",
+      "wuxing": "火",
+      "strokes": 8
+    },
+    {
+      "char": "声",
+      "wuxing": "土"
+    },
+    {
+      "char": "笙",
+      "wuxing": "火",
+      "strokes": 18
+    },
+    {
+      "char": "聲",
+      "wuxing": "水",
+      "strokes": 7
+    },
+    {
+      "char": "圣",
+      "wuxing": "土"
+    },
+    {
+      "char": "胜",
+      "wuxing": "火",
+      "strokes": 13
+    },
+    {
+      "char": "盛",
+      "wuxing": "水",
+      "strokes": 12
+    },
+    {
+      "char": "勝",
+      "wuxing": "火",
+      "strokes": 18
+    },
+    {
+      "char": "聖",
+      "wuxing": "土",
+      "strokes": 19
+    },
+    {
+      "char": "诗",
+      "wuxing": "金"
+    },
+    {
+      "char": "師",
+      "wuxing": "水",
+      "strokes": 12
+    },
+    {
+      "char": "湿",
+      "wuxing": "水",
+      "strokes": 12
+    },
+    {
+      "char": "詩",
+      "wuxing": "火",
+      "strokes": 18
+    },
+    {
+      "char": "十",
+      "wuxing": "火",
+      "strokes": 18
+    },
+    {
+      "char": "石",
+      "wuxing": "金"
+    },
+    {
+      "char": "时",
+      "wuxing": "水",
+      "strokes": 7
+    },
+    {
+      "char": "食",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "時",
+      "wuxing": "火",
+      "strokes": 23
+    },
+    {
+      "char": "史",
+      "wuxing": "金",
+      "strokes": 15
+    },
+    {
+      "char": "使",
+      "wuxing": "木",
+      "strokes": 16
+    },
+    {
+      "char": "始",
+      "wuxing": "水",
+      "strokes": 12
+    },
+    {
+      "char": "士",
+      "wuxing": "火",
+      "strokes": 8
+    },
+    {
+      "char": "氏",
+      "wuxing": "火",
+      "strokes": 8
+    },
+    {
+      "char": "世",
+      "wuxing": "金",
+      "strokes": 15
+    },
+    {
+      "char": "事",
+      "wuxing": "水",
+      "strokes": 12
+    },
+    {
+      "char": "室",
+      "wuxing": "金",
+      "strokes": 5
+    },
+    {
+      "char": "是",
+      "wuxing": "土",
+      "strokes": 24
+    },
+    {
+      "char": "收",
+      "wuxing": "金",
+      "strokes": 15
+    },
+    {
+      "char": "手",
+      "wuxing": "火",
+      "strokes": 8
+    },
+    {
+      "char": "守",
+      "wuxing": "水",
+      "strokes": 17
+    },
+    {
+      "char": "首",
+      "wuxing": "火",
+      "strokes": 23
+    },
+    {
+      "char": "寿",
+      "wuxing": "木",
+      "strokes": 16
+    },
+    {
+      "char": "壽",
+      "wuxing": "木",
+      "strokes": 6
+    },
+    {
+      "char": "书",
+      "wuxing": "金"
+    },
+    {
+      "char": "書",
+      "wuxing": "金",
+      "strokes": 5
+    },
+    {
+      "char": "淑",
+      "wuxing": "水"
+    },
+    {
+      "char": "疎",
+      "wuxing": "土",
+      "strokes": 19
+    },
+    {
+      "char": "疏",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "舒",
+      "wuxing": "金"
+    },
+    {
+      "char": "熟",
+      "wuxing": "水",
+      "strokes": 12
+    },
+    {
+      "char": "蜀",
+      "wuxing": "金",
+      "strokes": 5
+    },
+    {
+      "char": "树",
+      "wuxing": "木"
+    },
+    {
+      "char": "数",
+      "wuxing": "火",
+      "strokes": 13
+    },
+    {
+      "char": "墅",
+      "wuxing": "土"
+    },
+    {
+      "char": "數",
+      "wuxing": "木",
+      "strokes": 21
+    },
+    {
+      "char": "樹",
+      "wuxing": "火",
+      "strokes": 18
+    },
+    {
+      "char": "衰",
+      "wuxing": "火",
+      "strokes": 13
+    },
+    {
+      "char": "双",
+      "wuxing": "水",
+      "strokes": 17
+    },
+    {
+      "char": "霜",
+      "wuxing": "水"
+    },
+    {
+      "char": "雙",
+      "wuxing": "水",
+      "strokes": 22
+    },
+    {
+      "char": "誰",
+      "wuxing": "土",
+      "strokes": 9
+    },
+    {
+      "char": "水",
+      "wuxing": "水",
+      "strokes": 5
+    },
+    {
+      "char": "说",
+      "wuxing": "火",
+      "strokes": 13
     },
     {
       "char": "烁",
       "wuxing": "火"
     },
     {
+      "char": "丝",
+      "wuxing": "水",
+      "strokes": 22
+    },
+    {
+      "char": "思",
+      "wuxing": "金"
+    },
+    {
+      "char": "絲",
+      "wuxing": "土",
+      "strokes": 19
+    },
+    {
+      "char": "死",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "四",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "似",
+      "wuxing": "土",
+      "strokes": 9
+    },
+    {
+      "char": "寺",
+      "wuxing": "木",
+      "strokes": 11
+    },
+    {
+      "char": "松",
+      "wuxing": "木"
+    },
+    {
+      "char": "嵩",
+      "wuxing": "土"
+    },
+    {
+      "char": "宋",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "送",
+      "wuxing": "金",
+      "strokes": 10
+    },
+    {
+      "char": "苏",
+      "wuxing": "木"
+    },
+    {
+      "char": "素",
+      "wuxing": "金"
+    },
+    {
+      "char": "宿",
+      "wuxing": "水",
+      "strokes": 12
+    },
+    {
+      "char": "雖",
+      "wuxing": "土",
+      "strokes": 19
+    },
+    {
+      "char": "隨",
+      "wuxing": "火",
+      "strokes": 13
+    },
+    {
+      "char": "歲",
+      "wuxing": "木",
+      "strokes": 11
+    },
+    {
+      "char": "碎",
+      "wuxing": "水",
+      "strokes": 7
+    },
+    {
+      "char": "孙",
+      "wuxing": "金"
+    },
+    {
+      "char": "所",
+      "wuxing": "水",
+      "strokes": 17
+    },
+    {
+      "char": "他",
+      "wuxing": "水",
+      "strokes": 7
+    },
+    {
+      "char": "塔",
+      "wuxing": "土"
+    },
+    {
+      "char": "台",
+      "wuxing": "火",
+      "strokes": 13
+    },
+    {
+      "char": "苔",
+      "wuxing": "水",
+      "strokes": 17
+    },
+    {
+      "char": "臺",
+      "wuxing": "土",
+      "strokes": 19
+    },
+    {
+      "char": "太",
+      "wuxing": "木",
+      "strokes": 11
+    },
+    {
+      "char": "钛",
+      "wuxing": "金"
+    },
+    {
+      "char": "坦",
+      "wuxing": "土"
+    },
+    {
+      "char": "汤",
+      "wuxing": "水"
+    },
+    {
+      "char": "唐",
+      "wuxing": "火"
+    },
+    {
+      "char": "堂",
+      "wuxing": "土"
+    },
+    {
+      "char": "棠",
+      "wuxing": "木"
+    },
+    {
+      "char": "塘",
+      "wuxing": "土"
+    },
+    {
+      "char": "涛",
+      "wuxing": "水"
+    },
+    {
+      "char": "桃",
+      "wuxing": "木",
+      "strokes": 16
+    },
+    {
+      "char": "陶",
+      "wuxing": "火",
+      "strokes": 23
+    },
+    {
+      "char": "啼",
+      "wuxing": "土",
+      "strokes": 9
+    },
+    {
+      "char": "題",
+      "wuxing": "火",
+      "strokes": 13
+    },
+    {
+      "char": "天",
+      "wuxing": "金",
+      "strokes": 10
+    },
+    {
+      "char": "添",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "田",
+      "wuxing": "土"
+    },
+    {
+      "char": "恬",
+      "wuxing": "火"
+    },
+    {
+      "char": "條",
+      "wuxing": "木",
+      "strokes": 6
+    },
+    {
+      "char": "铁",
+      "wuxing": "金"
+    },
+    {
+      "char": "听",
+      "wuxing": "火",
+      "strokes": 13
+    },
+    {
+      "char": "聽",
+      "wuxing": "火",
+      "strokes": 18
+    },
+    {
+      "char": "亭",
+      "wuxing": "木",
+      "strokes": 6
+    },
+    {
+      "char": "庭",
+      "wuxing": "水",
+      "strokes": 22
+    },
+    {
+      "char": "通",
+      "wuxing": "金",
+      "strokes": 15
+    },
+    {
+      "char": "同",
+      "wuxing": "木",
+      "strokes": 21
+    },
+    {
+      "char": "彤",
+      "wuxing": "火"
+    },
+    {
+      "char": "桐",
+      "wuxing": "木"
+    },
+    {
+      "char": "头",
+      "wuxing": "木",
+      "strokes": 21
+    },
+    {
+      "char": "頭",
+      "wuxing": "水",
+      "strokes": 22
+    },
+    {
+      "char": "透",
+      "wuxing": "土",
+      "strokes": 24
+    },
+    {
+      "char": "徒",
+      "wuxing": "木",
+      "strokes": 11
+    },
+    {
+      "char": "圖",
+      "wuxing": "土",
+      "strokes": 19
+    },
+    {
+      "char": "土",
+      "wuxing": "土"
+    },
+    {
+      "char": "吐",
+      "wuxing": "金",
+      "strokes": 5
+    },
+    {
+      "char": "外",
+      "wuxing": "木",
+      "strokes": 11
+    },
+    {
+      "char": "宛",
+      "wuxing": "土"
+    },
+    {
+      "char": "婉",
+      "wuxing": "土"
+    },
+    {
+      "char": "晚",
+      "wuxing": "水",
+      "strokes": 7
+    },
+    {
+      "char": "万",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "萬",
+      "wuxing": "木",
+      "strokes": 21
+    },
+    {
+      "char": "王",
+      "wuxing": "水"
+    },
+    {
+      "char": "往",
+      "wuxing": "火",
+      "strokes": 13
+    },
+    {
+      "char": "旺",
+      "wuxing": "火"
+    },
+    {
+      "char": "望",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "危",
+      "wuxing": "木",
+      "strokes": 6
+    },
+    {
+      "char": "微",
+      "wuxing": "土",
+      "strokes": 19
+    },
+    {
+      "char": "薇",
+      "wuxing": "木"
+    },
+    {
+      "char": "唯",
+      "wuxing": "土"
+    },
+    {
+      "char": "惟",
+      "wuxing": "土",
+      "strokes": 24
+    },
+    {
+      "char": "维",
+      "wuxing": "土"
+    },
+    {
+      "char": "伟",
+      "wuxing": "土"
+    },
+    {
+      "char": "炜",
+      "wuxing": "火"
+    },
+    {
+      "char": "为",
+      "wuxing": "土"
+    },
+    {
+      "char": "未",
+      "wuxing": "土"
+    },
+    {
+      "char": "渭",
+      "wuxing": "金",
+      "strokes": 10
+    },
+    {
+      "char": "爲",
+      "wuxing": "土",
+      "strokes": 19
+    },
+    {
+      "char": "謂",
+      "wuxing": "木",
+      "strokes": 11
+    },
+    {
+      "char": "魏",
+      "wuxing": "土"
+    },
+    {
+      "char": "文",
+      "wuxing": "水"
+    },
+    {
+      "char": "雯",
+      "wuxing": "水"
+    },
+    {
+      "char": "聞",
+      "wuxing": "水",
+      "strokes": 7
+    },
+    {
+      "char": "问",
+      "wuxing": "水",
+      "strokes": 7
+    },
+    {
+      "char": "問",
+      "wuxing": "土",
+      "strokes": 24
+    },
+    {
+      "char": "我",
+      "wuxing": "金",
+      "strokes": 10
+    },
+    {
+      "char": "屋",
+      "wuxing": "水",
+      "strokes": 12
+    },
+    {
+      "char": "烏",
+      "wuxing": "土",
+      "strokes": 24
+    },
+    {
+      "char": "无",
+      "wuxing": "金",
+      "strokes": 5
+    },
+    {
+      "char": "吳",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "吴",
+      "wuxing": "木"
+    },
+    {
+      "char": "吴",
+      "wuxing": "土"
+    },
+    {
+      "char": "吾",
+      "wuxing": "木",
+      "strokes": 11
+    },
+    {
+      "char": "梧",
+      "wuxing": "木"
+    },
+    {
+      "char": "無",
+      "wuxing": "木",
+      "strokes": 6
+    },
+    {
+      "char": "五",
+      "wuxing": "木",
+      "strokes": 21
+    },
+    {
+      "char": "午",
+      "wuxing": "火"
+    },
+    {
+      "char": "武",
+      "wuxing": "土",
+      "strokes": 19
+    },
+    {
+      "char": "舞",
+      "wuxing": "金",
+      "strokes": 15
+    },
+    {
+      "char": "戊",
+      "wuxing": "土"
+    },
+    {
+      "char": "物",
+      "wuxing": "土",
+      "strokes": 14
+    },
+    {
+      "char": "夕",
+      "wuxing": "金",
+      "strokes": 10
+    },
+    {
+      "char": "兮",
+      "wuxing": "木",
+      "strokes": 11
+    },
+    {
+      "char": "西",
+      "wuxing": "金"
+    },
+    {
+      "char": "昔",
+      "wuxing": "水",
+      "strokes": 17
+    },
+    {
+      "char": "息",
+      "wuxing": "水",
+      "strokes": 12
+    },
+    {
+      "char": "惜",
+      "wuxing": "木",
+      "strokes": 21
+    },
+    {
+      "char": "溪",
+      "wuxing": "水"
+    },
+    {
+      "char": "锡",
+      "wuxing": "金"
+    },
+    {
+      "char": "熙",
+      "wuxing": "火"
+    },
+    {
+      "char": "曦",
+      "wuxing": "火"
+    },
+    {
+      "char": "席",
+      "wuxing": "土",
+      "strokes": 14
+    },
+    {
+      "char": "洗",
+      "wuxing": "水",
+      "strokes": 12
+    },
+    {
+      "char": "喜",
+      "wuxing": "木",
+      "strokes": 21
+    },
+    {
+      "char": "细",
+      "wuxing": "土",
+      "strokes": 19
+    },
+    {
+      "char": "細",
+      "wuxing": "火",
+      "strokes": 13
+    },
+    {
+      "char": "霞",
+      "wuxing": "水"
+    },
+    {
+      "char": "下",
+      "wuxing": "土",
+      "strokes": 24
+    },
+    {
+      "char": "夏",
+      "wuxing": "火"
+    },
+    {
+      "char": "仙",
+      "wuxing": "金",
+      "strokes": 10
+    },
+    {
+      "char": "先",
+      "wuxing": "火",
+      "strokes": 13
+    },
+    {
+      "char": "闲",
+      "wuxing": "木",
+      "strokes": 11
+    },
+    {
+      "char": "弦",
+      "wuxing": "火",
+      "strokes": 23
+    },
+    {
+      "char": "閑",
+      "wuxing": "土",
+      "strokes": 14
+    },
+    {
+      "char": "縣",
+      "wuxing": "木",
+      "strokes": 16
+    },
+    {
+      "char": "獻",
+      "wuxing": "火",
+      "strokes": 8
+    },
+    {
+      "char": "相",
+      "wuxing": "木",
+      "strokes": 21
+    },
+    {
+      "char": "香",
+      "wuxing": "木",
+      "strokes": 6
+    },
+    {
+      "char": "鄉",
+      "wuxing": "土",
+      "strokes": 14
+    },
+    {
+      "char": "湘",
+      "wuxing": "火",
+      "strokes": 13
+    },
+    {
+      "char": "想",
+      "wuxing": "土",
+      "strokes": 24
+    },
+    {
+      "char": "向",
+      "wuxing": "木",
+      "strokes": 6
+    },
+    {
+      "char": "象",
+      "wuxing": "水",
+      "strokes": 22
+    },
+    {
+      "char": "宵",
+      "wuxing": "水",
+      "strokes": 22
+    },
+    {
+      "char": "消",
+      "wuxing": "金",
+      "strokes": 5
+    },
+    {
+      "char": "潇",
+      "wuxing": "水"
+    },
+    {
+      "char": "箫",
+      "wuxing": "木"
+    },
+    {
+      "char": "霄",
+      "wuxing": "金",
+      "strokes": 5
+    },
+    {
+      "char": "蕭",
+      "wuxing": "水",
+      "strokes": 22
+    },
+    {
+      "char": "小",
+      "wuxing": "水",
+      "strokes": 12
+    },
+    {
+      "char": "晓",
+      "wuxing": "火"
+    },
+    {
+      "char": "筱",
+      "wuxing": "木"
+    },
+    {
+      "char": "曉",
+      "wuxing": "火",
+      "strokes": 18
+    },
+    {
+      "char": "校",
+      "wuxing": "水",
+      "strokes": 22
+    },
+    {
+      "char": "笑",
+      "wuxing": "金",
+      "strokes": 10
+    },
+    {
+      "char": "歇",
+      "wuxing": "火",
+      "strokes": 8
+    },
+    {
+      "char": "斜",
+      "wuxing": "水",
+      "strokes": 17
+    },
+    {
+      "char": "攜",
+      "wuxing": "土",
+      "strokes": 9
+    },
+    {
+      "char": "寫",
+      "wuxing": "木",
+      "strokes": 16
+    },
+    {
+      "char": "谢",
+      "wuxing": "金"
+    },
+    {
+      "char": "謝",
+      "wuxing": "火",
+      "strokes": 18
+    },
+    {
+      "char": "心",
+      "wuxing": "金"
+    },
+    {
+      "char": "忻",
+      "wuxing": "火"
+    },
+    {
+      "char": "芯",
+      "wuxing": "木"
+    },
+    {
+      "char": "辛",
+      "wuxing": "金"
+    },
+    {
+      "char": "昕",
+      "wuxing": "火"
+    },
+    {
+      "char": "新",
+      "wuxing": "金"
+    },
+    {
+      "char": "鑫",
+      "wuxing": "金"
+    },
+    {
+      "char": "信",
+      "wuxing": "金"
+    },
+    {
+      "char": "星",
+      "wuxing": "火"
+    },
+    {
+      "char": "行",
+      "wuxing": "水",
+      "strokes": 17
+    },
+    {
+      "char": "杏",
+      "wuxing": "水",
+      "strokes": 12
+    },
+    {
+      "char": "幸",
+      "wuxing": "土",
+      "strokes": 9
+    },
+    {
+      "char": "性",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "興",
+      "wuxing": "火",
+      "strokes": 13
+    },
+    {
+      "char": "雄",
+      "wuxing": "木",
+      "strokes": 21
+    },
+    {
+      "char": "休",
+      "wuxing": "木",
+      "strokes": 6
+    },
+    {
+      "char": "修",
+      "wuxing": "金"
+    },
+    {
+      "char": "秀",
+      "wuxing": "火",
+      "strokes": 13
+    },
+    {
+      "char": "绣",
+      "wuxing": "火",
+      "strokes": 8
+    },
+    {
+      "char": "戌",
+      "wuxing": "土"
+    },
+    {
+      "char": "须",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "虛",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "須",
+      "wuxing": "金",
+      "strokes": 5
+    },
+    {
+      "char": "徐",
+      "wuxing": "土"
+    },
+    {
+      "char": "许",
+      "wuxing": "木"
+    },
+    {
+      "char": "栩",
+      "wuxing": "木"
+    },
+    {
+      "char": "旭",
+      "wuxing": "火"
+    },
+    {
+      "char": "序",
+      "wuxing": "水",
+      "strokes": 12
+    },
+    {
+      "char": "緒",
+      "wuxing": "金",
+      "strokes": 15
+    },
+    {
+      "char": "轩",
+      "wuxing": "木"
+    },
+    {
+      "char": "轩",
+      "wuxing": "土"
+    },
+    {
+      "char": "宣",
+      "wuxing": "金"
+    },
+    {
+      "char": "萱",
+      "wuxing": "木"
+    },
+    {
+      "char": "暄",
+      "wuxing": "火"
+    },
+    {
+      "char": "玄",
+      "wuxing": "水"
+    },
+    {
+      "char": "璇",
+      "wuxing": "金"
+    },
+    {
       "char": "炫",
       "wuxing": "火"
     },
     {
-      "char": "昕",
+      "char": "學",
+      "wuxing": "木",
+      "strokes": 21
+    },
+    {
+      "char": "雪",
+      "wuxing": "水"
+    },
+    {
+      "char": "寻",
+      "wuxing": "水",
+      "strokes": 12
+    },
+    {
+      "char": "尋",
+      "wuxing": "火",
+      "strokes": 8
+    },
+    {
+      "char": "崖",
+      "wuxing": "金",
+      "strokes": 15
+    },
+    {
+      "char": "雅",
+      "wuxing": "木"
+    },
+    {
+      "char": "烟",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "煙",
+      "wuxing": "水",
+      "strokes": 22
+    },
+    {
+      "char": "言",
+      "wuxing": "火",
+      "strokes": 13
+    },
+    {
+      "char": "岩",
+      "wuxing": "土"
+    },
+    {
+      "char": "炎",
+      "wuxing": "火"
+    },
+    {
+      "char": "檐",
+      "wuxing": "金",
+      "strokes": 5
+    },
+    {
+      "char": "嚴",
+      "wuxing": "木",
+      "strokes": 21
+    },
+    {
+      "char": "巖",
+      "wuxing": "水",
+      "strokes": 7
+    },
+    {
+      "char": "掩",
+      "wuxing": "火",
+      "strokes": 18
+    },
+    {
+      "char": "眼",
+      "wuxing": "土",
+      "strokes": 9
+    },
+    {
+      "char": "宴",
+      "wuxing": "木",
+      "strokes": 21
+    },
+    {
+      "char": "艳",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "焱",
+      "wuxing": "火"
+    },
+    {
+      "char": "雁",
+      "wuxing": "火",
+      "strokes": 18
+    },
+    {
+      "char": "燕",
+      "wuxing": "木",
+      "strokes": 6
+    },
+    {
+      "char": "豔",
+      "wuxing": "土",
+      "strokes": 9
+    },
+    {
+      "char": "央",
+      "wuxing": "土"
+    },
+    {
+      "char": "扬",
       "wuxing": "火"
     },
     {
@@ -1313,31 +4655,287 @@
       "wuxing": "火"
     },
     {
-      "char": "扬",
+      "char": "杨",
+      "wuxing": "木"
+    },
+    {
+      "char": "洋",
+      "wuxing": "水"
+    },
+    {
+      "char": "陽",
+      "wuxing": "金",
+      "strokes": 10
+    },
+    {
+      "char": "楊",
+      "wuxing": "土",
+      "strokes": 19
+    },
+    {
+      "char": "養",
+      "wuxing": "火",
+      "strokes": 23
+    },
+    {
+      "char": "垚",
+      "wuxing": "土"
+    },
+    {
+      "char": "搖",
+      "wuxing": "水",
+      "strokes": 7
+    },
+    {
+      "char": "遙",
+      "wuxing": "火",
+      "strokes": 18
+    },
+    {
+      "char": "瑶",
+      "wuxing": "金"
+    },
+    {
+      "char": "杳",
+      "wuxing": "火",
+      "strokes": 8
+    },
+    {
+      "char": "要",
+      "wuxing": "木",
+      "strokes": 6
+    },
+    {
+      "char": "曜",
       "wuxing": "火"
     },
     {
-      "char": "璐",
+      "char": "耀",
       "wuxing": "火"
     },
     {
-      "char": "伟",
+      "char": "也",
+      "wuxing": "火",
+      "strokes": 8
+    },
+    {
+      "char": "野",
       "wuxing": "土"
     },
     {
-      "char": "维",
-      "wuxing": "土"
+      "char": "叶",
+      "wuxing": "土",
+      "strokes": 19
     },
     {
-      "char": "为",
-      "wuxing": "土"
+      "char": "夜",
+      "wuxing": "水",
+      "strokes": 17
     },
     {
-      "char": "唯",
-      "wuxing": "土"
+      "char": "烨",
+      "wuxing": "火"
     },
     {
-      "char": "勇",
+      "char": "葉",
+      "wuxing": "金",
+      "strokes": 10
+    },
+    {
+      "char": "業",
+      "wuxing": "土",
+      "strokes": 14
+    },
+    {
+      "char": "一",
+      "wuxing": "火",
+      "strokes": 13
+    },
+    {
+      "char": "衣",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "依",
+      "wuxing": "木",
+      "strokes": 6
+    },
+    {
+      "char": "漪",
+      "wuxing": "水"
+    },
+    {
+      "char": "怡",
+      "wuxing": "火"
+    },
+    {
+      "char": "移",
+      "wuxing": "水",
+      "strokes": 12
+    },
+    {
+      "char": "遺",
+      "wuxing": "木",
+      "strokes": 11
+    },
+    {
+      "char": "已",
+      "wuxing": "金",
+      "strokes": 15
+    },
+    {
+      "char": "以",
+      "wuxing": "水",
+      "strokes": 22
+    },
+    {
+      "char": "倚",
+      "wuxing": "木",
+      "strokes": 11
+    },
+    {
+      "char": "义",
+      "wuxing": "木"
+    },
+    {
+      "char": "艺",
+      "wuxing": "木"
+    },
+    {
+      "char": "亦",
+      "wuxing": "土",
+      "strokes": 19
+    },
+    {
+      "char": "奕",
+      "wuxing": "木"
+    },
+    {
+      "char": "異",
+      "wuxing": "土",
+      "strokes": 9
+    },
+    {
+      "char": "逸",
+      "wuxing": "木"
+    },
+    {
+      "char": "意",
+      "wuxing": "水",
+      "strokes": 12
+    },
+    {
+      "char": "毅",
+      "wuxing": "木"
+    },
+    {
+      "char": "翼",
+      "wuxing": "土",
+      "strokes": 9
+    },
+    {
+      "char": "因",
+      "wuxing": "金",
+      "strokes": 5
+    },
+    {
+      "char": "阴",
+      "wuxing": "水",
+      "strokes": 17
+    },
+    {
+      "char": "茵",
+      "wuxing": "木"
+    },
+    {
+      "char": "音",
+      "wuxing": "土",
+      "strokes": 24
+    },
+    {
+      "char": "陰",
+      "wuxing": "水",
+      "strokes": 17
+    },
+    {
+      "char": "吟",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "寅",
+      "wuxing": "火",
+      "strokes": 18
+    },
+    {
+      "char": "银",
+      "wuxing": "金"
+    },
+    {
+      "char": "引",
+      "wuxing": "木",
+      "strokes": 6
+    },
+    {
+      "char": "飲",
+      "wuxing": "土",
+      "strokes": 19
+    },
+    {
+      "char": "隱",
+      "wuxing": "水",
+      "strokes": 22
+    },
+    {
+      "char": "印",
+      "wuxing": "金",
+      "strokes": 5
+    },
+    {
+      "char": "应",
+      "wuxing": "水",
+      "strokes": 17
+    },
+    {
+      "char": "英",
+      "wuxing": "木"
+    },
+    {
+      "char": "莺",
+      "wuxing": "水",
+      "strokes": 7
+    },
+    {
+      "char": "應",
+      "wuxing": "火",
+      "strokes": 18
+    },
+    {
+      "char": "迎",
+      "wuxing": "土",
+      "strokes": 19
+    },
+    {
+      "char": "莹",
+      "wuxing": "木"
+    },
+    {
+      "char": "颖",
+      "wuxing": "木"
+    },
+    {
+      "char": "影",
+      "wuxing": "火",
+      "strokes": 18
+    },
+    {
+      "char": "映",
+      "wuxing": "土",
+      "strokes": 9
+    },
+    {
+      "char": "墉",
       "wuxing": "土"
     },
     {
@@ -1349,11 +4947,257 @@
       "wuxing": "土"
     },
     {
+      "char": "勇",
+      "wuxing": "土"
+    },
+    {
+      "char": "詠",
+      "wuxing": "土",
+      "strokes": 9
+    },
+    {
+      "char": "用",
+      "wuxing": "水",
+      "strokes": 17
+    },
+    {
+      "char": "幽",
+      "wuxing": "土",
+      "strokes": 14
+    },
+    {
+      "char": "悠",
+      "wuxing": "木",
+      "strokes": 21
+    },
+    {
+      "char": "犹",
+      "wuxing": "土",
+      "strokes": 14
+    },
+    {
+      "char": "游",
+      "wuxing": "木",
+      "strokes": 21
+    },
+    {
+      "char": "猶",
+      "wuxing": "土",
+      "strokes": 19
+    },
+    {
+      "char": "遊",
+      "wuxing": "火",
+      "strokes": 23
+    },
+    {
+      "char": "有",
+      "wuxing": "水",
+      "strokes": 22
+    },
+    {
+      "char": "又",
+      "wuxing": "火",
+      "strokes": 13
+    },
+    {
+      "char": "宥",
+      "wuxing": "土"
+    },
+    {
+      "char": "于",
+      "wuxing": "土"
+    },
+    {
+      "char": "於",
+      "wuxing": "土",
+      "strokes": 9
+    },
+    {
+      "char": "鱼",
+      "wuxing": "金",
+      "strokes": 5
+    },
+    {
+      "char": "魚",
+      "wuxing": "金",
+      "strokes": 15
+    },
+    {
+      "char": "渝",
+      "wuxing": "水"
+    },
+    {
+      "char": "瑜",
+      "wuxing": "金"
+    },
+    {
+      "char": "餘",
+      "wuxing": "水",
+      "strokes": 17
+    },
+    {
+      "char": "与",
+      "wuxing": "水",
+      "strokes": 7
+    },
+    {
+      "char": "宇",
+      "wuxing": "土"
+    },
+    {
+      "char": "羽",
+      "wuxing": "木"
+    },
+    {
       "char": "羽",
       "wuxing": "土"
     },
     {
+      "char": "雨",
+      "wuxing": "水"
+    },
+    {
+      "char": "语",
+      "wuxing": "木"
+    },
+    {
+      "char": "與",
+      "wuxing": "水",
+      "strokes": 12
+    },
+    {
+      "char": "語",
+      "wuxing": "木",
+      "strokes": 11
+    },
+    {
+      "char": "玉",
+      "wuxing": "金"
+    },
+    {
+      "char": "昱",
+      "wuxing": "火"
+    },
+    {
+      "char": "钰",
+      "wuxing": "金"
+    },
+    {
+      "char": "欲",
+      "wuxing": "水",
+      "strokes": 7
+    },
+    {
+      "char": "御",
+      "wuxing": "木",
+      "strokes": 6
+    },
+    {
+      "char": "遇",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "煜",
+      "wuxing": "火"
+    },
+    {
+      "char": "鬱",
+      "wuxing": "土",
+      "strokes": 14
+    },
+    {
+      "char": "渊",
+      "wuxing": "水"
+    },
+    {
+      "char": "元",
+      "wuxing": "火",
+      "strokes": 8
+    },
+    {
+      "char": "园",
+      "wuxing": "火",
+      "strokes": 18
+    },
+    {
+      "char": "垣",
+      "wuxing": "土"
+    },
+    {
+      "char": "原",
+      "wuxing": "水",
+      "strokes": 12
+    },
+    {
+      "char": "圆",
+      "wuxing": "火",
+      "strokes": 23
+    },
+    {
+      "char": "袁",
+      "wuxing": "土"
+    },
+    {
+      "char": "園",
+      "wuxing": "金",
+      "strokes": 15
+    },
+    {
+      "char": "圓",
+      "wuxing": "木",
+      "strokes": 16
+    },
+    {
+      "char": "源",
+      "wuxing": "水"
+    },
+    {
       "char": "远",
+      "wuxing": "土"
+    },
+    {
+      "char": "遠",
+      "wuxing": "金",
+      "strokes": 5
+    },
+    {
+      "char": "苑",
+      "wuxing": "土",
+      "strokes": 14
+    },
+    {
+      "char": "怨",
+      "wuxing": "木",
+      "strokes": 21
+    },
+    {
+      "char": "院",
+      "wuxing": "火",
+      "strokes": 23
+    },
+    {
+      "char": "愿",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "願",
+      "wuxing": "金",
+      "strokes": 5
+    },
+    {
+      "char": "月",
+      "wuxing": "木",
+      "strokes": 21
+    },
+    {
+      "char": "岳",
+      "wuxing": "土"
+    },
+    {
+      "char": "玥",
       "wuxing": "土"
     },
     {
@@ -1365,35 +5209,164 @@
       "wuxing": "土"
     },
     {
-      "char": "婉",
+      "char": "云",
+      "wuxing": "水"
+    },
+    {
+      "char": "雲",
+      "wuxing": "水",
+      "strokes": 7
+    },
+    {
+      "char": "筠",
+      "wuxing": "木"
+    },
+    {
+      "char": "韻",
+      "wuxing": "水",
+      "strokes": 12
+    },
+    {
+      "char": "哉",
+      "wuxing": "金",
+      "strokes": 10
+    },
+    {
+      "char": "在",
+      "wuxing": "水",
+      "strokes": 17
+    },
+    {
+      "char": "載",
+      "wuxing": "水",
+      "strokes": 22
+    },
+    {
+      "char": "早",
+      "wuxing": "土",
+      "strokes": 14
+    },
+    {
+      "char": "泽",
+      "wuxing": "水"
+    },
+    {
+      "char": "澤",
+      "wuxing": "金",
+      "strokes": 5
+    },
+    {
+      "char": "增",
       "wuxing": "土"
     },
     {
-      "char": "玥",
-      "wuxing": "土"
+      "char": "齋",
+      "wuxing": "土",
+      "strokes": 24
     },
     {
-      "char": "轩",
-      "wuxing": "土"
+      "char": "宅",
+      "wuxing": "土",
+      "strokes": 14
     },
     {
-      "char": "然",
-      "wuxing": "土"
+      "char": "占",
+      "wuxing": "土",
+      "strokes": 9
+    },
+    {
+      "char": "张",
+      "wuxing": "火"
+    },
+    {
+      "char": "張",
+      "wuxing": "火",
+      "strokes": 18
+    },
+    {
+      "char": "章",
+      "wuxing": "木",
+      "strokes": 21
+    },
+    {
+      "char": "璋",
+      "wuxing": "金"
+    },
+    {
+      "char": "长",
+      "wuxing": "木",
+      "strokes": 16
+    },
+    {
+      "char": "長",
+      "wuxing": "火",
+      "strokes": 8
+    },
+    {
+      "char": "钊",
+      "wuxing": "金"
+    },
+    {
+      "char": "昭",
+      "wuxing": "火"
     },
     {
       "char": "赵",
       "wuxing": "金"
     },
     {
-      "char": "钱",
+      "char": "照",
+      "wuxing": "木",
+      "strokes": 16
+    },
+    {
+      "char": "折",
+      "wuxing": "金",
+      "strokes": 5
+    },
+    {
+      "char": "者",
+      "wuxing": "火",
+      "strokes": 18
+    },
+    {
+      "char": "珍",
+      "wuxing": "金",
+      "strokes": 10
+    },
+    {
+      "char": "桢",
+      "wuxing": "木"
+    },
+    {
+      "char": "真",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "枕",
+      "wuxing": "水",
+      "strokes": 22
+    },
+    {
+      "char": "镇",
       "wuxing": "金"
     },
     {
-      "char": "孙",
+      "char": "争",
+      "wuxing": "金",
+      "strokes": 10
+    },
+    {
+      "char": "峥",
+      "wuxing": "土"
+    },
+    {
+      "char": "铮",
       "wuxing": "金"
     },
     {
-      "char": "周",
+      "char": "正",
       "wuxing": "金"
     },
     {
@@ -1401,112 +5374,279 @@
       "wuxing": "金"
     },
     {
-      "char": "石",
+      "char": "之",
+      "wuxing": "火",
+      "strokes": 8
+    },
+    {
+      "char": "芝",
+      "wuxing": "木"
+    },
+    {
+      "char": "枝",
+      "wuxing": "金",
+      "strokes": 10
+    },
+    {
+      "char": "知",
+      "wuxing": "火",
+      "strokes": 18
+    },
+    {
+      "char": "直",
+      "wuxing": "水",
+      "strokes": 17
+    },
+    {
+      "char": "只",
+      "wuxing": "水",
+      "strokes": 7
+    },
+    {
+      "char": "指",
+      "wuxing": "木",
+      "strokes": 16
+    },
+    {
+      "char": "至",
+      "wuxing": "水",
+      "strokes": 12
+    },
+    {
+      "char": "志",
+      "wuxing": "火"
+    },
+    {
+      "char": "治",
+      "wuxing": "金",
+      "strokes": 20
+    },
+    {
+      "char": "智",
+      "wuxing": "火"
+    },
+    {
+      "char": "中",
+      "wuxing": "土"
+    },
+    {
+      "char": "忠",
+      "wuxing": "火"
+    },
+    {
+      "char": "钟",
       "wuxing": "金"
     },
     {
-      "char": "沈",
+      "char": "終",
+      "wuxing": "木",
+      "strokes": 11
+    },
+    {
+      "char": "種",
+      "wuxing": "火",
+      "strokes": 23
+    },
+    {
+      "char": "仲",
+      "wuxing": "金",
+      "strokes": 15
+    },
+    {
+      "char": "重",
+      "wuxing": "金",
+      "strokes": 10
+    },
+    {
+      "char": "州",
+      "wuxing": "金",
+      "strokes": 15
+    },
+    {
+      "char": "舟",
+      "wuxing": "木",
+      "strokes": 16
+    },
+    {
+      "char": "周",
       "wuxing": "金"
     },
     {
-      "char": "谢",
+      "char": "洲",
+      "wuxing": "水"
+    },
+    {
+      "char": "昼",
+      "wuxing": "水",
+      "strokes": 17
+    },
+    {
+      "char": "朱",
+      "wuxing": "火"
+    },
+    {
+      "char": "珠",
       "wuxing": "金"
     },
     {
-      "char": "李",
+      "char": "竹",
       "wuxing": "木"
     },
     {
-      "char": "杨",
+      "char": "烛",
+      "wuxing": "木",
+      "strokes": 16
+    },
+    {
+      "char": "逐",
+      "wuxing": "金",
+      "strokes": 5
+    },
+    {
+      "char": "主",
+      "wuxing": "水",
+      "strokes": 12
+    },
+    {
+      "char": "渚",
+      "wuxing": "木",
+      "strokes": 11
+    },
+    {
+      "char": "住",
+      "wuxing": "火",
+      "strokes": 8
+    },
+    {
+      "char": "注",
+      "wuxing": "金",
+      "strokes": 5
+    },
+    {
+      "char": "柱",
+      "wuxing": "土",
+      "strokes": 14
+    },
+    {
+      "char": "著",
+      "wuxing": "土",
+      "strokes": 24
+    },
+    {
+      "char": "铸",
+      "wuxing": "金"
+    },
+    {
+      "char": "转",
+      "wuxing": "木",
+      "strokes": 21
+    },
+    {
+      "char": "轉",
+      "wuxing": "木",
+      "strokes": 6
+    },
+    {
+      "char": "妆",
+      "wuxing": "火",
+      "strokes": 23
+    },
+    {
+      "char": "壮",
+      "wuxing": "土"
+    },
+    {
+      "char": "追",
+      "wuxing": "木",
+      "strokes": 6
+    },
+    {
+      "char": "茲",
+      "wuxing": "木",
+      "strokes": 11
+    },
+    {
+      "char": "子",
+      "wuxing": "水"
+    },
+    {
+      "char": "梓",
       "wuxing": "木"
     },
     {
-      "char": "吴",
-      "wuxing": "木"
+      "char": "紫",
+      "wuxing": "火",
+      "strokes": 8
     },
     {
-      "char": "许",
-      "wuxing": "木"
+      "char": "字",
+      "wuxing": "火",
+      "strokes": 8
     },
     {
-      "char": "贾",
-      "wuxing": "木"
+      "char": "自",
+      "wuxing": "火",
+      "strokes": 23
     },
     {
-      "char": "董",
-      "wuxing": "木"
+      "char": "宗",
+      "wuxing": "水",
+      "strokes": 12
     },
     {
-      "char": "王",
-      "wuxing": "水"
+      "char": "總",
+      "wuxing": "水",
+      "strokes": 22
     },
     {
-      "char": "刘",
-      "wuxing": "水"
+      "char": "奏",
+      "wuxing": "火",
+      "strokes": 8
     },
     {
-      "char": "冯",
-      "wuxing": "水"
+      "char": "足",
+      "wuxing": "金",
+      "strokes": 20
     },
     {
-      "char": "汤",
-      "wuxing": "水"
+      "char": "祖",
+      "wuxing": "水",
+      "strokes": 7
     },
     {
-      "char": "潘",
-      "wuxing": "水"
+      "char": "纂",
+      "wuxing": "木",
+      "strokes": 11
     },
     {
-      "char": "韩",
-      "wuxing": "水"
+      "char": "最",
+      "wuxing": "火",
+      "strokes": 13
     },
     {
-      "char": "张",
-      "wuxing": "火"
+      "char": "醉",
+      "wuxing": "水",
+      "strokes": 22
     },
     {
-      "char": "陈",
-      "wuxing": "火"
+      "char": "尊",
+      "wuxing": "水",
+      "strokes": 7
     },
     {
-      "char": "郭",
-      "wuxing": "火"
+      "char": "昨",
+      "wuxing": "水",
+      "strokes": 17
     },
     {
-      "char": "何",
-      "wuxing": "火"
+      "char": "作",
+      "wuxing": "木",
+      "strokes": 21
     },
     {
-      "char": "高",
-      "wuxing": "火"
-    },
-    {
-      "char": "唐",
-      "wuxing": "火"
-    },
-    {
-      "char": "吴",
-      "wuxing": "土"
-    },
-    {
-      "char": "徐",
-      "wuxing": "土"
-    },
-    {
-      "char": "马",
-      "wuxing": "土"
-    },
-    {
-      "char": "袁",
-      "wuxing": "土"
-    },
-    {
-      "char": "魏",
-      "wuxing": "土"
-    },
-    {
-      "char": "于",
-      "wuxing": "土"
+      "char": "坐",
+      "wuxing": "水",
+      "strokes": 17
     }
   ]
 }
