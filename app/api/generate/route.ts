@@ -41,7 +41,7 @@ export async function POST(request: NextRequest) {
     }
 
     // 根据来源类型生成名字
-    let candidates: NameCandidate[] = [];
+    const candidates: NameCandidate[] = [];
     const perSourceCount = Math.ceil((input.count || 10) / input.sources.length);
 
     for (const source of input.sources) {

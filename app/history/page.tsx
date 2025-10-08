@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -28,6 +28,7 @@ interface HistoryRecord {
   score: {
     total: number;
     grade: string;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     breakdown?: any;
   };
   source: string;

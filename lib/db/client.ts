@@ -8,8 +8,11 @@ import { readFileSync } from 'fs';
 import { join } from 'path';
 
 // 定义统一的数据库接口
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export interface DatabaseClient {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   execute(sql: string, args?: any[]): Promise<{ rows: any[]; rowsAffected: number; lastInsertRowid?: number }>;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   batch(statements: Array<{ sql: string; args?: any[] }>): Promise<any[]>;
   close(): Promise<void>;
 }
@@ -55,15 +58,18 @@ async function createTursoClient(url: string, authToken?: string): Promise<Datab
   });
 
   return {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     async execute(sql: string, args?: any[]) {
       const result = await client.execute({ sql, args: args || [] });
       return {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         rows: result.rows as any[],
         rowsAffected: result.rowsAffected,
         lastInsertRowid: result.lastInsertRowid ? Number(result.lastInsertRowid) : undefined,
       };
     },
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     async batch(statements: Array<{ sql: string; args?: any[] }>) {
       const results = await client.batch(statements.map(stmt => ({ sql: stmt.sql, args: stmt.args || [] })));
       return results;

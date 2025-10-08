@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(git commit -m \"$(cat <<''EOF''\nfeat: expand character database and enhance UI components\n\n**Character Database Expansion**\n- Expanded wuxing.json from 722 to 5,584 characters (8x growth)\n- Auto-generated pinyin.json and strokes.json for all characters\n- Enhanced Five Elements coverage for better name generation\n\n**Poetry Generator Optimization**\n- Refactored poetry.ts for better performance (254 → 73 lines)\n- Improved character extraction logic\n- Enhanced fixed-char mode support\n\n**UI Enhancements**\n- Form persistence: Auto-save/load form values via localStorage\n- History UI improvements: Better card layout and interactions\n- Auth dialog refinements: Enhanced user experience\n- Name card updates: Improved visual presentation\n\n**Frontend Components**\n- NameInputForm: Added localStorage caching for better UX\n- HistoryList: Enhanced sorting and filtering\n- NameCard: Improved score visualization\n- Page layouts: Better responsive design\n\nAll changes maintain backward compatibility with existing functionality.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []

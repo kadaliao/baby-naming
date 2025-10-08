@@ -3,7 +3,7 @@
  * "Talk is cheap. Show me the code." - Linus
  */
 
-import { Solar, Lunar } from 'lunar-javascript';
+import { Solar } from 'lunar-javascript';
 
 /**
  * 八字信息
