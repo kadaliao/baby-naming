@@ -8,12 +8,23 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **Tech Stack**: Next.js 15 (App Router) + TypeScript + Tailwind CSS + shadcn/ui + OpenAI API
 
-**Current Status**: 100% complete + Vercel-ready. All core functionality implemented: generators, scoring, UI, fixed-char feature, database persistence, history UI, user authentication system, and hybrid database support for serverless deployment. Poetry database: 393 poems.
+**Current Status**: 100% complete + Vercel-ready. All core functionality implemented: generators, scoring, UI, fixed-char feature, database persistence, history UI, user authentication system, and hybrid database support for serverless deployment. Poetry database: 393 poems. Character database: 5,584 chars.
 
-**Last Updated**: 2025-10-08 14:15
+**Last Updated**: 2025-10-08 15:42
 
 ## Recent Changes
 
+- **Documentation Cleanup** (2025-10-08): Streamlined PLAN.md from 1466 lines to 177 lines
+  - Removed 500+ lines of redundant code examples (implementation details belong in `lib/`, not planning docs)
+  - Eliminated 9 outdated phase tracking sections (project is 100% complete, phase tracking obsolete)
+  - Deleted theoretical future expansions (小程序/App versions, 周易卦象 - all non-existent requirements)
+  - Kept only actionable information: deployment steps, environment config, real tech stack
+  - Result: Concise, practical documentation reflecting actual project state
+- **Build System Fixes** (recent commits): Resolved TypeScript and ESLint errors blocking production builds
+  - Fixed multi-statement SQL splitting for Turso compatibility
+  - Resolved all TypeScript compilation errors
+  - Cleaned up ESLint errors in database layer
+  - Disabled Turbopack for production builds (compatibility issues)
 - **Hybrid Database (Turso)** (混合数据库部署支持): Migrated to Turso-compatible hybrid architecture for Vercel deployment
   - Architecture: Auto-switches between local SQLite (dev) and Turso LibSQL (production)
   - Client layer: `lib/db/client.ts` with unified `DatabaseClient` interface
@@ -138,7 +149,7 @@ Four-dimensional scoring (total 100 points):
 - **`yuyi.ts`** (30 pts): Meaning (poetry sources, preference matching)
 
 **Data Dependencies**:
-- `data/characters/wuxing.json` - 377 chars with Five Elements tags
+- `data/characters/wuxing.json` - 5,584 chars with Five Elements tags
 - `data/characters/strokes.json` - Generated stroke counts
 - `data/characters/pinyin.json` - Generated pinyin with tone info
 
@@ -190,7 +201,7 @@ node scripts/validate-data.js
 ### 1. Character Database Structure
 
 All character data must maintain consistency across three files:
-- `data/characters/wuxing.json` - Source of truth (377 chars)
+- `data/characters/wuxing.json` - Source of truth (5,584 chars)
 - `data/characters/strokes.json` - Auto-generated
 - `data/characters/pinyin.json` - Auto-generated
 
