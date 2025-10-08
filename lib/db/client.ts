@@ -144,14 +144,58 @@ async function createSQLiteClient(): Promise<DatabaseClient> {
 }
 
 /**
+ * 分割 SQL 语句（处理 BEGIN...END 块）
+ */
+function splitSQLStatements(sql: string): string[] {
+  const statements: string[] = [];
+  let current = '';
+  let inBeginEnd = 0;
+
+  const lines = sql.split('\n');
+  for (const line of lines) {
+    const trimmed = line.trim();
+
+    // 跳过注释
+    if (trimmed.startsWith('--')) continue;
+
+    current += line + '\n';
+
+    // 检测 BEGIN/END 块（不区分大小写）
+    if (/\bBEGIN\b/i.test(trimmed)) inBeginEnd++;
+    if (/\bEND\b/i.test(trimmed)) inBeginEnd--;
+
+    // 如果不在 BEGIN...END 块内且遇到分号，则分割
+    if (inBeginEnd === 0 && trimmed.endsWith(';')) {
+      const statement = current.trim();
+      if (statement) {
+        statements.push(statement);
+      }
+      current = '';
+    }
+  }
+
+  // 处理最后一条语句（如果没有分号结尾）
+  const lastStatement = current.trim();
+  if (lastStatement) {
+    statements.push(lastStatement);
+  }
+
+  return statements;
+}
+
+/**
  * 初始化数据库 schema
  */
 async function initializeSchema(database: DatabaseClient): Promise<void> {
   const schemaPath = join(process.cwd(), 'lib', 'db', 'schema.sql');
   const schema = readFileSync(schemaPath, 'utf-8');
 
-  // 执行 schema 创建
-  await database.execute(schema);
+  // 分割并执行 SQL 语句
+  const statements = splitSQLStatements(schema);
+
+  for (const statement of statements) {
+    await database.execute(statement);
+  }
 
   // 运行 migrations
   await runMigrations(database);
@@ -195,7 +239,13 @@ async function runMigrations(database: DatabaseClient): Promise<void> {
       const migrationSQL = fs.readFileSync(migrationPath, 'utf-8');
 
       try {
-        await database.execute(migrationSQL);
+        // 分割并执行多条 SQL 语句（处理 BEGIN...END 块）
+        const statements = splitSQLStatements(migrationSQL);
+
+        for (const statement of statements) {
+          await database.execute(statement);
+        }
+
         await database.execute('INSERT INTO schema_migrations (migration_name) VALUES (?)', [file]);
         console.log(`✅ Migration ${file} applied`);
       } catch (error) {
