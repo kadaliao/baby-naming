@@ -39,7 +39,7 @@ export async function GET(request: NextRequest) {
     const identifier = userId ? { userId } : { sessionId };
 
     // 查询历史记录
-    const history = getHistory(identifier, {
+    const history = await getHistory(identifier, {
       limit,
       offset,
       onlyFavorites,
@@ -73,7 +73,7 @@ export async function GET(request: NextRequest) {
     }));
 
     // 获取统计信息
-    const stats = getStats(identifier);
+    const stats = await getStats(identifier);
 
     return NextResponse.json({
       success: true,

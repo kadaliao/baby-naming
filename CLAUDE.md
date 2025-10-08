@@ -8,12 +8,26 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **Tech Stack**: Next.js 15 (App Router) + TypeScript + Tailwind CSS + shadcn/ui + OpenAI API
 
-**Current Status**: 100% complete. All core functionality implemented: generators, scoring, UI, fixed-char feature, database persistence, history UI, and user authentication system. Poetry database: 393 poems.
+**Current Status**: 100% complete + Vercel-ready. All core functionality implemented: generators, scoring, UI, fixed-char feature, database persistence, history UI, user authentication system, and hybrid database support for serverless deployment. Poetry database: 393 poems.
 
-**Last Updated**: 2025-10-07 18:10
+**Last Updated**: 2025-10-08 14:15
 
 ## Recent Changes
 
+- **Hybrid Database (Turso)** (混合数据库部署支持): Migrated to Turso-compatible hybrid architecture for Vercel deployment
+  - Architecture: Auto-switches between local SQLite (dev) and Turso LibSQL (production)
+  - Client layer: `lib/db/client.ts` with unified `DatabaseClient` interface
+  - Repository layer: Converted all functions to async/await (`lib/db/repository.ts`)
+  - API updates: All 3 routes (`/api/generate`, `/api/history`, `/api/favorite`) now async
+  - Dependencies: Added `@libsql/client` (^0.14.0), kept `better-sqlite3` for local dev
+  - Environment: Auto-detects `TURSO_URL` env var to switch modes
+  - Testing: Verified local SQLite mode working correctly
+  - Deployment ready: Zero code changes needed for Vercel production deployment
+- **Form Persistence** (表单持久化): Added localStorage-based form caching for better UX
+  - Auto-saves form values on submit (surname, fixedChar, gender, birthDate, etc.)
+  - Auto-loads cached values on page reload
+  - Prevents data loss when navigating away
+  - Implementation: `NameInputForm.tsx` with `useEffect` hook and localStorage API
 - **User Authentication System** (用户认证系统): Complete user login/registration system with session migration
   - Database: Migration-based schema evolution with `lib/db/migrations/001_add_users.sql`
   - Auth logic: `lib/auth/user.ts` with bcrypt password hashing (10 rounds)
@@ -31,13 +45,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
   - Session management: localStorage-based session_id for anonymous users
   - Navigation: Added "历史记录" button to home page header
   - Icons: Uses lucide-react for UI icons (Star, Trash2, Calendar, Award, etc.)
-- **Database persistence** (数据库持久化): Implemented SQLite-based history and favorites
-  - Schema: Single-table design (`generated_names`) with session_id support (no user system required)
+- **Database persistence** (数据库持久化): Implemented database-based history and favorites
+  - Schema: Single-table design (`generated_names`) with session_id and user_id support
   - Repository pattern: `lib/db/client.ts` + `lib/db/repository.ts` with full CRUD operations
   - APIs: `/api/generate` (auto-saves), `/api/history` (with stats), `/api/favorite` (toggle/note/delete)
   - Testing: All endpoints verified working (generate → save → query → favorite)
-  - Database file: `data/names.db` (SQLite3 with WAL mode)
-  - Dependencies: better-sqlite3 ^11.8.1
+  - Local dev: SQLite with `data/names.db` (WAL mode)
+  - Production: Turso serverless database
+  - Dependencies: `@libsql/client` ^0.14.0, `better-sqlite3` ^11.8.1
 - **Poetry database expansion** (诗词库扩展): Expanded from 30 to 393 Tang poems (13x growth)
   - Imported complete "Three Hundred Tang Poems" (唐诗三百首) from chinese-poetry project
   - 95 authors covered: Li Bai (56), Du Fu (41), Wang Wei (29), Li Shangyin (25), etc.
@@ -254,8 +269,13 @@ OPENAI_API_KEY=sk-xxx          # Required for AI generator
 OPENAI_BASE_URL=https://...    # Optional, defaults to OpenAI
 AI_MODEL=gpt-4o-mini            # Optional, defaults to gpt-4o-mini
 
-# Database (for history/favorites)
+# Database (Hybrid mode: local SQLite + Turso serverless)
+# Local development (no config needed, uses SQLite automatically)
 DATABASE_PATH=./data/names.db  # Optional, defaults to ./data/names.db
+
+# Production (Vercel deployment with Turso)
+TURSO_URL=libsql://your-db.turso.io     # Required for production
+TURSO_AUTH_TOKEN=your-auth-token         # Required for production
 ```
 
 Server runs on port 16666 by default (configured in `package.json` via next dev).

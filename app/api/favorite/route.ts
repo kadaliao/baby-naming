@@ -25,7 +25,7 @@ export async function POST(request: NextRequest) {
 
     switch (action) {
       case 'toggle':
-        success = toggleFavorite(id);
+        success = await toggleFavorite(id);
         message = success ? '收藏状态已更新' : '更新失败';
         break;
 
@@ -36,12 +36,12 @@ export async function POST(request: NextRequest) {
             { status: 400 }
           );
         }
-        success = addNote(id, note);
+        success = await addNote(id, note);
         message = success ? '备注已保存' : '保存失败';
         break;
 
       case 'delete':
-        success = deleteName(id);
+        success = await deleteName(id);
         message = success ? '记录已删除' : '删除失败';
         break;
 

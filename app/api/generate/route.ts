@@ -107,10 +107,13 @@ export async function POST(request: NextRequest) {
     results.sort((a, b) => (b.score || 0) - (a.score || 0));
 
     // 保存到数据库（可选，失败不影响返回）
+    let savedIds: number[] = [];
     try {
       const sessionId = getSessionId(request);
+      const userId = getUserId(request);
       const saveInputs: SaveNameInput[] = results.map((candidate) => ({
         sessionId,
+        userId,
         surname: input.surname,
         gender: input.gender,
         birthDate: input.birthDate ? new Date(input.birthDate) : undefined,
@@ -122,15 +125,21 @@ export async function POST(request: NextRequest) {
         score: candidate.scoreDetail!,
       }));
 
-      const savedIds = saveNames(saveInputs);
-      console.log(`✅ 已保存 ${savedIds.length} 条名字到数据库`);
+      savedIds = await saveNames(saveInputs);
+      console.log(`✅ 已保存 ${savedIds.length} 条名字到数据库 (sessionId: ${sessionId}, userId: ${userId || 'none'})`);
     } catch (error) {
       console.error('保存到数据库失败（不影响返回）:', error);
     }
 
+    // 将数据库 ID 附加到结果中
+    const resultsWithIds = results.map((result, index) => ({
+      ...result,
+      id: savedIds[index] || undefined,
+    }));
+
     return NextResponse.json({
       success: true,
-      data: results,
+      data: resultsWithIds,
     });
   } catch (error) {
     console.error('生成名字失败：', error);
@@ -163,6 +172,18 @@ function getSessionId(request: NextRequest): string {
 
   // 3. 生成新的session ID
   return 'session-' + Date.now() + '-' + Math.random().toString(36).substr(2, 9);
+}
+
+/**
+ * 获取用户ID（如果已登录）
+ */
+function getUserId(request: NextRequest): number | undefined {
+  const userIdHeader = request.headers.get('x-user-id');
+  if (userIdHeader) {
+    const userId = parseInt(userIdHeader, 10);
+    return isNaN(userId) ? undefined : userId;
+  }
+  return undefined;
 }
 
 /**
