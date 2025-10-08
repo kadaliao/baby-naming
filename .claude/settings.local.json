@@ -1,29 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npm run dev:*)",
-      "Bash(npm install:*)",
-      "WebSearch",
-      "WebFetch(domain:github.com)",
-      "Bash(curl -s \"https://raw.githubusercontent.com/chinese-poetry/chinese-poetry/master/quan_tang_shi/json/poet.tang.0.json\")",
-      "Bash(curl -s \"https://unpkg.com/chinese-poetry@latest/\")",
-      "Bash(curl:*)",
-      "Bash(node:*)",
-      "Bash(npm run build:*)",
-      "Bash(npx tsx:*)",
-      "Bash(cat:*)",
-      "WebFetch(domain:alexop.dev)",
-      "Bash(git add:*)",
-      "Bash(git commit -m \"$(cat <<''EOF''\nfeat: implement core scoring system and generators\n\nMajor updates:\n- Scoring: 4-dimensional system (wuxing/yinlu/zixing/yuyi) with real algorithms\n- Generators: Poetry (from 30 Tang poems) and Wuxing (Five Elements theory)\n- Bazi calculator: Uses lunar-javascript for birth date analysis\n- Data: 377 chars with wuxing/strokes/pinyin properties\n- UI: ScoreRadar component with recharts, enhanced NameCard\n- Dependencies: lunar-javascript (1.7.5), recharts (3.2.1)\n- Docs: Added CLAUDE.md with architecture overview\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
-      "Bash(git config:*)",
-      "Bash(git log:*)",
-      "Bash(git filter-branch:*)",
-      "Bash(git stash:*)",
-      "Bash(git for-each-ref:*)",
-      "Bash(xargs:*)",
-      "Bash(lsof:*)",
-      "Bash(npm uninstall:*)",
-      "Bash(git commit -m \"$(cat <<''EOF''\nfeat: add Turso hybrid database support for Vercel deployment\n\nMajor architectural upgrade to enable serverless deployment on Vercel:\n\n**Database Layer (Hybrid Architecture)**\n- Rewrote `lib/db/client.ts` with unified DatabaseClient interface\n- Auto-detects environment: SQLite (local dev) or Turso LibSQL (production)\n- Converted `lib/db/repository.ts` to async/await for LibSQL compatibility\n- Updated all 3 API routes to handle async database operations\n- Dependencies: Added @libsql/client (0.14.0), kept better-sqlite3 for local dev\n\n**API Updates**\n- `/api/generate`: Async saveName() call\n- `/api/history`: Async getHistory() and getStats()\n- `/api/favorite`: Async toggleFavorite(), addNote(), deleteName()\n\n**Environment Configuration**\n- Local: Zero config, auto-uses SQLite (`data/names.db`)\n- Production: Set `TURSO_URL` and `TURSO_AUTH_TOKEN` in Vercel\n- Backward compatible: Existing local development unchanged\n\n**Documentation**\n- CLAUDE.md: Updated status to \"Vercel-ready\", added Turso details\n- README.md: Added Vercel deployment guide with Turso setup steps\n- Updated tech stack description with hybrid database info\n\n**Testing**\n- Verified local SQLite mode working correctly\n- Ready for production Turso deployment (zero code changes needed)\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
+      "Bash(git commit -m \"$(cat <<''EOF''\nfeat: expand character database and enhance UI components\n\n**Character Database Expansion**\n- Expanded wuxing.json from 722 to 5,584 characters (8x growth)\n- Auto-generated pinyin.json and strokes.json for all characters\n- Enhanced Five Elements coverage for better name generation\n\n**Poetry Generator Optimization**\n- Refactored poetry.ts for better performance (254 → 73 lines)\n- Improved character extraction logic\n- Enhanced fixed-char mode support\n\n**UI Enhancements**\n- Form persistence: Auto-save/load form values via localStorage\n- History UI improvements: Better card layout and interactions\n- Auth dialog refinements: Enhanced user experience\n- Name card updates: Improved visual presentation\n\n**Frontend Components**\n- NameInputForm: Added localStorage caching for better UX\n- HistoryList: Enhanced sorting and filtering\n- NameCard: Improved score visualization\n- Page layouts: Better responsive design\n\nAll changes maintain backward compatibility with existing functionality.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git commit:*)"
     ],
     "deny": [],
     "ask": []
