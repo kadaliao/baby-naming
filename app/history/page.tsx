@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import { ThemeToggle } from '@/components/ui/ThemeToggle';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { HistoryList } from '@/components/history/HistoryList';
@@ -269,12 +270,15 @@ export default function HistoryPage() {
                 )}
               </p>
             </div>
-            <Link href="/">
-              <Button variant="outline">
-                <Home className="h-4 w-4 mr-2" />
-                返回首页
-              </Button>
-            </Link>
+            <div className="flex items-center gap-2">
+              <ThemeToggle />
+              <Link href="/">
+                <Button variant="outline">
+                  <Home className="h-4 w-4 mr-2" />
+                  返回首页
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </header>

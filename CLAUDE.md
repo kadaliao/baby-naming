@@ -8,12 +8,19 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **Tech Stack**: Next.js 15 (App Router) + TypeScript + Tailwind CSS + shadcn/ui + OpenAI API
 
-**Current Status**: 100% complete + Vercel-ready. All core functionality implemented: generators, scoring, UI, fixed-char feature, database persistence, history UI, user authentication system, and hybrid database support for serverless deployment. Poetry database: 393 poems. Character database: 5,584 chars.
+**Current Status**: 100% complete + Vercel-ready. All core functionality implemented: generators, scoring, UI, fixed-char feature, database persistence, history UI, user authentication system, hybrid database support, and dark/light theme switching. Poetry database: 393 poems. Character database: 5,584 chars.
 
-**Last Updated**: 2025-10-08 15:42
+**Last Updated**: 2025-10-08 19:19
 
 ## Recent Changes
 
+- **Dark/Light Theme** (2025-10-08): Complete theme switching system with localStorage persistence
+  - ThemeProvider: `lib/theme/provider.tsx` with Context API and system preference detection
+  - ThemeToggle: Button component with Sun/Moon icons (added to home and history pages)
+  - CSS: Tailwind dark mode configured via `globals.css` with comprehensive dark variants
+  - Persistence: Auto-saves theme preference to localStorage
+  - Zero hydration issues: Provider always renders with consistent initial state
+  - Implementation: <100 lines total, zero business logic changes
 - **Documentation Cleanup** (2025-10-08): Streamlined PLAN.md from 1466 lines to 177 lines
   - Removed 500+ lines of redundant code examples (implementation details belong in `lib/`, not planning docs)
   - Eliminated 9 outdated phase tracking sections (project is 100% complete, phase tracking obsolete)

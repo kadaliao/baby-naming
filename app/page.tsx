@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { NameInputForm } from '@/components/forms/NameInputForm';
 import { NameCard } from '@/components/results/NameCard';
 import { Button } from '@/components/ui/button';
+import { ThemeToggle } from '@/components/ui/ThemeToggle';
 import { AuthDialog } from '@/components/auth/AuthDialog';
 import { History, LogIn, LogOut, User } from 'lucide-react';
 import type { NamingInput, NameCandidate } from '@/types/name';
@@ -118,6 +119,8 @@ export default function Home() {
               宝宝取名助手
             </h1>
             <div className="flex items-center justify-center md:justify-end gap-2 flex-wrap">
+              <ThemeToggle />
+
               <Link href="/history">
                 <Button variant="outline" size="sm">
                   <History className="h-4 w-4 mr-2" />

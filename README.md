@@ -21,6 +21,7 @@
 - 📊 **可视化展示**：雷达图、评分详情、诗词出处
 - 💾 **记录管理**：历史记录、收藏功能、数据持久化
 - 👤 **用户系统**：注册登录、会话迁移、跨设备同步
+- 🌓 **主题切换**：深色/浅色模式，localStorage持久化，系统偏好自动检测
 
 ### 可选优化方向
 - 📚 数据扩展：宋词、诗经库
@@ -128,6 +129,7 @@ baby-naming/
 │   ├── bazi/             # 八字计算
 │   ├── auth/             # 用户认证
 │   ├── db/               # 数据库（client, repository, migrations）
+│   ├── theme/            # 主题系统（Provider, Context）
 │   └── utils/            # 工具函数
 ├── data/                  # 数据资源
 │   ├── poetry/           # 诗词库
@@ -335,6 +337,11 @@ MIT License
 - API 异步化改造
 - 零配置本地开发
 
+**Phase 6 - UI/UX 优化** ✅
+- 深色/浅色主题切换（ThemeProvider + localStorage）
+- 系统偏好自动检测（prefers-color-scheme）
+- 全组件 dark 模式支持（Tailwind dark 变体）
+
 ### ⏳ 待完成功能
 
 - 移动端响应式优化（基础已完成，需进一步优化）
@@ -342,6 +349,11 @@ MIT License
 - 批量生成 UI（可一次生成多个名字）
 
 ### 📌 最近更新
+
+**2025-10-08 19:19**
+- ✅ 深色/浅色主题：完整主题切换系统，支持 localStorage 持久化和系统偏好检测
+- ✅ ThemeProvider 实现：Context API + 自动检测（<100行代码，零业务逻辑变更）
+- ✅ UI 组件适配：全组件 Tailwind dark 模式支持
 
 **2025-10-08 15:42**
 - ✅ 文档清理：PLAN.md 从 1466 行精简至 177 行（删除冗余代码示例、过时追踪、理论设计）
