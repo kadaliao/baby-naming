@@ -7,7 +7,11 @@
       "Bash(npm search:*)",
       "Bash(npm run dev:*)",
       "Bash(lsof:*)",
-      "Bash(xargs kill:*)"
+      "Bash(xargs kill:*)",
+      "Bash(node:*)",
+      "Bash(cat:*)",
+      "Bash(npx tsx:*)",
+      "Bash(awk:*)"
     ],
     "deny": [],
     "ask": []

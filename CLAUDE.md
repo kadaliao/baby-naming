@@ -8,12 +8,20 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **Tech Stack**: Next.js 15 (App Router) + TypeScript + Tailwind CSS + shadcn/ui + OpenAI API
 
-**Current Status**: 100% complete + Vercel-ready. All core functionality implemented: generators, scoring, UI, fixed-char feature, database persistence, history UI, user authentication system, hybrid database support, and dark/light theme switching. Poetry database: 393 poems. Character database: 5,584 chars.
+**Current Status**: 100% complete + Vercel-ready. All core functionality implemented: generators, scoring, UI, fixed-char feature, database persistence, history UI, user authentication system, hybrid database support, and dark/light theme switching. Poetry database: 393 poems. Character database: 20,992 chars (complete CJK basic block coverage).
 
-**Last Updated**: 2025-10-08 19:19
+**Last Updated**: 2025-10-09 15:30 (Pinyin database fixed)
 
 ## Recent Changes
 
+- **Pinyin Database Fix** (2025-10-09): Fixed "部分汉字缺少拼音数据" warning once for all
+  - Root cause: Original database only had 1,205 naming chars, missing common surnames
+  - False start: Extended to 1,295 chars (only +90) - still too conservative, just patching
+  - Real solution: **Complete CJK basic block coverage** (U+4E00 - U+9FFF = 20,992 chars)
+  - Script: `scripts/generate-pinyin-full.js` - scans entire Unicode CJK range + ensures 100% wuxing.json coverage
+  - Coverage: **100% naming chars** (1,205/1,205) + **100% surnames** (60/60) + all common Chinese characters
+  - Database growth: 1,205 → 20,992 (16x expansion)
+  - Result: Zero "default score" fallbacks, will never encounter missing pinyin data again
 - **Dark/Light Theme** (2025-10-08): Complete theme switching system with localStorage persistence
   - ThemeProvider: `lib/theme/provider.tsx` with Context API and system preference detection
   - ThemeToggle: Button component with Sun/Moon icons (added to home and history pages)
@@ -185,14 +193,18 @@ Character property data is auto-generated from source data:
 # Generate stroke data from wuxing.json
 node scripts/generate-strokes.js
 
-# Generate pinyin data from wuxing.json
-node scripts/generate-pinyin.js
+# Generate complete pinyin data (entire CJK basic block U+4E00-U+9FFF)
+node scripts/generate-pinyin-full.js
 
 # Validate consistency across all three datasets
 node scripts/validate-data.js
 ```
 
-**Important**: After adding new characters to `data/characters/wuxing.json`, MUST regenerate strokes and pinyin data.
+**Important**:
+- After adding new chars to `wuxing.json`, MUST regenerate strokes and pinyin data
+- Always use `generate-pinyin-full.js` - it covers entire CJK basic block (20,992 chars)
+- Ensures 100% coverage of naming chars + surnames + all common Chinese characters
+- Generation takes ~30s, produces ~5MB JSON file
 
 ### UI Components (`components/`)
 
@@ -208,14 +220,20 @@ node scripts/validate-data.js
 ### 1. Character Database Structure
 
 All character data must maintain consistency across three files:
-- `data/characters/wuxing.json` - Source of truth (5,584 chars)
-- `data/characters/strokes.json` - Auto-generated
-- `data/characters/pinyin.json` - Auto-generated
+- `data/characters/wuxing.json` - Source of naming chars (1,205 chars)
+- `data/characters/strokes.json` - Auto-generated from wuxing.json
+- `data/characters/pinyin.json` - **Complete CJK coverage** (20,992 chars: entire Unicode U+4E00-U+9FFF range)
 
 **Expansion Process**:
-1. Add chars to `wuxing.json` with Five Elements tags
-2. Run `generate-strokes.js` and `generate-pinyin.js`
-3. Run `validate-data.js` to ensure 100% consistency
+1. Add naming chars to `wuxing.json` with Five Elements tags
+2. Run `generate-strokes.js` to update strokes data
+3. Run `generate-pinyin-full.js` to update pinyin data (covers entire CJK basic block)
+4. Run `validate-data.js` to ensure consistency
+
+**Important**:
+- Use `generate-pinyin-full.js` (not the old scripts) for complete coverage
+- Pinyin database covers ALL Chinese characters in CJK basic block, no missing chars possible
+- Database size: ~5MB JSON (acceptable for client-side loading)
 
 ### 2. Wuxing Generator Algorithm
 
