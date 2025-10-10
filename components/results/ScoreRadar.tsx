@@ -53,7 +53,7 @@ export function ScoreRadar({ scoreDetail }: ScoreRadarProps) {
         <RadarChart cx="50%" cy="50%" outerRadius="80%" data={data}>
           <PolarGrid />
           <PolarAngleAxis dataKey="subject" />
-          <PolarRadiusAxis angle={90} domain={[0, 30]} />
+          <PolarRadiusAxis angle={90} domain={[0, 30]} tick={false} />
           <Radar
             name="得分"
             dataKey="score"

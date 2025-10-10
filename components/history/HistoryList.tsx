@@ -1,8 +1,12 @@
+import { useState } from 'react';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Checkbox } from '@/components/ui/checkbox';
+import { Progress } from '@/components/ui/progress';
+import { Separator } from '@/components/ui/separator';
 import { Star, Trash2, Calendar, Award } from 'lucide-react';
+import { ScoreRadar } from '@/components/results/ScoreRadar';
 
 interface HistoryRecord {
   id: number;
@@ -12,6 +16,12 @@ interface HistoryRecord {
   score: {
     total: number;
     grade: string;
+    breakdown?: {
+      wuxing: { score: number; reason: string };
+      yinlu: { score: number; reason: string };
+      zixing: { score: number; reason: string };
+      yuyi: { score: number; reason: string };
+    };
   };
   source: string;
   sourceDetail?: string;
@@ -37,6 +47,21 @@ export function HistoryList({
   onToggleSelect,
   showCheckbox = true
 }: HistoryListProps) {
+  // 管理每个卡片的展开状态
+  const [expandedIds, setExpandedIds] = useState<Set<number>>(new Set());
+
+  const toggleExpand = (id: number) => {
+    setExpandedIds(prev => {
+      const newSet = new Set(prev);
+      if (newSet.has(id)) {
+        newSet.delete(id);
+      } else {
+        newSet.add(id);
+      }
+      return newSet;
+    });
+  };
+
   // 格式化时间
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
@@ -100,15 +125,19 @@ export function HistoryList({
   };
 
   return (
-    <div className="space-y-4">
-      {records.map((record) => (
-        <Card key={record.id} className="hover:shadow-lg transition-shadow">
-          <CardHeader className="pb-3">
-            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-3">
-              <div className="flex gap-3 flex-1">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      {records.map((record) => {
+        const isExpanded = expandedIds.has(record.id);
+        const scoreDetail = record.score.breakdown;
+
+        return (
+        <Card key={record.id} className="hover:shadow-lg transition-shadow flex flex-col">
+          <CardHeader className="pb-2 flex-shrink-0">
+            <div className="flex items-start justify-between gap-2">
+              <div className="flex gap-2 flex-1 min-w-0">
                 {/* 复选框 */}
                 {showCheckbox && (
-                  <div className="pt-1">
+                  <div className="pt-1 flex-shrink-0">
                     <Checkbox
                       checked={selectedIds.includes(record.id)}
                       onCheckedChange={() => onToggleSelect(record.id)}
@@ -116,70 +145,172 @@ export function HistoryList({
                   </div>
                 )}
 
-                <div className="flex-1">
-                  <div className="flex items-center gap-3 mb-2 flex-wrap">
-                    <h3 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white">
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-2 mb-1">
+                    <h3 className="text-lg font-bold text-gray-900 dark:text-white truncate">
                       {record.fullName}
                     </h3>
-                    <Badge className={getSourceColor(record.source)}>
+                  </div>
+                  <div className="flex items-center gap-2 flex-wrap text-xs">
+                    <Badge className={getSourceColor(record.source)} variant="secondary">
                       {getSourceText(record.source)}
                     </Badge>
-                  </div>
-                  <div className="flex items-center gap-4 text-sm text-gray-600 dark:text-gray-400 flex-wrap">
                     <div className="flex items-center gap-1">
-                      <Award className="h-4 w-4" />
+                      <Award className="h-3 w-3" />
                       <span className={`font-semibold ${getGradeColor(record.score.grade)}`}>
-                        {record.score.grade}级
+                        {record.score.grade}
                       </span>
-                      <span>·</span>
-                      <span>{record.score.total}分</span>
+                      <span className="text-gray-400">·</span>
+                      <span>{record.score.total.toFixed(0)}分</span>
                     </div>
-                    <div className="flex items-center gap-1">
-                      <Calendar className="h-4 w-4" />
-                      <span>{formatDate(record.createdAt)}</span>
-                    </div>
+                  </div>
+                  <div className="flex items-center gap-1 text-xs text-gray-500 dark:text-gray-400 mt-1">
+                    <Calendar className="h-3 w-3" />
+                    <span>{formatDate(record.createdAt)}</span>
                   </div>
                 </div>
               </div>
 
-              <div className="flex items-center gap-2 self-start md:self-auto">
+              <div className="flex items-center gap-1 flex-shrink-0">
                 <Button
                   variant="ghost"
                   size="icon"
+                  className={`h-8 w-8 ${record.isFavorite ? 'text-yellow-500' : 'text-gray-400'}`}
                   onClick={() => onToggleFavorite(record.id)}
-                  className={record.isFavorite ? 'text-yellow-500' : 'text-gray-400'}
                 >
                   <Star
-                    className="h-5 w-5"
+                    className="h-4 w-4"
                     fill={record.isFavorite ? 'currentColor' : 'none'}
                   />
                 </Button>
                 <Button
                   variant="ghost"
                   size="icon"
+                  className="h-8 w-8 text-red-600 hover:text-red-700"
                   onClick={() => onDelete(record.id)}
-                  className="text-red-600 hover:text-red-700 hover:bg-red-50 dark:hover:bg-red-900/20"
                 >
-                  <Trash2 className="h-5 w-5" />
+                  <Trash2 className="h-4 w-4" />
                 </Button>
               </div>
             </div>
           </CardHeader>
 
-          {record.sourceDetail && (
-            <CardContent className="pt-0">
-              <div className="text-sm text-gray-600 dark:text-gray-400 bg-gray-50 dark:bg-gray-800 rounded-md p-3">
-                {record.sourceDetail}
+          <CardContent className="pt-0 pb-3 flex-1 flex flex-col space-y-2">
+            {/* 寓意说明 */}
+            {record.sourceDetail && (
+              <div>
+                <h4 className="font-semibold mb-1 text-xs text-gray-700 dark:text-gray-300">
+                  {record.source === 'poetry' ? '诗词出处' : '寓意解析'}
+                </h4>
+                {record.source === 'poetry' ? (
+                  <div className="bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 rounded-md p-2 border border-purple-200 dark:border-purple-800">
+                    <p className="text-xs text-gray-700 dark:text-gray-300 leading-relaxed italic line-clamp-2">
+                      {record.sourceDetail}
+                    </p>
+                  </div>
+                ) : (
+                  <p className="text-xs text-gray-600 dark:text-gray-400 line-clamp-2">
+                    {record.sourceDetail}
+                  </p>
+                )}
               </div>
-              {record.notes && (
-                <div className="mt-2 text-sm text-gray-600 dark:text-gray-400 italic">
-                  备注：{record.notes}
+            )}
+
+            {/* 展开/收起按钮 */}
+            {scoreDetail && (
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={() => toggleExpand(record.id)}
+                className="w-full justify-between h-7 text-xs"
+              >
+                <span>{isExpanded ? '收起' : '查看'}评分详情</span>
+                <span className="text-sm">{isExpanded ? '▲' : '▼'}</span>
+              </Button>
+            )}
+
+            {/* 评分详情（展开后显示） */}
+            {isExpanded && scoreDetail && (
+              <>
+                {/* 雷达图 */}
+                <div className="mt-2">
+                  <ScoreRadar scoreDetail={{
+                    total: record.score.total,
+                    grade: record.score.grade as 'S' | 'A' | 'B' | 'C' | 'D',
+                    breakdown: scoreDetail,
+                    suggestions: []
+                  }} />
                 </div>
-              )}
-            </CardContent>
-          )}
+
+                <Separator />
+
+                {/* 四维评分进度条 */}
+                <div className="space-y-2">
+                  {/* 五行 */}
+                  <div>
+                    <div className="flex justify-between items-center mb-1">
+                      <span className="text-xs text-gray-600 dark:text-gray-400">
+                        五行 ({scoreDetail.wuxing.score.toFixed(0)}/25)
+                      </span>
+                    </div>
+                    <Progress value={(scoreDetail.wuxing.score / 25) * 100} className="h-1.5" />
+                    <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5 line-clamp-1">
+                      {scoreDetail.wuxing.reason}
+                    </p>
+                  </div>
+
+                  {/* 音律 */}
+                  <div>
+                    <div className="flex justify-between items-center mb-1">
+                      <span className="text-xs text-gray-600 dark:text-gray-400">
+                        音律 ({scoreDetail.yinlu.score.toFixed(0)}/25)
+                      </span>
+                    </div>
+                    <Progress value={(scoreDetail.yinlu.score / 25) * 100} className="h-1.5" />
+                    <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5 line-clamp-1">
+                      {scoreDetail.yinlu.reason}
+                    </p>
+                  </div>
+
+                  {/* 字形 */}
+                  <div>
+                    <div className="flex justify-between items-center mb-1">
+                      <span className="text-xs text-gray-600 dark:text-gray-400">
+                        字形 ({scoreDetail.zixing.score.toFixed(0)}/20)
+                      </span>
+                    </div>
+                    <Progress value={(scoreDetail.zixing.score / 20) * 100} className="h-1.5" />
+                    <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5 line-clamp-1">
+                      {scoreDetail.zixing.reason}
+                    </p>
+                  </div>
+
+                  {/* 寓意 */}
+                  <div>
+                    <div className="flex justify-between items-center mb-1">
+                      <span className="text-xs text-gray-600 dark:text-gray-400">
+                        寓意 ({scoreDetail.yuyi.score.toFixed(0)}/30)
+                      </span>
+                    </div>
+                    <Progress value={(scoreDetail.yuyi.score / 30) * 100} className="h-1.5" />
+                    <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5 line-clamp-1">
+                      {scoreDetail.yuyi.reason}
+                    </p>
+                  </div>
+                </div>
+              </>
+            )}
+
+            {/* 备注 */}
+            {record.notes && (
+              <div className="text-xs text-gray-600 dark:text-gray-400 italic pt-1 border-t dark:border-gray-700">
+                备注：{record.notes}
+              </div>
+            )}
+          </CardContent>
         </Card>
-      ))}
+        );
+      })}
     </div>
   );
 }

@@ -10,10 +10,18 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **Current Status**: 100% complete + Vercel-ready. All core functionality implemented: generators, scoring, UI, fixed-char feature, database persistence, history UI, user authentication system, hybrid database support, and dark/light theme switching. Poetry database: 393 poems. Character database: 20,992 chars (complete CJK basic block coverage).
 
-**Last Updated**: 2025-10-10 13:30
+**Last Updated**: 2025-10-10 13:55
 
 ## Recent Changes
 
+- **History Page UI Overhaul** (2025-10-10): Grid layout + complete score details
+  - Layout: Changed from single-column to responsive grid (1/2/3 columns for mobile/tablet/desktop)
+  - Information parity: History cards now show same details as generation results
+  - Compact design: Reduced text sizes, icon sizes, button sizes for density
+  - Expandable details: Click "查看评分详情" to show radar chart + 4-dimension progress bars
+  - Component updates: `HistoryList.tsx` now imports `ScoreRadar` and `Progress` components
+  - Data structure: Added `breakdown` field to `HistoryRecord` interface
+  - Visual fix: Radar chart tick marks hidden (`tick={false}`) to prevent axis label overlap
 - **AI Generator Fix** (2025-10-10): Fixed markdown JSON parsing issue for third-party OpenAI-compatible APIs
   - Root cause: DeepSeek/custom models return ```json...``` format, violating OpenAI's `response_format` spec
   - Solution: Strip markdown code block markers before JSON.parse() in `lib/generator/ai.ts`
