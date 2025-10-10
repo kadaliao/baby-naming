@@ -10,10 +10,19 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **Current Status**: 100% complete + Vercel-ready. All core functionality implemented: generators, scoring, UI, fixed-char feature, database persistence, history UI, user authentication system, hybrid database support, and dark/light theme switching. Poetry database: 393 poems. Character database: 20,992 chars (complete CJK basic block coverage).
 
-**Last Updated**: 2025-10-10 13:55
+**Last Updated**: 2025-10-10 14:00
 
 ## Recent Changes
 
+- **Strokes Database Fix** (2025-10-10): Fixed "部分汉字缺少笔画数据" warning by achieving 100% coverage matching pinyin database
+  - Root cause: Original database only had 1,200 naming chars, missing 65% of poetry characters
+  - Missing chars: Common poetry words (床/举/眠/觉/闻/鸟...) and surname "罗" had no strokes data
+  - Solution: **100% CJK basic block coverage** (U+4E00 - U+9FFF = 20,992 chars, same as pinyin database)
+  - Script: `scripts/generate-strokes-full.js` - uses chinese-character-strokes + Unihan fallback for 16 rare chars
+  - Fallback strategy: 16 extremely rare chars (U+9FF0-U+9FFF, never used in naming) use Unihan-based estimates
+  - Coverage: **100% naming chars** (1,200/1,200) + **100% poetry chars** (2,699/2,699) + **100% surnames** (60/60)
+  - Database growth: 1,200 → 20,992 (17.5x expansion, matches pinyin database exactly)
+  - Result: Zero "default score" fallbacks in zixing scoring, 100% parity with pinyin database
 - **History Page UI Overhaul** (2025-10-10): Grid layout + complete score details
   - Layout: Changed from single-column to responsive grid (1/2/3 columns for mobile/tablet/desktop)
   - Information parity: History cards now show same details as generation results
@@ -76,7 +85,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
   - Session migration: Seamlessly migrate anonymous session data to user accounts
   - Repository updates: All data access functions support both `sessionId` and `userId`
   - History integration: History page automatically uses userId when logged in
-  - Testing: Full test suite in `scripts/test-user-system.ts` (all tests passing)
+  - Testing: Full test suite verified (all tests passing, test script archived to `scripts/deprecated/exploration/`)
   - UX: Shows current user in header, auto-migration message on first login
 - **History UI** (历史记录界面): Implemented frontend for browsing history and favorites
   - Page: `/history` with tabs for all records and favorites only
@@ -204,8 +213,8 @@ calculateBazi(birthDate: Date) → {
 Character property data is auto-generated from source data:
 
 ```bash
-# Generate stroke data from wuxing.json
-node scripts/generate-strokes.js
+# Generate complete stroke data (entire CJK basic block U+4E00-U+9FFF)
+node scripts/generate-strokes-full.js
 
 # Generate complete pinyin data (entire CJK basic block U+4E00-U+9FFF)
 node scripts/generate-pinyin-full.js
@@ -216,9 +225,11 @@ node scripts/validate-data.js
 
 **Important**:
 - After adding new chars to `wuxing.json`, MUST regenerate strokes and pinyin data
-- Always use `generate-pinyin-full.js` - it covers entire CJK basic block (20,992 chars)
-- Ensures 100% coverage of naming chars + surnames + all common Chinese characters
-- Generation takes ~30s, produces ~5MB JSON file
+- Always use `generate-strokes-full.js` and `generate-pinyin-full.js` - both cover entire CJK basic block (20,992 chars)
+- Ensures 100% coverage of naming chars + surnames + poetry chars + all CJK basic block characters
+- Both databases achieve 100% coverage with identical character counts (20,992 chars)
+- Strokes generation: ~5s, produces ~1.1MB JSON file (20,976 via library + 16 via Unihan estimates)
+- Pinyin generation: ~30s, produces ~5MB JSON file (100% via pinyin library)
 
 ### UI Components (`components/`)
 
@@ -234,20 +245,23 @@ node scripts/validate-data.js
 ### 1. Character Database Structure
 
 All character data must maintain consistency across three files:
-- `data/characters/wuxing.json` - Source of naming chars (1,205 chars)
-- `data/characters/strokes.json` - Auto-generated from wuxing.json
-- `data/characters/pinyin.json` - **Complete CJK coverage** (20,992 chars: entire Unicode U+4E00-U+9FFF range)
+- `data/characters/wuxing.json` - Source of naming chars (1,200 chars with Five Elements tags)
+- `data/characters/strokes.json` - **100% CJK coverage** (20,992 chars: entire Unicode U+4E00-U+9FFF range)
+- `data/characters/pinyin.json` - **100% CJK coverage** (20,992 chars: entire Unicode U+4E00-U+9FFF range)
 
 **Expansion Process**:
 1. Add naming chars to `wuxing.json` with Five Elements tags
-2. Run `generate-strokes.js` to update strokes data
+2. Run `generate-strokes-full.js` to update strokes data (covers entire CJK basic block)
 3. Run `generate-pinyin-full.js` to update pinyin data (covers entire CJK basic block)
 4. Run `validate-data.js` to ensure consistency
 
 **Important**:
-- Use `generate-pinyin-full.js` (not the old scripts) for complete coverage
-- Pinyin database covers ALL Chinese characters in CJK basic block, no missing chars possible
-- Database size: ~5MB JSON (acceptable for client-side loading)
+- Both strokes and pinyin databases have identical 100% CJK basic block coverage (20,992 chars)
+- Strokes database: 20,976 chars via chinese-character-strokes + 16 chars via Unihan estimates
+- The 16 estimated chars (U+9FF0-U+9FFF) are extremely rare and never used in naming
+- Zero missing data for naming chars, surnames, poetry chars, or any common Chinese characters
+- Database sizes: ~1.1MB (strokes), ~5MB (pinyin) - acceptable for client-side loading
+- Use `generate-strokes-full.js` and `generate-pinyin-full.js` (not the old scripts) for complete coverage
 
 ### 2. Wuxing Generator Algorithm
 
