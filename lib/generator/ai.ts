@@ -48,7 +48,13 @@ export async function generateNamesWithAI(input: NamingInput): Promise<NameCandi
       throw new Error('AI 返回内容为空');
     }
 
-    const result = JSON.parse(content) as { names: AINameResult[] };
+    // 清理 markdown 代码块标记（部分模型会返回 ```json ... ``` 格式）
+    const cleanedContent = content
+      .replace(/^```json\s*\n?/i, '')  // 移除开头的 ```json
+      .replace(/\n?```\s*$/i, '')      // 移除结尾的 ```
+      .trim();
+
+    const result = JSON.parse(cleanedContent) as { names: AINameResult[] };
 
     // 转换为 NameCandidate 格式
     const candidates: NameCandidate[] = result.names.map((name) => ({

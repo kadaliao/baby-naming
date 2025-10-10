@@ -10,10 +10,16 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **Current Status**: 100% complete + Vercel-ready. All core functionality implemented: generators, scoring, UI, fixed-char feature, database persistence, history UI, user authentication system, hybrid database support, and dark/light theme switching. Poetry database: 393 poems. Character database: 20,992 chars (complete CJK basic block coverage).
 
-**Last Updated**: 2025-10-09 15:30 (Pinyin database fixed)
+**Last Updated**: 2025-10-10 13:30
 
 ## Recent Changes
 
+- **AI Generator Fix** (2025-10-10): Fixed markdown JSON parsing issue for third-party OpenAI-compatible APIs
+  - Root cause: DeepSeek/custom models return ```json...``` format, violating OpenAI's `response_format` spec
+  - Solution: Strip markdown code block markers before JSON.parse() in `lib/generator/ai.ts`
+  - Regex cleanup: Removes opening `^```json\s*\n?` and closing `\n?```\s*$` markers
+  - Backward compatible: Works with both standard JSON and markdown-wrapped responses
+  - Result: AI generation now works with all OpenAI-compatible endpoints
 - **Pinyin Database Fix** (2025-10-09): Fixed "部分汉字缺少拼音数据" warning once for all
   - Root cause: Original database only had 1,205 naming chars, missing common surnames
   - False start: Extended to 1,295 chars (only +90) - still too conservative, just patching
